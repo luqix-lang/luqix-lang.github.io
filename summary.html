@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luqix</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="css/fancy.css">
+    <link rel="stylesheet" type="text/css" href="css/tailwind.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="modules/flare/flare.css">
+
+    <style type="text/css">
+         *{
+            color: #12124b;
+            font-size: 16px;
+            line-height: 1.4;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        }
+
+        nav{
+            background-color: white !important;
+            border-bottom: 1px solid #D4D4D8 !important;
+        }
+
+        nav *{
+            color: #12124b;
+        }
+
+        footer{
+            background-color: #FAFAFA !important;
+            border-top: 1px solid #F4F4F5 !important;
+        }
+
+        footer *{
+            color: #71717a !important;
+        }
+
+        footer .f5{
+            color: #12124b !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="">
+        <div id="nav"></div>
+
+        <div class="flex justify-center">
+            <div class="col-5 col-7-lg col-9-md col-10-sm px-2-sm">
+                <div class="py-10-xxl py-5-sm">
+                    <p class="text-xl-7"><a href="" class="px-2 text-xl-7 id">#</a>Documentation</p>
+                    <p class="mt-4">Just some brief documentation, Luqix is an easy to use programming language, has very clean syntax and supports multi code <a href="#">multi code demacation</a> options just to write in your way.</p>
+
+                    <p class="text-xl-2 mt-7" id="syntax"><span class="px-2 text-xl-2 id">#</span>Syntax</p>
+                    <p class="mt-3">We follow the C-style syntax. Demacated with indentation or curl-braces <span class="key">{}</span>. Mind the indentation to prevent uncaught errors.</p>
+                    <div class="code my-4">// decmacting with culr-braces
+for(let i=0; i<10; i++) {
+    print(i)
+}
+
+scores = 10
+
+// indenting with tabs
+while (scores)
+    print(scores)
+    scores = scores-1
+</div>
+
+                    
+                    <p class="text-xl-2 mt-7" id="syntax"><span class="px-2 text-xl-2 id">#</span>Learn syntax</p>
+                    <p class="mt-3">All possible code features are provided, all types of <span class="key">loops</span>, <span class="key">datatypes</span>, <span class="key">variables</span>, <span class="key">funtions</span>, <span class="key">classes</span> and <span class="key">statement</span>. All these are very easy to implement and they work just as expected.</p>
+                    <div class="code my-4">fn your_name(){
+    return prompt('Enter name: ')
+}
+
+name = your_name()
+
+if(len(name) == 0)
+    print('Please enter a valid name')
+elif(name == 'John')
+    print('I knew it was you')
+else
+    print('how are you name')
+
+</div>
+
+
+                    <p class="text-xl-2 mt-7" id="syntax"><span class="px-2 text-xl-2 id">#</span>Datatypes</p>
+                    <p class="mt-3">As usual, datatypes are used to handle input data differently, to collect and pass it as a whole or individually. So all possible datatypes are provided, there are ways to modify their data with a corresponding module.</p>
+
+                    <div class="mb-4 mt-4 rounded-lg b-1">
+                        <div class="flex tb bb-1 justify-between">
+                            <p class="col-2 px-2 bold">Datatype</p>
+                            <p class="col-6 px-2 bold">Structure</p>
+                            <p class="col-2 px-2 bold">Module</p>
+                        </div>
+                        <div class="flex tb bb-1 justify-between">
+                            <p class="col-2 px-2">string</p>
+                            <div class="col-6 px-2">
+                                <p class="code">'hello world'</p>
+                            </div>
+                            <p class="col-2 px-2">string</p>
+                        </div>
+                        <div class="flex tb bb-1 justify-between">
+                            <p class="col-2 px-2">number</p>
+                            <div class="col-6 px-2">
+                                <p class="">
+                                    <span class="px-2 code">0.1038</span>
+                                    <span class="px-2 code">1_000_000</span>
+                                    <span class="px-2 code">157</span>
+                                    <span class="px-2 code">0-19874</span>
+                                </p>
+                            </div>
+                            <p class="col-2 px-2">math</p>
+                        </div>
+                        <div class="flex tb bb-1 justify-between">
+                            <p class="col-2 px-2">boolean</p>
+                            <div class="col-6 px-2">
+                                <p class="">
+                                    <span class="code">true</span>
+                                    <span class="code">false</span>
+                                </p>
+                            </div>
+                            <p class="col-2 px-2">...</p>
+                        </div>
+                        <div class="flex tb bb-1 justify-between">
+                            <p class="col-2 px-2">list</p>
+                            <div class="col-6 px-2">
+                                <p class="">
+                                    <span class="px-2 code">[1,2,3,4,5,6]</span>
+                                    <span class="px-2 code">['a','b','c',1,2,3,4,[2,3,4]]</span>
+                                </p>
+                            </div>
+                            <p class="col-2 px-2">list</p>
+                        </div>
+                        <div class="flex tb bb-1 justify-between">
+                            <p class="col-2 px-2">dict</p>
+                            <div class="col-6 px-2">
+                                <p class="">
+                                    <span class="px-2 code">{name:'Luqix', type:'interpreter'}</span>
+                                    <span class="px-2 code">{'a':1,'b':2}</span>
+                                </p>
+                            </div>
+                            <p class="col-2 px-2">dict</p>
+                        </div>
+                        <div class="flex tb bb-1 justify-between">
+                            <p class="col-2 px-2">bytes</p>
+                            <div class="col-6 px-2">
+                                <p class="">
+                                    <span class="px-2 code">b'hello world'</span>
+                                    <span class="px-2 code"></span>
+                                </p>
+                            </div>
+                            <p class="col-2 px-2">bytes</p>
+                        </div>
+                        <div class="flex tb bb-1 justify-between">
+                            <p class="col-2 px-2">enum</p>
+                            <div class="col-6 px-2">
+                                <p class="">
+                                    <span class="px-2 code">enum{a=1, b=9, c=20}</span>
+                                </p>
+                            </div>
+                            <p class="col-2 px-2">....</p>
+                        </div>
+
+                    </div>
+
+
+                    <p class="text-xl-2 mt-10" id="syntax"><span class="px-2 text-xl-2 id">#</span>Functions</p>
+                    <p class="mt-3">For any reasonable program, there are functions, they help in code flow, reusing code, and determining when and how a task if to execute. A function has a name, parameters and code demacated to it, it's after then called anywhere accessable in the code scope.</p>
+
+                    <p class="mt-3">A function will create and keep its own scope but its able to return data using the <span class="key">return</span> keyword.</p>
+                    <div class="code my-4">fn random_game() {
+    print('what is the bravest animal')
+
+    guess = 'lion'
+    ans = prompt('1 chance: ')
+
+    if (ans == guess)
+        return 'You win'
+
+    return 'You lost'
+}
+
+print(random_game())
+</div>
+
+                    
+                    <p class="text-xl-2 mt-10" id="syntax"><span class="px-2 text-xl-2 id">#</span>Classes</p>
+                    <p class="mt-3">Classes are used to create personal datatypes/objects, you will give them attributes and you are not limited to your modification, <span class="key">inheritance</span> is supported.</p>
+
+                    <p class="mt-3">A function will create and keep its own scope but its able to return data using the <span class="key">return</span> keyword.</p>
+                    <div class="code my-4">class Student{
+    fn __init__(name, level) {
+        self.name = name
+        self.level = level
+    }
+
+    fn update(n, l) {
+        self.name = n
+        self.level = l
+    }
+}
+
+school = [Student('Ronnie', 5), Student('Brian', 1), Student('Cate', 4), Student('Babs', 3)]
+
+// accessing atributes
+for(let i; i < len(school); i++)
+    print(f'My name is {school[i].name} and am in form {school[i].level}.')
+
+</div>
+
+                    <p class="text-xl-2 mt-10" id="syntax"><span class="px-2 text-xl-2 id">#</span>Modules</p>
+                    <p class="mt-3">Builtin modules provide extra power to your program only when need. Luqix doesn't need headers or dynamic files but has the modules embedded down in there ground-state and only become useful when needed.</p>
+
+                    <div class="b-1 p-2 rounded-lg mt-5">
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2 font-bold">Module</p>
+                            <p class="col-6 px-2 font-bold">Usage</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">locals</p>
+                            <p class="col-6 px-2">Provides functions imported in any new scope</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">sys</p>
+                            <p class="col-6 px-2">Has variables concerning the runtime</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">system</p>
+                            <p class="col-6 px-2">Provides operating system functions</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">base64</p>
+                            <p class="col-6 px-2">Base64 encoding</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">string</p>
+                            <p class="col-6 px-2">Manuplates strings</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">bytes</p>
+                            <p class="col-6 px-2">Manuplates bytes</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">dict</p>
+                            <p class="col-6 px-2">Manuplates dictionary data</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">list</p>
+                            <p class="col-6 px-2">Manuplates lists</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">math</p>
+                            <p class="col-6 px-2">Provides C math functions</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">json</p>
+                            <p class="col-6 px-2">Creates and decodes json strings</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">path</p>
+                            <p class="col-6 px-2">Manuplates string file paths</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">file</p>
+                            <p class="col-6 px-2">Handles opening and closing file streams</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">reg</p>
+                            <p class="col-6 px-2">Regular expressions</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">reg</p>
+                            <p class="col-6 px-2">Regular expressions</p>
+                        </div>
+                        <div class="flex tb bb-1 bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">ws</p>
+                            <p class="col-6 px-2">Simple trial websocket to make some browser GUI</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">socket</p>
+                            <p class="col-6 px-2">Berkeley socket AP</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">url</p>
+                            <p class="col-6 px-2">Libcurl library api</p>
+                        </div>
+                        <div class="flex tb bb-1 align-items-center justify-between">
+                            <p class="col-4 px-2">time</p>
+                            <p class="col-6 px-2">Provides C runtime functions</p>
+                        </div>
+                    </div>
+
+               
+
+
+                    <p class="text-xl-2 mt-10" id="syntax"><span class="px-2 text-xl-2 id">#</span>Locals</p>
+                    <p class="mt-3">This is one super usefull module in Luqix has it has core functions to do things like find data length, output on the console, exit the current thread and may more.</p>
+                    <p class="mt-3">Luckily, it is automatically imported in every new scope due to its needy usage of its functions.</p>
+
+                    <p class="mt-5">Outputs given data on the console.</p>
+                    <p class="code my-2">print('hello world') // hello world</p>
+
+                    <p class="mt-5">Safely imports core modules to the calling scope.</p>
+                    <p class="code my-2">rd = importc('random') // 4</p>
+
+                    <p class="mt-3">Used to find the length of a datatype.</p>
+                    <p class="code my-2">len([1,2,3,4]) // 4</p>
+
+                    <p class="mt-5">Lists the attributes of any datatype</p>
+                    <p class="code my-2">attr(enum{a=1, b=2}) // [a, b]</p>
+
+                    <p class="mt-5">Get user input from the console.</p>
+                    <p class="code my-2">prompt('Username: ')</p>
+
+                    <p class="mt-5">Returns the type of data as a string.</p>
+                    <p class="code my-2">type('hello world') // string</p>
+
+                    <p class="mt-5">Creates a genuine exception understood by the interpreter error handler.</p>
+                    <p class="code my-2">Exception(enum{msg='undefined', tyep='referenceError', line=0}) </p>
+
+                    <p class="mt-5">Gets an attribute from given datatype without having to use the <span class="key">.</span> character.</p>
+                    <p class="code my-2">getattr(enum{a=1}, 'a') // 1</p>
+
+                    <p class="mt-5">Removes attribute specified attribute from the given data.</p>
+                    <p class="code my-2">delattr(enum{a=1, b=2}, 'b')</p>
+
+                    <p class="mt-5">Sets a new or replaces attribute of a given datatype.</p>
+                    <p class="code my-2">a = enum{a=1}
+setattr(a, 'b', 2)</p>
+
+                    <p class="mt-5">Used in inheriting a class.</p>
+                    <p class="code my-2">super(_class, 'attr')</p>
+
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="foot"></div>
+
+    </div>
+
+    <script type="text/javascript" src="modules/flare/flare.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

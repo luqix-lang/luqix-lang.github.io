@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.code *, .code, .blend, .blend *{
+	font-size: 14px;
+    font-family: "monospace", monospace !important;
+
+}
+
+.flare-keywords{
+	color: #58cc02 !important;
+}
+
+.flare-call{
+	color: #1EB0F6 !important;
+}
+
+.flare-attributes{
+	color: #264AA0 !important;
+}
+
+.flare-numbers{
+	color: #F48F00 !important;
+}
+
+.flare-comments, .flare-comments *{
+	color: #00000090 !important;
+	font-style: italic;
+	font-size: 13px !important;
+}
+
+.flare-strings, span2, .flare-strings *{
+	color: #F87171 !important;
+}
