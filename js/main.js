@@ -28,7 +28,8 @@ footer.innerHTML = `
                 </div>
                 <div class="col">
                     <p class="f5 mt-3-md">On Website</p>
-                    <a href="summmary.html"><p class="py-1 mt-2">Documentation</p></a>
+                    <a href="index.html"><p class="py-1 mt-2">Home</p></a>
+                    <a href="summary.html"><p class="py-1 mt-2">Documentation</p></a>
                     <a href="download.html"><p class="py-1">Download</p></a>
                     <a href="blog.html"><p class="py-1">Blog</p></a>
                 </div>
