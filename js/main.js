@@ -6,58 +6,24 @@ for(let i=0; i <code.length; i++)
     lix.light(code[i]);
 
 
-
-let footer = document.getElementById('foot');
-
-footer.innerHTML = `
-<footer class="py-20-xxl py-10-lg py-5-sm flex doc justify-center">
-            <div class="grid-container grid-5 col-10-lg grid-3-lg grid-2-sm px-2-lg col-7-xxl">
-                <div class="col">
-                    <p class="f5">Variable code<br>with genuine software</p>
-                </div>
-                <div class="col">
-                    <p class="f5 mt-3-md">Learn</p>
-                    <a href=""><p class="py-1 mt-2">Documentation</p></a>
-                    <a href=""><p class="py-1">Watch Tutorial</p></a>
-                </div>
-                <div class="col">
-                    <p class="f5 mt-3-md">Contact Us</p>
-                    <a href=""><p class="py-1 mt-2">Twitter</p></a>
-                    <a href=""><p class="py-1">Facebook</p></a>
-                    <a href=""><p class="py-1">Youtube</p></a>
-                </div>
-                <div class="col">
-                    <p class="f5 mt-3-md">On Website</p>
-                    <a href="index.html"><p class="py-1 mt-2">Home</p></a>
-                    <a href="summary.html"><p class="py-1 mt-2">Documentation</p></a>
-                    <a href="download.html"><p class="py-1">Download</p></a>
-                    <a href="blog.html"><p class="py-1">Blog</p></a>
-                </div>
-                <div class="col">
-                    <p class="mt-3-md">copyright @luqix</p>
-                    <p class="py-2">GNU license</p>
-                    <div class="flex">
-                        <p class="px-2"><i class="bi bi-github text-lg"></i></p>
-                        <p class="px-2"><i class="bi bi-twitter text-lg"></i></p>
-                        <p class="px-2"><i class="bi bi-youtube text-lg"></i></p>
-                    </div>
-                </div>
-                <p class="px-2 text-center col-10 mt-10 opacity-80">Updated 29 August 2023</p>
-            </div>
-        </footer>
-`
-
 let nav = document.getElementById('nav');
 
-nav.innerHTML=`
-<nav class="flex px-20-xxl px-5-lg px-2-sm py-3 align-items-center justify-between">
-    <div>
-        <a href="index.html"><p class="text-xl-3 text-xl-sm f9">Luqix</p></a>
+nav.innerHTML = `
+<div class="col-8 col-10-md px-3-md flex-wrap flex justify-between align-items-center">
+    <div class="flex align-items-center justify-between col-10-md">
+        <a href="index.html"><p class="text-3xl py-2 pacific">Luqix</p></a>
+        <p class="px-2 d-none-xxl d-block-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg></p>
     </div>
-    <div class="flex align-items-center justify-end">
-        <a href="download.html"><p class="px-3 px-2 text-md-sm py-2">Download</p></a>
-        <a href="summary.html"><p class="px-3 px-2 text-md-sm py-2">Docs</p></a>
-        <a href="blog.html"><p class="px-3 px-2 text-md-sm py-2">Blog</p></a>
+    <div class="flex flex-wrap align-items-center justify-center">
+        <a href="docs/docs.html"><p class="px-4 fm">Documentation</p></a>
+        <a href=""><p class="px-4 fm">Tutorials</p></a>
+        <a href=""><p class="px-4 fm">Blog</p></a>
+        <a href=""><p class="px-4 fm">Support</p></a>
+        <a href=""><p class="px-4 fm">Forum</p></a>
     </div>
-</nav>
-`
+    <div class="">
+        <a href="https://github.com/luqix-lang/luqix"><p class="bg-white my-2-md py-1 px-3 rounded-full text-black text-md">Download Now <i class="fab fa-github"></i></p></a>
+    </div>
+</div>`
