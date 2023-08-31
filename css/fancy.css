@@ -56712,6 +56712,10 @@ a-sm{
 }
 
 /*percentage */
+.w-0-sm{
+	width:0;
+}
+
 .h-1-sm{
 	height:1%;
 }

@@ -14,3 +14,13 @@
 	color:  #87909c !important;
 	font-style: normal !important;
 }
+
+.show-side{
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 300;
+	width: 70%;
+	transition: all 1s linear;
+}

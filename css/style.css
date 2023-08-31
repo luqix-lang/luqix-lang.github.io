@@ -20,11 +20,12 @@
     color: #23272a;
 }
 
+
 .txt, .txt *{ color: #23272a !important; }
 
-
 nav{
-    background-color: #404EEDaa;
+    background-color: #404EEDba;
+    backdrop-filter: blur(2px);
 }
 
 nav *{
@@ -118,3 +119,14 @@ svg { color: inherit !important; }
 
 .navd { background-color: #000000f0; }
 .navd *{ color: white; }
+
+.menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #00000090;
+    z-index: 30;
+
+}

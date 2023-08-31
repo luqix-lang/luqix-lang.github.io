@@ -26,10 +26,10 @@
 
         <div class="py-20-xxl py-5-md land flex justify-center">
             <div class="col-5 col-7-lg col-8-md col-10-sm px-2-sm py-10-xxl py-5-sm">
-                <p class="text-6xl text-xl-3-md text-center arvo font-extrabold">AN EASY TOOL...</p>
+                <p class="md:text-6xl text-3xl  text-center arvo font-extrabold">AN EASY TOOL...</p>
                 <p class="mt-7 text-center text-xl">...enjoy the most readable syntax with independent options, or new syntax. Feel the real power of weak dynamic typing where the language can't limit your typing. And also enjoy modern programming features at a very cheap requirement.</p>
 
-                <div class="flex flex-wrap align-items-center mt-7 justify-evenly">
+                <div class="flex -z-0 flex-wrap align-items-center mt-7 justify-evenly">
                     <a href="docs/docs.html" class="col-4 col-10-md text-center text-xl">
                         <p class="txt fm py-3 svg-dark rounded-full bg-white align-items-center flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24" class="mr-3 txt">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
@@ -95,29 +95,29 @@
                 <div class="mt-5 flex justify-center">
                     <div class="code col-7 col-10-md">// guessing game
 
-animal = "lion"
+animal = 'lion'
 
 fn play(score) {
-    print("What is the bravest animal?")
+    print('What is the bravest animal?'')
 
     while (score) {
-        player = prompt("guess: ")
+        player = prompt('guess: ')
 
         if (player == animal)
-            print("You win")
+            print('You win')
             return score
         else 
-            print("No, try again")
+            print('No, try again')
         
         score = score-1
 
         if(score == 1)
-            print("One chance to go")
+            print('One chance to go')
     }
     return 0
 }
 
-print(f"Thanks for play.\nscores: {play(5)}")
+print(f'Thanks for play.\nscores: {play(5)}')
                     </div>
                 </div>
             </div>
@@ -125,41 +125,7 @@ print(f"Thanks for play.\nscores: {play(5)}")
     </div>
 
 
-    <div class="flex flex-wrap foot pt-5-xxl pb-10-xxl justify-center">
-        <footer class="flex flex-wrap col-7 col-8-lg col-9-md col-10-sm px-2-sm justify-around">
-            <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
-                <p class="pacific text-xl">Variable Code</p>
-                <p class="arvo">With genuine software</p>
-            </div>
-            <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
-                <p class="font-bold mb-1 txc">On Website</p>
-                <a href="docs/docs.html"><p class="py-1">Documentation</p></a>
-                <a href=""><p class="py-1">Tutorials</p></a>
-                <a href=""><p class="py-1">Blog</p></a>
-                <a href=""><p class="py-1">Support</p></a>
-                <a href="docs/install.html"><p class="py-1">Install</p></a>
-            </div>
-            <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
-                <p class="font-bold mb-1 txc">Learn</p>
-                <a href="docs/docs.html"><p class="py-1">Documentation</p></a>
-                <a href=""><p class="py-1">Tutorials</p></a>
-                <a href=""><p class="py-1">Twitter</p></a>
-                <a href=""><p class="py-1">Stackoverflow</p></a>
-                <a href="https://github.com/luqix-lang/luqix"><p class="py-1">Github</p></a>
-            </div>
-            <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
-                <p class="font-bold mb-1 txc">Details</p>
-                <a href=""><p class="py-1">GNU License</p></a>
-                <div class="mt-1 flex justify-start">
-                    <p class="px-2"><a href="https://github.com/luqix-lang/luqix"><i class="fab fa-github"></i></a></p>
-                    <p class="px-2"><a href=""><i class="fab fa-twitter"></i></a></p>
-                    <p class="px-2"><a href=""><i class="fab fa-stack-overflow"></i></a></p>
-                </div>
-            </div>
-
-        </footer>
-        <p class="text-center col-10 opacity-80">@copyright 30 August 2023</p>
-    </div>
+    <div class="flex flex-wrap foot pt-5-xxl pb-10-xxl justify-center" id="footer"></div>
 
 </div>
 

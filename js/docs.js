@@ -1,15 +1,21 @@
+let code = document.getElementsByClassName('code');
 
 let side = document.getElementById('sidebar');
 
+AOS.init();
+
+let lix = new Flare();
+
+for(let i=0; i <code.length; i++)
+    lix.light(code[i]);
+
 
 side.innerHTML = `
-<div class="page sidebar">
+<div class="page sidebar" >
      <a href="../index.html"><p class="text-2xl text-white pacific">Luqix</p></a>
-     <a href=""><p class="mt-1 py-1">Intro</p></a>
-     <a href=""><p class="py-1">Installation</p></a>
-     <a href=""><p class="py-1">Changelog</p></a>
-     <a href=""><p class="py-1">Warning</p></a>
-     <a href=""><p class="py-1">Info</p></a>
+     <a href="docs.html"><p class="mt-1 py-1">Intro</p></a>
+     <a href="install.html"><p class="py-1">Installation</p></a>
+     <a href="changelog.html"><p class="py-1">Changelog</p></a>
 
      <div class="mt-4">
          <p class="text-sm text-white fm">LEARN BASICS</p>
@@ -70,15 +76,26 @@ side.innerHTML = `
 `
 
 let navd = document.getElementById('nav-doc');
+    ID = document.getElementById('ID');
 
 navd.innerHTML = `
 <div class="flex justify-between align-items-center px-4">
-     <a href=""><p class="pacific font-light text-2xl">Luqix</p></a>
-     <p class="">INTRO</p>
-     <p class="px-2">
+     <a href="../index.html"><p class="pacific font-light text-2xl">Luqix</p></a>
+     <p class="">${ID.innerText.toUpperCase()}</p>
+     <p class="px-2" id="barz">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
      </p>
  </div>
 `
+
+barz.addEventListener('click', ()=>{
+    if(side.classList.contains('d-none-sm')){
+        side.classList.remove('d-none-sm');
+        side.classList.add('show-side');
+    } else {
+        side.classList.remove('show-side');
+        side.classList.add('d-none-sm');
+    }
+})

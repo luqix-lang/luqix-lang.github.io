@@ -7,23 +7,92 @@ for(let i=0; i <code.length; i++)
 
 
 let nav = document.getElementById('nav');
+    foot = document.getElementById('footer');
 
 nav.innerHTML = `
-<div class="col-8 col-10-md px-3-md flex-wrap flex justify-between align-items-center">
+<div class="col-8 col-10-md px-3-md flex-wrap flex justify-between align-items-center z-10">
     <div class="flex align-items-center justify-between col-10-md">
         <a href="index.html"><p class="text-3xl py-2 pacific">Luqix</p></a>
-        <p class="px-2 d-none-xxl d-block-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
+        <p id="bar" class="px-2 d-none-xxl d-block-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg></p>
     </div>
-    <div class="flex flex-wrap align-items-center justify-center">
+    <div class="flex-xxl d-none-md flex-wrap align-items-center justify-center">
         <a href="docs/docs.html"><p class="px-4 fm">Documentation</p></a>
         <a href=""><p class="px-4 fm">Tutorials</p></a>
-        <a href=""><p class="px-4 fm">Blog</p></a>
+        <a href="blog.html"><p class="px-4 fm">Blog</p></a>
         <a href=""><p class="px-4 fm">Support</p></a>
         <a href=""><p class="px-4 fm">Forum</p></a>
     </div>
-    <div class="">
-        <a href="https://github.com/luqix-lang/luqix"><p class="bg-white my-2-md py-1 px-3 rounded-full text-black text-md">Download Now <i class="fab fa-github"></i></p></a>
+    <div class="d-block-xxl d-none-md">
+        <a href="https://github.com/luqix-lang/luqix"><p class="bg-white my-2-md py-1 px-3 rounded-full text-black text-md">Install Now&nbsp; <i class="bi bi-github txt"></i></p></a>
+    </div>
+    <div class="d-none-md menu d-none-xxl justify-center align-items-center" id="menu">
+        <div class="flex relative align-items-center justify-center bg-white col-9 h-90 rounded-md">
+            <p id="close-menu" class="text-right absolute top-1 right-0 text-3xl px-3 txt fm">x</p>
+            <div class="col-10">
+                <a href="docs/docs.html"><p class="txt text-xl text-center py-3 border-b mx-3">Document</p></a>
+                <a href="docs/docs.html"><p class="txt text-xl text-center py-3 border-b mx-3">Tutorials</p></a>
+                <a href="blog.html"><p class="txt text-xl text-center py-3 border-b mx-3">Blog</p></a>
+                <a href="docs/docs.html"><p class="txt text-xl text-center py-3 border-b mx-3">Support</p></a>
+                <a href="docs/docs.html"><p class="txt text-xl text-center py-3 border-b mx-3">Forum</p></a>
+                <a href="https://github.com/luqix-lang/luqix"><p class="txt text-xl text-center py-3 border-b mx-3"><i class="bi bi-github"></i></p></a>
+            </div>
+        </div>
     </div>
 </div>`
+
+footer.innerHTML = `
+<footer class="flex flex-wrap col-7 col-8-lg col-9-md col-10-sm px-2-sm justify-around">
+    <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
+        <p class="pacific text-xl">Variable Code</p>
+        <p class="arvo">With genuine software</p>
+    </div>
+    <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
+        <p class="font-bold mb-1 txc">On Website</p>
+        <a href="docs/docs.html"><p class="py-1">Documentation</p></a>
+        <a href=""><p class="py-1">Tutorials</p></a>
+        <a href="blog.html"><p class="py-1">Blog</p></a>
+        <a href=""><p class="py-1">Support</p></a>
+        <a href="docs/install.html"><p class="py-1">Install</p></a>
+    </div>
+    <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
+        <p class="font-bold mb-1 txc">Learn</p>
+        <a href="docs/docs.html"><p class="py-1">Documentation</p></a>
+        <a href=""><p class="py-1">Tutorials</p></a>
+        <a href=""><p class="py-1">Twitter</p></a>
+        <a href=""><p class="py-1">Stackoverflow</p></a>
+        <a href="https://github.com/luqix-lang/luqix"><p class="py-1">Github</p></a>
+    </div>
+    <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
+        <p class="font-bold mb-1 txc">Details</p>
+        <a href=""><p class="py-1">GNU License</p></a>
+        <div class="mt-1 flex justify-start">
+            <p class="px-2"><a href="https://github.com/luqix-lang/luqix"><i class="fab fa-github"></i></a></p>
+            <p class="px-2"><a href=""><i class="fab fa-twitter"></i></a></p>
+            <p class="px-2"><a href=""><i class="fab fa-stack-overflow"></i></a></p>
+        </div>
+    </div>
+
+</footer>
+<p class="text-center col-10 opacity-80">@copyright 30 August 2023</p>
+`
+
+
+let bar = document.getElementById('bar')
+let menu = document.getElementById('menu');
+let close_menu = document.getElementById('close-menu');
+
+
+bar.addEventListener('click', ()=>{
+    menu.classList.remove('d-none-md');
+    menu.classList.remove('d-none-xxl');
+    menu.classList.add('d-flex-md');
+})
+
+close_menu.addEventListener('click', ()=>{
+    menu.classList.remove('d-flex-md');
+    menu.classList.add('d-none-md');
+    menu.classList.add('d-none-xxl');
+})
+
