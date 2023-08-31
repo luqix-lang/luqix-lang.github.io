@@ -13,7 +13,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <link rel="stylesheet" type="text/css" href="modules/flare/flare.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
@@ -49,7 +51,7 @@
             </div>
             <div class="col-4 col-10-md">
                 <div class="">
-                    <p class="text-5xl text-xl-5-md leading-snug font-extrabold arvo mt-3-md">Write readable less code</p>
+                    <p class="xl:text-5xl text-2xl leading-snug font-extrabold arvo mt-3-md">Write readable less code</p>
                     <p class="mt-4 text-xl">Since the language is interpreted, there is no need for type writing and also many functions to do straight low level functions are already provided. So this results to writing short code.</p>
                 </div>
             </div>
@@ -57,10 +59,10 @@
     </div>
 
     <div class="flex justify-center py-20-xxl py-10-md smoky" data-aos="fade-up">
-        <div class="col-7 col-8-lg col-9-md col-10-sm px-2-sm flex-wrap-md flex justify-between align-items-center">
+        <div class="col-7 col-8-lg col-9-md col-10-sm px-2-sm flex-wrap-md flex md:flex-row flex-col-reverse justify-between align-items-center">
             <div class="col-4 col-10-md">
                 <div class="">
-                    <p class="text-5xl text-xl-5-md leading-snug font-extrabold arvo">Includes modern reliable features</p>
+                    <p class="xl:text-5xl text-2xl leading-snug font-extrabold arvo">Includes modern reliable features</p>
                     <p class="mt-4 text-xl">Modern features including recursion of functions, object oriented programming to deal with polymorphic datatypes and modulation to handle massive projects by segmentating them.</p>
                 </div>
             </div>
@@ -77,7 +79,7 @@
             </div>
             <div class="col-4 col-10-md">
                 <div class="">
-                    <p class="text-5xl text-xl-5-md leading-snug font-extrabold arvo mt-3-md">Has builtin low level libraries</p>
+                    <p class="xl:text-5xl text-2xl leading-snug font-extrabold arvo mt-3-md">Has builtin low level libraries</p>
                     <p class="mt-4 text-xl">Luqix provides its functionality to manuplating data and interfacing with various APIs inform of builtin modules. They are embedded in the interpreter but only activate when called.</p>
                 </div>
             </div>
@@ -87,35 +89,35 @@
     <div class="flex justify-center py-20-xxl py-10-md smoky">
         <div class="col-7 col-8-lg col-10-md px-2-md">
             <div class="" data-aos="zoom-in-up">
-                <p class="text-5xl text-xl-5-md text-center arvo font-extrabold">HERE IS SOME LUQIX CODE</p>
+                <p class="xl:text-5xl text-2xl text-center arvo font-extrabold">HERE IS SOME LUQIX CODE</p>
                 <p class="mt-5 text-center text-xl">The example below is a guessing game, requiring user input from the terminal, this will be our guess and we define a function taking a parameter for score count, if it gets to zero, you have lose and they time you win, its your score.</p>
 
                 <div class="mt-5 flex justify-center">
                     <div class="code col-7 col-10-md">// guessing game
 
-animal = 'lion'
+animal = "lion"
 
 fn play(score) {
-    print('What is the bravest animal?')
+    print("What is the bravest animal?")
 
     while (score) {
-        player = prompt('guess: ')
+        player = prompt("guess: ")
 
         if (player == animal)
-            print('You win')
-            return scores
+            print("You win")
+            return score
         else 
-            print('No, try again')
+            print("No, try again")
         
-        scores = scores-1
+        score = score-1
 
-        if(scores == 1)
-            print('One chance to go')
+        if(score == 1)
+            print("One chance to go")
     }
     return 0
 }
 
-print('Thanks for play.\nscores: {play(5)}')
+print(f"Thanks for play.\nscores: {play(5)}")
                     </div>
                 </div>
             </div>

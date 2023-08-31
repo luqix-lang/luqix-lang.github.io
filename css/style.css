@@ -32,7 +32,7 @@ nav *{
 }
 
 .mic{
-    background-image: url('/home/rogers/Downloads/129124.png');
+    background-image: url('../img/land.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
