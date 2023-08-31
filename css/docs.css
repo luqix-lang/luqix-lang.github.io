@@ -1,0 +1,16 @@
+
+
+.code, .cmd {
+	background-color: #111214;
+}
+
+.cmd{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 5px;
+}
+
+.cmd, .cmd *{
+	color:  #87909c !important;
+	font-style: normal !important;
+}

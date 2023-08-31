@@ -72,8 +72,8 @@ side.innerHTML = `
 let navd = document.getElementById('nav-doc');
 
 navd.innerHTML = `
-<div class="flex justify-between align-items-center px-3">
-     <a href=""><p class="pacific text-2xl">Luqix</p></a>
+<div class="flex justify-between align-items-center px-4">
+     <a href=""><p class="pacific font-light text-2xl">Luqix</p></a>
      <p class="">INTRO</p>
      <p class="px-2">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">

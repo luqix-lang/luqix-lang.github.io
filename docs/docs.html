@@ -21,17 +21,17 @@
 
 </head>
 <body>
-
+    <p id="ID" class="d-none">intro</p>
      <div class="mic d-none"> <nav class="flex sticky-top text-white justify-center align-items-center" id="nav"></nav> </div>
 
-     <div id="nav-doc" class="sticky-top navd py-2 d-none-xxl d-block-sm">
+     <div id="nav-doc" class="sticky-top navd z-20 py-2 d-none-xxl d-block-sm">
          
      </div> 
 
      <div class="flex">
          <div class="col-2-xxl col-3-md d-none-sm" id="sidebar"></div>
-         <div class="col-8-xxl col-7-md col-10-sm bg-content">
-             <div class="page content px-10 px-5-md px-4-sm py-10" data-aos="zoom-in-up">
+         <div class="col-8-xxl z-10 col-7-md col-10-sm bg-content">
+             <div class="page content px-10-xxl px-5-md  py-10" data-aos="zoom-in-up">
                  <p class="text-4xl fm">Introduction</p>
                  <p class="mt-4">Hello everyone, the Luqix team welcomes you to our official website documentation where we talk about the language in general, its usage, bugs and capabilities and also learn the official writing of the new luqix programming language.</p>
 
@@ -40,9 +40,37 @@
                  <div class="line"></div>
 
                  <p class="text-2xl fm">Know about Luqix</p>
-                 <p class="mt-3">Luqix is object oriented and tries all its data somehow as <a href="" class="link">objects</a>.</p>
-                 <p class="mt-3">It has highly customizable syntax thanks to the multi code demacation options inbuilt its scratch crafted <a class="link">lexer</a> and <a class="link">parser</a>.</p>
-                 <p class="mt-3">Although its data is all objects and so it has attributes. Each data having an individual attribute is expensive in <a class="link">memory</a> issues and so functions are provided separately to reuse them to manuplate different data so as to save memory.</p>
+                 <ul class="list-disc ml-7">
+                     <li class="mt-3">Luqix is object oriented and tries all its data somehow as <a href="" class="link">objects</a>.</li>
+                     <li class="mt-3">It has highly customizable syntax thanks to the multi code demacation options inbuilt its scratch crafted <a class="link">lexer</a> and <a class="link">parser</a>.</li>
+                     <li class="mt-3">Although its data is all objects and so it has attributes. Each data having an individual attribute is expensive in <a class="link">memory</a> issues and so functions are provided separately to reuse them to manuplate different data so as to save memory.</li>
+                     <li class="mt-3">There is hope for dynamic file loading.</li>
+                     <li class="mt-3">Speed is a proirity although not yet archived, hope you could bare.</li>
+                     <li class="mt-3">Error handling sofar is not at its best but you could use the existing as updates come in. The   <a class="link">try statement</a> archives that.</li>
+                 </ul>
+
+
+                 <p class="text-2xl fm mt-10">Goals</p>
+                 <ul class="list-disc ml-7">
+                     <li class="mt-3">We aim for luqix to be a simpler entry coding language for completely new programmers. Having the same concepts with mature languages and yet presenting them in there easy formats.</li>
+                     <li class="mt-3">Just another alternative to the existing programming languages.</li>
+                     <li class="mt-3">No gap is claimed to be filled but all needed is coding and deploying easily.</li>
+                 </ul>
+
+                 <p class="text-2xl fm mt-10">Do falls</p>
+                 <ul class="list-disc ml-7">
+                     <p class="mt-3">No project has no setbacks, ours are as included.</p>
+                     <li class="mt-3">Luqix is very slow. Speed is a must for a language but what we can promise all is being done to increase speed without forking hard methods that could limit our simplicity like <a class="link">JIT</a> compliation.</li>
+                     <li class="mt-3">Present very many none spotted bugs. Well since some could be easy to fix, please make a report so its fixed right away and then thaks for the contribution. <a href="" class="link">follow <i class="bi bi-arrow-right link"></i></a></li>
+                     <li class="mt-3">Alot of low level functionality is missing, well still alot is being added. Checkout the <a class="link">Changelog</a> tab.</li>
+                     <li class="mt-3">Regular changes could be a downfall but please adheld.</li>
+                 </ul>
+
+                 <div class="mt-7 mb-5 flex justify-between">
+                     <a href=""><p class="px-7 py-2 text-center text-xl fm rounded-md invisible"></p></a>
+                     <a href="install.html"><p class="px-7 py-2 text-center align-items-center text-xl fm rounded-md hover:text-blue-300">Installation <i class="bi bi-arrow-right hover:text-blue-300"></i></p></a>
+                 </div>
+                 
              </div>
          </div>
      </div>
