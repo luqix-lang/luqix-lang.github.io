@@ -67,8 +67,8 @@ side.innerHTML = `
      <p class="mt-4 font-bold">2. Builtin modules</p>
      <div class="ml-2">
          <p class=" mt-3  font-bold">Interpreter APIs</p>
-         <a href=""><p class="py-1">Locals</p></a>
-         <a href=""><p class="py-1">Sys</p></a>
+         <a href="locals.html"><p class="py-1">Locals</p></a>
+         <a href="sys.html"><p class="py-1">Sys</p></a>
 
          <p class=" mt-3  font-bold">a. Math logic</p>
          <a href=""><p class="py-1">Math</p></a>
