@@ -47,12 +47,12 @@ for(let i=0; i <code.length; i++)
 
 
 side.innerHTML = `
-<div class="page sidebar shadow-lg relative z-40 md:shadow-none " >
+<div class="page sidebar sm:shadow-lg border-r-2 border-r-blue-500 sm:border-r-0 shadow-cyan-400 relative z-40 sm:shadow-none " >
      <a href="docs.html"><p class="mt-1 py-1">Intro</p></a>
      <a href="install.html"><p class="py-1">Installation</p></a>
      <a href="changelog.html"><p class="py-1">Changelog</p></a>
 
-     <p class="text-sm mt-4 font-bold">LEARN BASICS</p>
+     <p class="mt-4 font-bold">1. Learn basics</p>
      <div class="ml-2">
          <a href="variables.html"><p class="py-1">Variables</p></a>
          <a href="functions.html"><p class="py-1">Functions</p></a>
@@ -64,40 +64,40 @@ side.innerHTML = `
          <a href=""><p class="py-1">Import statement</p></a>
      </div>
 
-     <p class="text-sm mt-4 font-bold">BUILTIN MODULES</p>
+     <p class="mt-4 font-bold">2. Builtin modules</p>
      <div class="ml-2">
-         <p class="text-sm mt-3  font-bold">INTERPRETER APIs</p>
+         <p class=" mt-3  font-bold">Interpreter APIs</p>
          <a href=""><p class="py-1">Locals</p></a>
          <a href=""><p class="py-1">Sys</p></a>
 
-         <p class="text-sm mt-3  font-bold">MATH LOGIC</p>
+         <p class=" mt-3  font-bold">a. Math logic</p>
          <a href=""><p class="py-1">Math</p></a>
          <a href=""><p class="py-1">Random</p></a>
 
-         <p class="text-sm mt-3  font-bold">SYSTEM APIs</p>
+         <p class=" mt-3  font-bold">b. System APIs</p>
          <a href=""><p class="py-1">System</p></a>
          <a href=""><p class="py-1">Time</p></a>
          <a href=""><p class="py-1">Threads</p></a>
          <a href=""><p class="py-1">Parallelism</p></a>
          <a href=""><p class="py-1">Process</p></a>
 
-         <p class="text-sm mt-3  font-bold">DATA MANUPLATORS</p>
+         <p class=" mt-3  font-bold">c. Data manuplators</p>
          <a href=""><p class="py-1">Dict</p></a>
          <a href=""><p class="py-1">List</p></a>
          <a href=""><p class="py-1">String</p></a>
          <a href=""><p class="py-1">Bytes</p></a>
 
-         <p class="text-sm mt-3  font-bold">FILE HANDLING</p>
+         <p class=" mt-3  font-bold">d. File handling</p>
          <a href=""><p class="py-1">file</p></a>
          <a href=""><p class="py-1">Path</p></a>
          <a href=""><p class="py-1">Reg</p></a>
 
-         <p class="text-sm mt-3  font-bold">ENCODING</p>
+         <p class=" mt-3  font-bold">e. Encoding</p>
          <a href=""><p class="py-1">Base64</p></a>
          <a href=""><p class="py-1">Json</p></a>
          
 
-         <p class="text-sm mt-3  font-bold">NETWORKING</p>
+         <p class=" mt-3  font-bold">f. Networking</p>
          <a href=""><p class="py-1">Socket</p></a>
          <a href=""><p class="py-1">Websocket</p></a>
          <a href=""><p class="py-1">Url</p></a>

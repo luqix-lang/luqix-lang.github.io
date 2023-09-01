@@ -25,7 +25,7 @@
 
 nav, .navd{
     background-color: #404EEDba;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
 }
 
 nav *{
