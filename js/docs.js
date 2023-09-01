@@ -56,12 +56,12 @@ side.innerHTML = `
      <div class="ml-2">
          <a href="variables.html"><p class="py-1">Variables</p></a>
          <a href="functions.html"><p class="py-1">Functions</p></a>
-         <a href="forloop.html"><p class="py-1">For loop</p></a>
-         <a href=""><p class="py-1">While loop</p></a>
-         <a href=""><p class="py-1">If statement</p></a>
-         <a href=""><p class="py-1">Try Except statement</p></a>
-         <a href=""><p class="py-1">Switch statement</p></a>
-         <a href=""><p class="py-1">Import statement</p></a>
+         <a href="for.html"><p class="py-1">For loop</p></a>
+         <a href="while.html"><p class="py-1">While loop</p></a>
+         <a href="if.html"><p class="py-1">If statement</p></a>
+         <a href="try.html"><p class="py-1">Try Except statement</p></a>
+         <a href="import.html"><p class="py-1">Import statement</p></a>
+         <a href="switch.html"><p class="py-1">Switch statement</p></a>
      </div>
 
      <p class="mt-4 font-bold">2. Builtin modules</p>
@@ -113,8 +113,8 @@ let navd = document.getElementById('nav-doc');
     ID = document.getElementById('ID');
 
 navd.innerHTML = `
-<div class="flex justify-between align-items-center px-4">
-     <a href="../index.html"><p class="pacific font-light text-xl">Luqix-v1.00.1</p></a>
+<div class="flex justify-between align-items-center px-4 py-1">
+     <a href="../index.html"><p class="pacific font-light text-2xl">Luqix-v1.00.1</p></a>
      <p class="">${ID.innerText.toUpperCase()}</p>
      <p class="px-2" id="barz">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">

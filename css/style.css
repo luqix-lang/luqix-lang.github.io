@@ -52,8 +52,6 @@ svg { color: inherit !important; }
 .code {
     white-space: pre-wrap;
     padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
     border-radius: 10px;
     font-family: 'Liberation Mono', sans-serif;
 }
@@ -112,3 +110,4 @@ svg { color: inherit !important; }
     height: 100vh;
     background-color: #000000b0;
 }
+

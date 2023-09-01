@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luqix basics-import</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/fancy.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/docs.css">
+
+    <link rel="stylesheet" type="text/css" href="../modules/flare/flare.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <p id="ID" class="d-none">import</p>
+     <div class="mic sticky-top z-20 d-none-sm"> <nav class="flex sticky-top text-white relative z-20 justify-center align-items-center" id="nav"></nav> </div>
+     <div id="nav-doc" class="sticky-top navd z-20 py-2 d-none-xxl d-block-sm"></div> 
+
+     <div class="flex justify-center">
+         <div class="flex col-8 col-9-lg  col-10-md z-10 relative">
+             <div class="col-2-xxl col-3-md d-none-sm " data-aos="fade-right" id="sidebar"></div>
+             <div class="col-8-xxl z-10 col-7-md col-10-sm bg-content">
+                 <div class="page content px-10-xxl px-5-md  py-10">
+                     <p class="text-4xl font-bold">Basics import-statement</p>
+                     <p class="mt-4">This is used to import <span class="key">luqix</span> into your program.</p>
+                     <p class="mt-3">Import statement in Luqix is helpful to take a objects defined in other files and bring then to your working program.</p>
+
+                     <div class="line"></div>
+
+                     <p class="mt-7">The statement is limited to only luqix files <a class="link">builtin</a> modules are imported we the <a class="link">importc</a> function from the <a class="link">locals</a> module.</p>
+
+                     <div class="code my-7">import file1, file2
+import file3 as f3</div>
+
+                     <p class="mt-3"><span class="key">as</span> is used to defined a new name for the imported module or it will be saved as the module name itself.</p>
+
+                    <p class="mt-7 text-2xl font-bold">Using <span class="key">from</span></p>
+                    <div class="line"></div>
+                    <p class="mt-3">Here <span class="key">from</span> accompanies the <span class="key">import</span> statement and defines a dynamic path to where the modules could be located.</p>
+
+                    <div class="my-7 code">import file1 from '../'</div>
+
+					<p class="mt-2">The path after the <span class="key">from</span> keyword is dynamic as so its read in code at runtime.</p>
+
+                    <p class="mt-7 text-2xl font-bold">Notice</p>
+                    <div class="line"></div>
+                    <p class="mt-3">Here the import statement doesn't support fetching attributes at defining the statment so you will do that in maybe the next lines, something like this.</p>
+
+                    <div class="mt-7 code">import f1
+
+race = f1.race
+
+print(race()) // thats better but wrong</div>
+                    
+                    <div class="mt-14 mb-5 flex justify-between">
+                         <a href="try.html"><p class="px-7-xxl px-2-md py-2 text-center text-xl-xxl text-md-md rounded-md hover:text-blue-500"><i class="bi bi-arrow-left"></i>&nbsp;Try&nbsp;statement</p></a>
+                         <a href="switch.html"><p class="px-7-xxl px-2-md py-2 text-center align-items-center text-xl-xxl text-md-md rounded-md hover:text-blue-500">Switch&nbsp;statement&nbsp;<i class="bi bi-arrow-right hover:text-blue-300"></i></p></a>
+                     </div>
+                     
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="../modules/flare/flare.js"></script>
+    <script type="text/javascript" src="../js/docs.js"></script>
+
+</body>
+</html>
+

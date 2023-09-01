@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luqix module-locals</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/fancy.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/docs.css">
+
+    <link rel="stylesheet" type="text/css" href="../modules/flare/flare.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style type="text/css">
+        .code{
+            background-color: #F4F4F5 !important;
+            padding: 15px !important;
+            border-radius: 10px !important;
+        }
+
+        .code, .code *{
+            line-height: 19px !important;
+        }
+    </style>
+
+</head>
+<body>
+    <p id="ID" class="d-none">locals module</p>
+     <div class="mic sticky-top z-20 d-none-sm"> <nav class="flex sticky-top text-white relative z-20 justify-center align-items-center" id="nav"></nav> </div>
+     <div id="nav-doc" class="sticky-top navd z-20 py-2 d-none-xxl d-block-sm"></div> 
+
+     <div class="flex justify-center">
+         <div class="flex col-8 col-9-lg  col-10-md z-10 relative">
+             <div class="col-2-xxl col-3-md d-none-sm " data-aos="fade-right" id="sidebar"></div>
+             <div class="col-8-xxl z-10 col-7-md col-10-sm bg-content">
+                 <div class="page content px-10-xxl px-5-md  py-10">
+                     <p class="md:text-4xl text-3xl font-bold">Module locals</p>
+                     <p class="mt-4">This builtin module has special functions for the interpreter, just navigate.</p>
+
+                     <div class="line"></div>
+
+                     <p class="mt-4">The builtins module is automatically loaded every time Luqix interpreter starts, either as a top level execution environment or as interactive session. The commonly used functions used without importing from any where are defined in this module.</p>
+                     <p class="mt-2">Even when you import a module, this module is also imported to the modules's scope.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> print(<span class="args">args, ...</span>)</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">prints the given arguments string formats on the console or terminal.</p>
+                     <p class="mt-2">Takes in any nnumber of arguments.</p>
+
+                     <div class="code my-6">print('hello world', 19)</div>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> attr(<span class="args">object</span>)</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Returns the a list of attributes in string format of the object specified.</p>
+                     <p class="mt-2">Takes only one argument and it should be given.</p>
+
+                     <div class="code my-6">let rd = importc('random')
+
+n = attr(rd)
+// ['choice', 'num', ...]</div>
+
+                     <p id="importc" class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> importc(<span class="args">'name'</span>)</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Imports a builtin module from the interpreter's core if its at ground state or returns the already called module if its already in use.</p>
+                     <p class="mt-2">Takes only one argument and it should be given, this is the module name.</p>
+
+                     <div class="code my-6">let rd = importc('random')
+    math = importc('math')</div>
+                     <p class="mt-2">Its limited to builtin modules only and for normal Luqix files, use the <a href="import.html" class="link">import</a> statement.</p>
+
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> prompt(<span class="args">'optional'</span>)</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Reads user input from the terminal or console.</p>
+                     <p class="mt-2">Takes only one argument and its optional, this should be a string that prompts the input.</p>
+
+                     <div class="code my-6">pwd = prompt('Enter password: ')</div>
+                     <p class="mt-2">The argument given is simply a placeholder but not some default text and there is no provision from default input, an <span class="key">if</span> statement and <span class="key">len</span> method could help with that.</p>
+
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> len(<span class="args">obj</span>)</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Returns the length of the object given, and if no length is specified, then a 0 is returned.</p>
+                     <p class="mt-2">Takes only one argument and it should be given.</p>
+
+                     <div class="code my-6">n = len('Jesus is Lord')</div>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> type(<span class="args">obj</span>)</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Returns the type of data given, it could be a custom object or builtin <a class="link">datatypes</a>.</p>
+                     <p class="mt-2">Takes only one argument and it should be given.</p>
+
+                     <div class="code my-6">type('hello world') // string
+type(1284) // number</div>
+                    <p class="mt-2">The type is returned as a string so comparision must be with a string.</p>
+
+                    <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> exit()</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Terminates/stops the execution of the calling scope or <a class="link">thread</a>.</p>
+
+                     <div class="code my-4">exit()</div>
+                    <p class="">No arguments are need. And this uses the C function <span class="key">std.exit</span> taking in argument 0.</p>
+
+                    <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> delattr(<span class="args">obj, 'attr-name')</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Deletes the specified attribute from the given object.</p>
+
+                     <div class="code my-4">delattr(math, 'cos')</div>
+
+                    <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> setattr(<span class="args">obj, 'attr-name', value</span>)</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Sets a new attribute to the specified object.</p>
+
+                     <div class="code my-4">setattr(math, 'pi', (22/7))</div>
+
+                    <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> getattr(<span class="args">obj, 'attr-name'</span>)</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Returns the specified attribute values of the given object.</p>
+
+                     <div class="code my-4">cosine = getattr(math, 'cos')</div>
+
+
+                    <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> super(<span class="args">obj, arg</span>)</p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">appends attribute to the object given as parameter one.</p>
+
+                     <div class="code my-4">// obj imagine its a class that has inherited parent class of arg
+super(obj, arg)</div>
+
+
+                    
+
+
+                    <div class="mt-14 mb-5 flex justify-between">
+                         <a href="import.html"><p class="px-7 py-2 text-center text-xl-xxl text-md-md rounded-md hover:text-blue-500"><i class="bi bi-arrow-left"></i>&nbsp;Import</p></a>
+                         <a href="sys.html"><p class="px-7 py-2 text-center align-items-center text-xl-xxl text-md-md rounded-md hover:text-blue-500">Sys&nbsp;<i class="bi bi-arrow-right hover:text-blue-300"></i></p></a>
+                     </div>
+                     
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="../modules/flare/flare.js"></script>
+    <script type="text/javascript" src="../js/docs.js"></script>
+
+</body>
+</html>
+

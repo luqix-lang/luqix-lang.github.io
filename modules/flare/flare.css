@@ -5,7 +5,7 @@
 
 .code *, .code{
 	font-size: 14px !important;
-	line-height: 20px !important;
+	line-height: 17px !important;
     font-family: 'Liberation Mono', sans-serif;
     color: #24292f !important;
 }
@@ -26,11 +26,12 @@
 	color: #953800 !important;
 }
 
-.flare-comments, .flare-comments *{
-	color: #6e7781 !important;
-	font-style: italic;
-}
 
 .flare-strings, span2, .flare-strings *{
 	color: #0a3069 !important;
+}
+
+.flare-comments, .flare-comments *{
+	color: #6e7781 !important;
+	font-style: italic;
 }
