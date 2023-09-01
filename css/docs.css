@@ -1,13 +1,9 @@
 
 
-.code, .cmd {
-	background-color: #111214;
-}
 
 .cmd{
 	padding-top: 20px;
 	padding-bottom: 20px;
-	border-radius: 5px;
 }
 
 .cmd, .cmd *{
@@ -21,6 +17,24 @@
 	top: 0;
 	bottom: 0;
 	z-index: 300;
-	width: 70%;
+	width: 80%;
 	transition: all 1s linear;
+	overflow-y: scroll;
+	padding-top: 50px;
+}
+
+.show-side *{
+	font-size: 15px;
+}
+
+.code {background-color: inherit !important;}
+
+.code, .code *{ line-height: 5px !important; }
+
+.key{
+	background-color: #EFF1F3;
+	border-radius: 5px;
+	padding: 3px !important;
+	padding-left: 4px !important;
+	padding-right: 4px !important;
 }

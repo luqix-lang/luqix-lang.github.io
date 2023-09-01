@@ -1,19 +1,19 @@
 @import url('https://fonts.cdnfonts.com/css/gg-sans-2');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/liberation-mono');
 
 
+.fn{ font-family: 'gg sans Normal', sans-serif !important; }
 
+.fm{ font-family: 'gg sans Medium', sans-serif !important; }
 
-.fn{ font-family: 'gg sans Normal', sans-serif; }
+.fs{ font-family: 'gg sans SemiBold', sans-serif !important; }
 
-.fm{ font-family: 'gg sans Medium', sans-serif; }
+.pacific { font-family: 'Pacifico', cursive !important; }
 
-.fs{ font-family: 'gg sans SemiBold', sans-serif; }
-
-.pacific { font-family: 'Pacifico', cursive; }
-
-.arvo{ font-family: 'Arvo', serif; }
+.arvo{ font-family: 'Arvo', serif !important; }
 
 *{
     font-family: 'gg sans Normal', sans-serif;
@@ -23,7 +23,7 @@
 
 .txt, .txt *{ color: #23272a !important; }
 
-nav{
+nav, .navd{
     background-color: #404EEDba;
     backdrop-filter: blur(2px);
 }
@@ -51,16 +51,13 @@ svg { color: inherit !important; }
 
 .code {
     white-space: pre-wrap;
-    background-color: #292841;
     padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 10px;
+    font-family: 'Liberation Mono', sans-serif;
 }
 
-.code *{
-    color: white;
-}
 
 .foot{
     background-color: #303030;
@@ -71,62 +68,47 @@ svg { color: inherit !important; }
 .txc { color: #404EED !important; }
 
 
-.page{
-    height: 100vh;
-    overflow-y: scroll;
-}
-
 .sidebar{
-    background-color: #303030;
+    background-color: white;
     padding: 30px;
     padding-top: 20px;
 }
 
 .sidebar *{
-    color: #ffffffc0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    color: #12124b !important;
 }
 
-.sidebar::-webkit-scrollbar{
-    width: 10px;
-}
 
-.sidebar::-webkit-scrollbar-thumb{
-    background: #202327;
-    border-radius: 10px;
-    margin-right: 2px;
-    width: 30px;
-}
 
-.content{ background-color: #303234; }
-.bg-content{ background-color: #303234; }
+.content{ background-color: white; }
 
 .content * {
-    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: #24292f;
 }
 
-.link { color: #2eb6ff !important; }
+.link { color: #0969da !important; }
 
 .link:hover{ text-decoration: underline; }
 
 .text-white{ color: #fff !important; }
 
 .line {
-    height: 2px;
-    background-color: #ffffff70;
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    height: 1px;
+    background-color: #D8DEE4;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 
-.navd { background-color: #000000f0; }
+/*.navd { background-color: #000000f0; }*/
 .navd *{ color: white; }
 
 .menu{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #00000090;
-    z-index: 30;
-
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    height: 100vh;
+    background-color: #000000b0;
 }

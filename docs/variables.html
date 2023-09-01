@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Luqix unfinished</title>
+    <title>Luqix basics-variables</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -22,7 +22,7 @@
 
 </head>
 <body>
-    <p id="ID" class="d-none">under Dev</p>
+    <p id="ID" class="d-none">variables</p>
      <div class="mic sticky-top z-20 d-none-sm"> <nav class="flex sticky-top text-white relative z-20 justify-center align-items-center" id="nav"></nav> </div>
      <div id="nav-doc" class="sticky-top navd z-20 py-2 d-none-xxl d-block-sm"></div> 
 
@@ -31,11 +31,34 @@
              <div class="col-2-xxl col-3-md d-none-sm " data-aos="fade-right" id="sidebar"></div>
              <div class="col-8-xxl z-10 col-7-md col-10-sm bg-content">
                  <div class="page content px-10-xxl px-5-md  py-10">
-                     <p class="text-4xl font-bold">Under construction</p>
+                     <p class="text-4xl font-bold">Basics-variables</p>
+                     <p class="mt-4">There are a few ways to make variables.</p>
+
+                     <p class="mt-3">A variables is a value that can change, depending on conditions or on information passed to the program.</p>
+
+                     <div class="line"></div>
+
+                     <p class="mt-7">No special where to create variables just the normal.</p>
+
+                     <div class="code my-7">food = 'banana'
+amount = 500
+shopping_lists = ['oil', 'vinegar', 'onions', 'charcoal']</div>
+
+                    <p class="mt-7 text-2xl font-bold">Using the <span class="key">setvar( )</span> function in the <a class="link">sys</a> module.</p>
+                    <div class="line"></div>
+                    <p class="mt-4">This method is just doing the same as the above just that for it its dynamic.</p>
+
+                    <div class="code my-7">let sys = importc('sys');
+
+sys.setvar('animal', 'horse');
+print(animal) // horse</div>
+
+                    <p class="mt-4">Just remember variables are limited to the scope they are created in here. There is no provision for <a class="link">GLOBAL</a> variables like other laguages do.</p>
+
 
                     <div class="mt-14 mb-5 flex justify-between">
-                         <a href="docs.html"><p class="px-7 py-2 text-center text-xl rounded-md hover:text-blue-500"><i class="bi bi-arrow-left"></i>&nbsp;Functions</p></a>
-                         <a href="docs.html"><p class="px-7 py-2 text-center align-items-center text-xl rounded-md hover:text-blue-500">While statement&nbsp;<i class="bi bi-arrow-right hover:text-blue-300"></i></p></a>
+                         <a href="changelog.html"><p class="px-7 py-2 text-center text-xl rounded-md hover:text-blue-500"><i class="bi bi-arrow-left"></i>&nbsp;Changelog</p></a>
+                         <a href="functions.html"><p class="px-7 py-2 text-center align-items-center text-xl rounded-md hover:text-blue-500">Functions&nbsp;<i class="bi bi-arrow-right hover:text-blue-300"></i></p></a>
                      </div>
                      
                  </div>

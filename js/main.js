@@ -28,15 +28,16 @@ nav.innerHTML = `
         <a href="https://github.com/luqix-lang/luqix"><p class="bg-white my-2-md py-1 px-3 rounded-full text-black text-md">Install Now&nbsp; <i class="bi bi-github txt"></i></p></a>
     </div>
     <div class="d-none-md menu d-none-xxl justify-center align-items-center" id="menu">
-        <div class="flex relative align-items-center justify-center bg-white col-9 h-90 rounded-md">
-            <p id="close-menu" class="text-right absolute top-1 right-0 text-3xl px-3 txt fm">x</p>
+        <div class="flex relative align-item-center justify-center bg-white col-9 h-90 rounded-md">
+            <p id="close-menu" class="text-right absolute top-1 right-0 text-3xl px-3 txt fm"><i class="bi bi-x txt"></i></p>
             <div class="col-10">
-                <a href="docs/docs.html"><p class="txt text-xl text-center py-3 border-b mx-3">Document</p></a>
-                <a href="docs/docs.html"><p class="txt text-xl text-center py-3 border-b mx-3">Tutorials</p></a>
-                <a href="blog.html"><p class="txt text-xl text-center py-3 border-b mx-3">Blog</p></a>
-                <a href="docs/docs.html"><p class="txt text-xl text-center py-3 border-b mx-3">Support</p></a>
-                <a href="docs/docs.html"><p class="txt text-xl text-center py-3 border-b mx-3">Forum</p></a>
-                <a href="https://github.com/luqix-lang/luqix"><p class="txt text-xl text-center py-3 border-b mx-3"><i class="bi bi-github"></i></p></a>
+                <a href="index.html"><p class="txt text-xl py-3 px-2 mx-3 pacific">Luqix</p></a>
+                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Document</p></a>
+                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Tutorials</p></a>
+                <a href="blog.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Blog</p></a>
+                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Support</p></a>
+                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Forum</p></a>
+                <a href="https://github.com/luqix-lang/luqix"><p class="txt text-xl px-2 py-3 border-t mx-3"><i class="bi bi-github"></i></p></a>
             </div>
         </div>
     </div>

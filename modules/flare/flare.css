@@ -3,35 +3,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 
-.code *, .code, .blend, .blend *{
-	font-size: 14px;
-	color: #f5f5f5;
-    font-family: "monospace", monospace !important;
-
+.code *, .code{
+	font-size: 14px !important;
+	line-height: 20px !important;
+    font-family: 'Liberation Mono', sans-serif;
+    color: #24292f !important;
 }
 
 .flare-keywords{
-	color: #FFE75C !important;
+	color: #cf222e !important;
 }
 
 .flare-call{
-	color: #2DDFB4 !important;
+	color: #8250df !important;
 }
 
 .flare-attributes{
-	color: #264AA0 !important;
+	color: #953800 !important;
 }
 
 .flare-numbers{
-	color: #F48F00 !important;
+	color: #953800 !important;
 }
 
 .flare-comments, .flare-comments *{
-	color: #ffffff80 !important;
+	color: #6e7781 !important;
 	font-style: italic;
-	font-size: 13px !important;
 }
 
 .flare-strings, span2, .flare-strings *{
-	color: #FFA78B !important;
+	color: #0a3069 !important;
 }

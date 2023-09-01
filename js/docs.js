@@ -1,3 +1,39 @@
+let nav = document.getElementById('nav');
+
+nav.innerHTML = `
+<div class="col-8 col-10-md px-3-md flex-wrap flex justify-between align-items-center z-10">
+    <div class="flex align-items-center justify-between col-10-md">
+        <a href="../index.html"><p class="text-3xl py-2 pacific">Luqix</p></a>
+        <p id="bar" class="px-2 d-none-xxl d-block-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg></p>
+    </div>
+    <div class="flex-xxl d-none-md flex-wrap align-items-center justify-center">
+        <a href="docs.html"><p class="px-4 fm">Documentation</p></a>
+        <a href=""><p class="px-4 fm">Tutorials</p></a>
+        <a href="../blog.html"><p class="px-4 fm">Blog</p></a>
+        <a href=""><p class="px-4 fm">Support</p></a>
+        <a href=""><p class="px-4 fm">Forum</p></a>
+    </div>
+    <div class="d-block-xxl d-none-md">
+        <a href="https://github.com/luqix-lang/luqix"><p class="bg-white my-2-md py-1 px-3 rounded-full text-black text-md">Install Now&nbsp; <i class="bi bi-github txt"></i></p></a>
+    </div>
+    <div class="d-none-md menu d-none-xxl justify-center align-items-center" id="menu">
+        <div class="flex relative align-item-center justify-center bg-white col-9 h-90 rounded-md">
+            <p id="close-menu" class="text-right absolute top-1 right-0 text-3xl px-3 txt fm"><i class="bi bi-x txt"></i></p>
+            <div class="col-10">
+                <a href="index.html"><p class="txt text-xl py-3 px-2 mx-3 pacific">Luqix</p></a>
+                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Document</p></a>
+                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Tutorials</p></a>
+                <a href="blog.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Blog</p></a>
+                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Support</p></a>
+                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Forum</p></a>
+                <a href="https://github.com/luqix-lang/luqix"><p class="txt text-xl px-2 py-3 border-t mx-3"><i class="bi bi-github"></i></p></a>
+            </div>
+        </div>
+    </div>
+</div>`
+
 let code = document.getElementsByClassName('code');
 
 let side = document.getElementById('sidebar');
@@ -11,17 +47,16 @@ for(let i=0; i <code.length; i++)
 
 
 side.innerHTML = `
-<div class="page sidebar" >
-     <a href="../index.html"><p class="text-2xl text-white pacific">Luqix</p></a>
+<div class="page sidebar shadow-lg relative z-40 md:shadow-none " >
      <a href="docs.html"><p class="mt-1 py-1">Intro</p></a>
      <a href="install.html"><p class="py-1">Installation</p></a>
      <a href="changelog.html"><p class="py-1">Changelog</p></a>
 
-     <div class="mt-4">
-         <p class="text-sm text-white fm">LEARN BASICS</p>
-         <a href=""><p class="py-1">Variables</p></a>
-         <a href=""><p class="py-1">Functions</p></a>
-         <a href=""><p class="py-1">For loop</p></a>
+     <p class="text-sm mt-4 font-bold">LEARN BASICS</p>
+     <div class="ml-2">
+         <a href="variables.html"><p class="py-1">Variables</p></a>
+         <a href="functions.html"><p class="py-1">Functions</p></a>
+         <a href="forloop.html"><p class="py-1">For loop</p></a>
          <a href=""><p class="py-1">While loop</p></a>
          <a href=""><p class="py-1">If statement</p></a>
          <a href=""><p class="py-1">Try Except statement</p></a>
@@ -29,41 +64,40 @@ side.innerHTML = `
          <a href=""><p class="py-1">Import statement</p></a>
      </div>
 
-     <div class="mt-4">
-         <p class="text-sm text-white fm">BUILTIN MODULES</p>
-         
-         <p class="text-sm mt-3 text-white fm">INTERPRETER APIs</p>
+     <p class="text-sm mt-4 font-bold">BUILTIN MODULES</p>
+     <div class="ml-2">
+         <p class="text-sm mt-3  font-bold">INTERPRETER APIs</p>
          <a href=""><p class="py-1">Locals</p></a>
          <a href=""><p class="py-1">Sys</p></a>
 
-         <p class="text-sm mt-3 text-white fm">MATH LOGIC</p>
+         <p class="text-sm mt-3  font-bold">MATH LOGIC</p>
          <a href=""><p class="py-1">Math</p></a>
          <a href=""><p class="py-1">Random</p></a>
 
-         <p class="text-sm mt-3 text-white fm">SYSTEM APIs</p>
+         <p class="text-sm mt-3  font-bold">SYSTEM APIs</p>
          <a href=""><p class="py-1">System</p></a>
          <a href=""><p class="py-1">Time</p></a>
          <a href=""><p class="py-1">Threads</p></a>
          <a href=""><p class="py-1">Parallelism</p></a>
          <a href=""><p class="py-1">Process</p></a>
 
-         <p class="text-sm mt-3 text-white fm">DATA MANUPLATORS</p>
+         <p class="text-sm mt-3  font-bold">DATA MANUPLATORS</p>
          <a href=""><p class="py-1">Dict</p></a>
          <a href=""><p class="py-1">List</p></a>
          <a href=""><p class="py-1">String</p></a>
          <a href=""><p class="py-1">Bytes</p></a>
 
-         <p class="text-sm mt-3 text-white fm">FILE HANDLING</p>
+         <p class="text-sm mt-3  font-bold">FILE HANDLING</p>
          <a href=""><p class="py-1">file</p></a>
          <a href=""><p class="py-1">Path</p></a>
          <a href=""><p class="py-1">Reg</p></a>
 
-         <p class="text-sm mt-3 text-white fm">ENCODING</p>
+         <p class="text-sm mt-3  font-bold">ENCODING</p>
          <a href=""><p class="py-1">Base64</p></a>
          <a href=""><p class="py-1">Json</p></a>
          
 
-         <p class="text-sm mt-3 text-white fm">NETWORKING</p>
+         <p class="text-sm mt-3  font-bold">NETWORKING</p>
          <a href=""><p class="py-1">Socket</p></a>
          <a href=""><p class="py-1">Websocket</p></a>
          <a href=""><p class="py-1">Url</p></a>
@@ -80,7 +114,7 @@ let navd = document.getElementById('nav-doc');
 
 navd.innerHTML = `
 <div class="flex justify-between align-items-center px-4">
-     <a href="../index.html"><p class="pacific font-light text-2xl">Luqix</p></a>
+     <a href="../index.html"><p class="pacific font-light text-xl">Luqix-v1.00.1</p></a>
      <p class="">${ID.innerText.toUpperCase()}</p>
      <p class="px-2" id="barz">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
