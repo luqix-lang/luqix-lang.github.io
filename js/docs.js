@@ -75,7 +75,7 @@ side.innerHTML = `
          <a href="random.html"><p class="py-1">Random</p></a>
 
          <p class=" mt-3  font-bold">b. System APIs</p>
-         <a href=""><p class="py-1">System</p></a>
+         <a href="system.html"><p class="py-1">System</p></a>
          <a href=""><p class="py-1">Time</p></a>
          <a href=""><p class="py-1">Threads</p></a>
          <a href=""><p class="py-1">Parallelism</p></a>
