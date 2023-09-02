@@ -71,45 +71,148 @@
                      <p class="mt-3">returns the largest integer that is smaller than or equal to the value passed as the argument (i.e.: rounds down the nearest integer)</p>
                      <div class="code my-6">n = math.floor(12.7) // 12</div>
 
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> round<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Rounds off as math rules suggest, but to a whole number.</p>
+
 
                      <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> fmod<span class="fn">(<span class="args">x, y</span>)</span></p>
                      <div class="line mt-4"></div>
                      <p class="mt-3">return the remainder(modulus) of 2 floating-point numbers mentioned in its arguments</p>
                      <div class="code my-6">n = math.fmod(9.6, 3.5) // 2.6</div>
 
-
-                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> <span class="fn">(<span class="args"></span>)</span></p>
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> trunc<span class="fn">(<span class="args">x</span>)</span></p>
                      <div class="line mt-4"></div>
-                     <p class="mt-3"></p>
-                     <div class="code my-6"></div>
+                     <p class="mt-3">The trunc() function here rounds the x towards zero and returns the nearest integral value that is not larger in magnitude than x.</p>
 
-
-                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> <span class="fn">(<span class="args"></span>)</span></p>
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> remainder<span class="fn">(<span class="args">x, y</span>)</span></p>
                      <div class="line mt-4"></div>
-                     <p class="mt-3"></p>
-                     <div class="code my-6"></div>
+                     <p class="mt-3">Returns the remainder of dividing x with y.</p>
+                     <div class="code my-6">n = math.remainder(13, 5) // 3</div>
 
 
-                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> <span class="fn">(<span class="args"></span>)</span></p>
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> exp<span class="fn">(<span class="args">x</span>)</span></p>
                      <div class="line mt-4"></div>
-                     <p class="mt-3"></p>
-                     <div class="code my-6"></div>
+                     <p class="mt-3">Returns the exponential (Euler's number) e (or 2.71828) raised to the given number.</p>
+                     <div class="code my-6">n = math.exp(12) //162755</div>
 
 
-                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> <span class="fn">(<span class="args"></span>)</span></p>
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> log<span class="fn">(<span class="args">x</span>)</span></p>
                      <div class="line mt-4"></div>
-                     <p class="mt-3"></p>
-                     <div class="code my-6"></div>
+                     <p class="mt-3">Returns the natural logarithm (base-e logarithm) of x.</p>
+                     <div class="code my-6">n = math.log(10) //2.30259</div>
 
 
-                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> <span class="fn">(<span class="args"></span>)</span></p>
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> log10<span class="fn">(<span class="args">x</span>)</span></p>
                      <div class="line mt-4"></div>
-                     <p class="mt-3"></p>
-                     <div class="code my-6"></div>
+                     <p class="mt-3">It allows you to take the logarithm of base 10 of x.</p>
+                     <div class="code my-6">n = math.log10(15) //1.99123</div>
 
 
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> log2<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Returns the base-2 logarithm of x.</p>
+                     <div class="code my-6">n = math.log2(48) //5.58496</div>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> log1p<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Returns the natural logarithm of the base-e logarithm of x+1</p>
+                     <div class="code my-6">n = math.log1p(77) //4.35671 </div>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> pow<span class="fn">(<span class="args">x, y</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Its responsible for calculating the power of x to y.</p>
+                     <div class="code my-6">p = math.pow(2, 4) // 16</div>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> sqrt<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Returns the square root of x.</p>
+                     <div class="code my-6">n = math.sqrt(121) //11</div>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> cqrt<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Returns the cube root of x.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> acos<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the arc cosine of x, in radians. The result is between 0 and pi.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> asin<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the arc sine of x, in radians. The result is between -pi/2 and pi/2.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> atan<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the arc tangent of x, in radians. The result is between -pi/2 and pi/2.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> cos<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the cosine of x radians.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> hypot<span class="fn">(<span class="args">x, y</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Returns square root of sum of square of given arguments. This formula is used for finding the length of hypotenuse when the lengths of other two sides of a right angled triangle are given. Hence, the function name hypot().</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> sin<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the sine of x radians.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> tan<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the tangent of x radians.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> acosh<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the inverse hyperbolic cosine of x.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> asinh<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the inverse hyperbolic sine of x.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> atanh<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the inverse hyperbolic tangent of x.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> cosh<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the hyperbolic cosine of x.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> sinh<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the hyperbolic sine of x.</p>
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> tanh<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the hyperbolic tangent of x.</p>
 
 
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> erf<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the error function at x.</p>
+
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> erfc<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the complementary error function at x. The complementary error function is defined as 1.0 - erf(x). It is used for large values of x where a subtraction from one would cause a loss of significance.</p>
+
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> gamma<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the Gamma function at x.</p>
+
+
+                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> lgamma<span class="fn">(<span class="args">x</span>)</span></p>
+                     <div class="line mt-4"></div>
+                     <p class="mt-3">Return the natural logarithm of the absolute value of the Gamma function at x.</p>
+
+                     <p class="mt-7 text-center px-2">We are gonna add to this module.</p>
+
+                     <div role="alert" class="mt-10">
+                        <div class="bg-orange-500 text-white font-bold rounded-t px-4 py-2">Notice</div>
+                        <div class="border border-t-0 border-orange-400 rounded-b bg-orange-100 px-4 py-3 text-orange-700">
+                            <p class="text-orange-700">Am are gonna add to this module.</p>
+                        </div>
+                    </div>
 
                     <div class="mt-14 mb-5 flex justify-between">
                          <a href="sys.html"><p class="px-7 py-2 text-center text-xl-xxl text-md-md rounded-md hover:text-blue-500"><i class="bi bi-arrow-left"></i>&nbsp;Sys Module</p></a>

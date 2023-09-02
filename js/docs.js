@@ -70,9 +70,9 @@ side.innerHTML = `
          <a href="locals.html"><p class="py-1">Locals</p></a>
          <a href="sys.html"><p class="py-1">Sys</p></a>
 
-         <p class=" mt-3  font-bold">a. Math logic</p>
-         <a href=""><p class="py-1">Math</p></a>
-         <a href=""><p class="py-1">Random</p></a>
+         <p class="mt-3 font-bold">a. Math logic</p>
+         <a href="math.html"><p class="py-1">Math</p></a>
+         <a href="random.html"><p class="py-1">Random</p></a>
 
          <p class=" mt-3  font-bold">b. System APIs</p>
          <a href=""><p class="py-1">System</p></a>
