@@ -113,7 +113,7 @@ let navd = document.getElementById('nav-doc');
     ID = document.getElementById('ID');
 
 navd.innerHTML = `
-<div class="flex justify-between align-items-center px-4 py-1">
+<div class="flex justify-between align-items-center px-4 py-1 z-90">
      <a href="../index.html"><p class="pacific font-light text-2xl">Luqix-v1.00.1</p></a>
      <p class="">${ID.innerText.toUpperCase()}</p>
      <p class="px-2" id="barz">
