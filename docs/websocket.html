@@ -40,7 +40,7 @@
 
      <div class="flex justify-center">
          <div class="flex col-8 col-9-lg  col-10-md z-10 relative">
-             <div class="col-2-xxl col-3-md d-none-sm " data-aos="fade-right" id="sidebar"></div>
+             <div class="col-2-xxl col-3-md d-none-sm" data-aos="fade-right" id="sidebar"></div>
              <div class="col-8-xxl z-10 col-7-md col-10-sm bg-content">
                  <div class="page content px-10-xxl px-5-md  py-10">
                      <p class="md:text-4xl text-3xl font-bold">Module websocket</p>
@@ -51,7 +51,7 @@
                      <div role="alert" class="mt-10">
                         <div class="bg-indigo-500 text-white font-bold rounded-t px-4 py-2">Info</div>
                         <div class="border border-t-0 border-indigo-400 rounded-b bg-indigo-100 px-4 py-3 text-indigo-700">
-                            <p class="text-indigo-700">For now, we can use this module to build browser apps backened by Luqix.</p>
+                            <p class="text-indigo-700">For now, we can use this module to build browser apps backend by Luqix.</p>
                         </div>
                     </div>
 
@@ -131,10 +131,47 @@ app.send(msg)</div>
                     </div>
 
 
+                    <p class="mt-10 font-bold text-xl">Some sample code for a websocket</p>
+                    <div class="my-6 code">let str = importc('string')
+    bytes = importc('bytes')
+    websocket = importc('websocket')
+
+hostname = 'localhost'
+port = 5000
+
+app = websocket.WebsocketServer(hostname, port)
+
+app.onopen(?(){
+    app.send(str.encode('Hello from Luqix'))
+})
+
+
+app.onmessage(?(event){
+    print(event.data)
+
+    app.send(str.encode(f'Hello {bytes.decode(event.data)}, how are you doing'))
+})
+
+
+print(f'Webserver connecting at ws://{hostname}:{port}...')
+app.start();</div>
+
+    <p class="mt-3">No for the webbroswer side</p>
+    <p class="mt-1">For the browser code, write a simple <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications">websocket</a> using the port used there as in <span class="key">ws://localhost:5000</span></p>
+
+
+                    <div role="alert" class="mt-10">
+                        <div class="bg-orange-500 text-white font-bold rounded-t px-4 py-2">Notice</div>
+                        <div class="border border-t-0 border-orange-400 rounded-b bg-orange-100 px-4 py-3 text-orange-700">
+                            <p class="text-orange-700">An update is coming for this function to easily handle errors, as of now the start function can't be used to handle the <a href="https://web-crunch.com/posts/address-already-in-use-resolving-the-bind-error-in-ruby-on-rails#:~:text=The%20%22Address%20already%20in%20use%20bind%20error%22%20occurs%20when%20another,unique%20port%20to%20avoid%20conflicts." class="text-orange-700 font-bold">Address Already In Use Error</a>.</p>
+                        </div>
+                    </div>
+
+
 
                     <div class="mt-14 mb-5 flex justify-between">
-                         <a href="math.html"><p class="px-7 py-2 text-center text-xl-xxl text-md-md rounded-md hover:text-blue-500"><i class="bi bi-arrow-left"></i>&nbsp;Math Module</p></a>
-                         <a href="system.html"><p class="px-7 py-2 text-center align-items-center text-xl-xxl text-md-md rounded-md hover:text-blue-500">System module&nbsp;<i class="bi bi-arrow-right hover:text-blue-300"></i></p></a>
+                         <a href="socket.html"><p class="px-7 py-2 text-center text-xl-xxl text-md-md rounded-md hover:text-blue-500"><i class="bi bi-arrow-left"></i>&nbsp;Socket Module</p></a>
+                         <a href="url.html"><p class="px-7 py-2 text-center align-items-center text-xl-xxl text-md-md rounded-md hover:text-blue-500">Url module&nbsp;<i class="bi bi-arrow-right hover:text-blue-300"></i></p></a>
                      </div>
                      
                  </div>
