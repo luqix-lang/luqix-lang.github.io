@@ -69,3 +69,9 @@
 	font-weight: normal !important;
 	font-family: monospace !important;
 }
+
+.type{
+	font-size: 13px !important;
+	font-weight: normal !important;
+	padding-right: 10px;
+}
