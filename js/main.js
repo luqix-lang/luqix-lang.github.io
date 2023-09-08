@@ -25,10 +25,12 @@ nav.innerHTML = `
         <a href=""><p class="px-4 fm">Forum</p></a>
     </div>
     <div class="d-block-xxl d-none-md">
-        <a href="https://github.com/luqix-lang/luqix"><p class="bg-white my-2-md py-1 px-3 rounded-full text-black text-md">Install Now&nbsp; <i class="bi bi-github txt"></i></p></a>
+        <div class="">
+          <input type="search" class="outline-0 py-2 px-3 txt rounded-md w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
+        </div>
     </div>
     <div class="d-none-md menu d-none-xxl justify-center align-items-center" id="menu">
-        <div class="flex relative align-item-center justify-center bg-white col-9 h-90 rounded-md">
+        <div class="flex relative align-items-center justify-center bg-white col-9 h-90 rounded-md">
             <p id="close-menu" class="text-right absolute top-1 right-0 text-3xl px-3 txt fm"><i class="bi bi-x txt"></i></p>
             <div class="col-10">
                 <a href="index.html"><p class="txt text-xl py-3 px-2 mx-3 pacific">Luqix</p></a>

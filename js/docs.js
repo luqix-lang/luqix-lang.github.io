@@ -16,7 +16,9 @@ nav.innerHTML = `
         <a href=""><p class="px-4 fm">Forum</p></a>
     </div>
     <div class="d-block-xxl d-none-md">
-        <a href="https://github.com/luqix-lang/luqix"><p class="bg-white my-2-md py-1 px-3 rounded-full text-black text-md">Install Now&nbsp; <i class="bi bi-github txt"></i></p></a>
+        <div class="">
+          <input type="search" class="outline-0 py-2 px-3 txt rounded-md w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
+        </div>
     </div>
     <div class="d-none-md menu d-none-xxl justify-center align-items-center" id="menu">
         <div class="flex relative align-item-center justify-center bg-white col-9 h-90 rounded-md">
@@ -52,8 +54,9 @@ side.innerHTML = `
      <a href="install.html"><p class="py-1">Installation</p></a>
      <a href="changelog.html"><p class="py-1">Changelog</p></a>
 
-     <p class="mt-4 font-bold">1. Learn basics</p>
+     <p class="mt-4 cat">1. Learn basics</p>
      <div class="ml-2">
+         <a href="keywords.html"><p class="py-1">Keywords</p></a>
          <a href="variables.html"><p class="py-1">Variables</p></a>
          <a href="functions.html"><p class="py-1">Functions</p></a>
          <a href="for.html"><p class="py-1">For loop</p></a>
@@ -64,40 +67,40 @@ side.innerHTML = `
          <a href="switch.html"><p class="py-1">Switch statement</p></a>
      </div>
 
-     <p class="mt-4 font-bold">2. Builtin modules</p>
+     <p class="mt-4 cat">2. Builtin modules</p>
      <div class="ml-2">
-         <p class=" mt-3  font-bold">Interpreter APIs</p>
+         <p class=" mt-3  cat">Interpreter APIs</p>
          <a href="locals.html"><p class="py-1">Locals</p></a>
          <a href="sys.html"><p class="py-1">Sys</p></a>
 
-         <p class="mt-3 font-bold">a. Math logic</p>
+         <p class="mt-3 cat">a. Math logic</p>
          <a href="math.html"><p class="py-1">Math</p></a>
          <a href="random.html"><p class="py-1">Random</p></a>
 
-         <p class=" mt-3  font-bold">b. System APIs</p>
+         <p class=" mt-3  cat">b. System APIs</p>
          <a href="system.html"><p class="py-1">System</p></a>
          <a href=""><p class="py-1">Time</p></a>
          <a href=""><p class="py-1">Threads</p></a>
          <a href=""><p class="py-1">Parallelism</p></a>
          <a href=""><p class="py-1">Process</p></a>
 
-         <p class=" mt-3  font-bold">c. Data manuplators</p>
+         <p class=" mt-3  cat">c. Data manuplators</p>
          <a href=""><p class="py-1">Dict</p></a>
          <a href=""><p class="py-1">List</p></a>
          <a href=""><p class="py-1">String</p></a>
          <a href=""><p class="py-1">Bytes</p></a>
 
-         <p class=" mt-3  font-bold">d. File handling</p>
+         <p class=" mt-3  cat">d. File handling</p>
          <a href=""><p class="py-1">file</p></a>
          <a href=""><p class="py-1">Path</p></a>
          <a href=""><p class="py-1">Reg</p></a>
 
-         <p class=" mt-3  font-bold">e. Encoding</p>
+         <p class=" mt-3  cat">e. Encoding</p>
          <a href=""><p class="py-1">Base64</p></a>
          <a href=""><p class="py-1">Json</p></a>
          
 
-         <p class=" mt-3  font-bold">f. Networking</p>
+         <p class=" mt-3  cat">f. Networking</p>
          <a href=""><p class="py-1">Socket</p></a>
          <a href="websocket.html"><p class="py-1">Websocket</p></a>
          <a href=""><p class="py-1">Url</p></a>
