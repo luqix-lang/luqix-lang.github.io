@@ -2,8 +2,6 @@
 
 
 *{
-	font-size: 17px;
-	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, "helvetica neue", Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol" !important;
 	line-height: 1.5 ;
 }
 
@@ -31,18 +29,19 @@
 }
 
 .show-side *{
-	font-size: 15px;
+	/*font-size: 15px;*/
 }
 
 .code {background-color: inherit !important;}
 
 
 .key{
-	background-color: #EFF1F3;
+	background-color: #F3F6F9;
 	border-radius: 5px;
 	padding: 3px !important;
 	padding-left: 4px !important;
 	padding-right: 4px !important;
+	border:  1px solid #DAE2ED;
 }
 
 

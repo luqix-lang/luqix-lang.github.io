@@ -74,7 +74,7 @@ print(count(21)) // 19</div>
                     <div class="line"></div>
                     <p class="mt-3">This is a non-stable feature, but all you do is specify some parameters as you define he function that will be appended to the given params as the function is being called.</p>
 
-                    <div class="code mt-7">// imoji is a must to be given
+                    <div class="code mt-5">// imoji is a must to be given
 fn hey(imoji, name='Luqix') {
     print(f'How are you {name} {imoji}')
 }
@@ -86,9 +86,31 @@ hey('🙌', 'Cutie') // How are you 🙌 Cutie
                     <p class="mt-4">This is not stable but it could be useful.</p>
 
 
+
+                    <p class="mt-7 text-2xl font-bold">Nameless functions</p>
+                    <div class="line"></div>
+                    <p class="mt-3">These are very handy to make in times where the function will be needed conditional or passed in as an argument. Its can be similar to <a href="https://www.geeksforgeeks.org/python-lambda-anonymous-functions-filter-map-reduce/" class="link">python3's lambda</a> functions.</p>
+
+                    <div class="code mt-5">let new_task = ?(x, y){
+    return x + y
+}
+
+print(new_task)
+</div>
+
+                    <p class="mt-4">Even this next option works without including the function name.</p>
+
+                    <div class="code mt-7">let new_task = fn (x, y){
+    return x + y
+}
+
+print(new_task)
+</div>
+
+
                     <div class="mt-14 mb-5 flex justify-between">
-                         <a href="variables.html"><p class="px-7 py-2 text-center text-xl rounded-md hover:text-blue-500"><i class="bi bi-arrow-left"></i>&nbsp;Variables</p></a>
-                         <a href="for.html"><p class="px-7 py-2 text-center align-items-center text-xl rounded-md hover:text-blue-500">For statement&nbsp;<i class="bi bi-arrow-right hover:text-blue-300"></i></p></a>
+                         <a href="variables.html"><p class="px-7 py-2 text-center text-blue-500 bold text-md rounded-md hover:text-blue-500">‹ Variables</p></a>
+                         <a href="for.html"><p class="px-7 py-2 text-center align-items-center text-blue-500 bold text-md rounded-md hover:text-blue-500">For statement ›</p></a>
                      </div>
                      
                  </div>

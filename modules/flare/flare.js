@@ -52,6 +52,7 @@ class Flare {
 	    gen = gen.replace(this.attribute, `.<span class="${this.classNames['attributes']}">$1</span>`),
 	    
 	    gen = gen.replace(this.consts, `<span class="${this.classNames['consts']}">$1</span>`),
+	    gen = gen.replace(this.signs, `<span class="${this.classNames['signs']}">$1</span>`),
 
 	    gen = gen.replace(this.comments,`<span class="${this.classNames['comments']}">$1</span>`),
 	    gen = gen.replace(this.inlineComments, `<span class="${this.classNames['comments']}">$1</span>`),

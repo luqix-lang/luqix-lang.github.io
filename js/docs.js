@@ -3,7 +3,7 @@ let nav = document.getElementById('nav');
 nav.innerHTML = `
 <div class="col-8 col-10-md px-3-md flex-wrap flex justify-between align-items-center z-10">
     <div class="flex align-items-center justify-between col-10-md">
-        <a href="../index.html"><p class="text-3xl py-2 pacific">Luqix</p></a>
+        <a href="../index.html"><p class="text-3xl py-3 pacific">Luqix</p></a>
         <p id="bar" class="px-2 d-none-xxl d-block-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg></p>
@@ -79,7 +79,7 @@ side.innerHTML = `
 
          <p class=" mt-3  cat">b. System APIs</p>
          <a href="system.html"><p class="py-1">System</p></a>
-         <a href=""><p class="py-1">Time</p></a>
+         <a href="time.html"><p class="py-1">Time</p></a>
          <a href=""><p class="py-1">Threads</p></a>
          <a href=""><p class="py-1">Parallelism</p></a>
          <a href=""><p class="py-1">Process</p></a>
@@ -96,7 +96,7 @@ side.innerHTML = `
          <a href=""><p class="py-1">Reg</p></a>
 
          <p class=" mt-3  cat">e. Encoding</p>
-         <a href=""><p class="py-1">Base64</p></a>
+         <a href="base64.html"><p class="py-1">Base64</p></a>
          <a href=""><p class="py-1">Json</p></a>
          
 
@@ -116,7 +116,7 @@ let navd = document.getElementById('nav-doc');
     ID = document.getElementById('ID');
 
 navd.innerHTML = `
-<div class="flex justify-between align-items-center px-4 py-1 z-90">
+<div class="flex justify-between align-items-center px-4 py-2 z-90">
      <a href="../index.html"><p class="pacific font-light text-2xl">Luqix-v1.00.1</p></a>
      <p class="">${ID.innerText.toUpperCase()}</p>
      <p class="px-2" id="barz">

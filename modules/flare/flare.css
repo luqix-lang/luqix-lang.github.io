@@ -12,19 +12,19 @@
 }
 
 .flare-keywords{
-	color: #cf222e !important;
+	color: #204a87 !important;
 }
 
 .flare-call{
-	color: #8250df !important;
+	color: #953800 !important;
 }
 
 .flare-attributes{
-	color: #953800 !important;
+	color: #0000cf !important;
 }
 
 .flare-numbers{
-	color: #953800 !important;
+	color: #0000cf !important;
 }
 
 .flare-operators{
@@ -33,10 +33,10 @@
 
 
 .flare-strings, span2, .flare-strings *{
-	color: #0a3069 !important;
+	color: #4e9a06 !important;
 }
 
 .flare-comments, .flare-comments *{
-	color: #6e7781 !important;
+	color: #8f5902d0 !important;
 	font-style: italic;
 }

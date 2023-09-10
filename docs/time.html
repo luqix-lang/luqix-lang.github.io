@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luqix Time</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/fancy.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/docs.css">
+
+    <link rel="stylesheet" type="text/css" href="../modules/flare/flare.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style type="text/css">
+        .code{
+            padding: 15px !important;
+            border-radius: 5px !important;
+        }
+
+        .code, .code *{
+            line-height: 19px !important;
+        }
+    </style>
+
+</head>
+<body>
+    <p id="ID" class="d-none">Time</p>
+     <div class="mic sticky-top z-20 d-none-sm"> <nav class="flex sticky-top text-white relative z-20 justify-center align-items-center" id="nav"></nav> </div>
+     <div id="nav-doc" class="sticky-top navd z-20 py-2 d-none-xxl d-block-sm"></div> 
+
+     <div class="flex justify-center">
+         <div class="flex col-8 justify-center col-9-lg  col-10-md z-10 relative">
+             <div class="col-6-xxl z-10 col-7-md col-10-sm bg-content">
+                 <div class="page content px-10-xxl px-5-md  py-10">
+                    <p class="text-3xl font-bold">Module Time</p>
+                    <p class="mt-4">This time module is simply a wrapper of the C <a class="link">time.h</a> header file. It provides almost all funtionality for the <a class="link">C language</a> and returns alike data.</p>
+
+                    <p class="mt-5">The time API simple to <a class="link key" href="https://www.tutorialspoint.com/c_standard_library/c_function_time.htm">>> C docs could help</a>.</p>
+
+                    <div class="mt-5 tbb">
+                        <div class="flex justify-between py-4 bb">
+                            <p class="col-2 px-1"><a href="#encode64" class="link">sleep</a></p>
+                            <p class="col-2 px-1"><a href="#decode64" class="link">time</a></p>
+                            <p class="col-2 px-1"><a href="#encode32" class="link">ctime</a></p>
+                            <p class="col-2 px-1"><a href="#decode32" class="link">mktime</a></p>
+                            <p class="col-2 px-1"><a href="#decode32" class="link">asctime</a></p>
+                        </div>
+                        <div class="flex justify-between py-4 bb">
+                            <p class="col-2 px-1"><a href="#encode64" class="link">difftime</a></p>
+                            <p class="col-2 px-1"><a href="#decode64" class="link">gmtime</a></p>
+                            <p class="col-2 px-1"><a href="#encode32" class="link">localtime</a></p>
+                            <p class="col-2 px-1"><a href="#decode32" class="link">clock</a></p>
+                            <p class="col-2 px-1"><a href="#decode32" class="link">CLOCKS_PER_SEC</a></p>
+                        </div>
+                    </div>
+
+                    <div role="alert" class="p-4 mt-7 border border-blue-300 bg-blue-100 rounded-lg">
+                        <p class="text-cyan-900"><span class="font-bold text-cyan-900">Warning</span> Its better you view the <a class="link">datatypes</a> docs so you can be familiar with various datatypes used in this module.</p>
+                    </div>
+
+                    <div class="mt-">
+                        <p id="encode64" class="mt-7 text-xl font-bold  flex align-items-center"><span class="blink">$</span> sleep<span class="fn">(<span class="args">int seconds</span>) *</span></p>
+                        <div class="line mt-4"></div>
+                        <p class="mt-3">Takes in seconds as an integer seconds thats seen as microseconds. This stops calling thread for the given time.</p>
+                        <div class="my-5 code">time.sleep(500) // sleeps for half a minute</div>
+
+
+                        <div class="mt-5 smoky border p-4 rounded-lg">
+                            <a href="https://www.tutorialspoint.com/c_standard_library/c_function_time.htm">
+                                <div class="flex align-items-center border  p-1 bg-white rounded-lg justify-around">
+                                    <div class="col-4">
+                                        <img src="data:image/jpeg;base64,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" class="round-lg img">
+                                    </div>
+                                    <div class="col-5 py-1">
+                                        <h5 class="text-blue-500 text-md bold">Good time course</h5>
+                                        <p class="mt-1 text-base  text-neutral">These docs help so much if you are even familiar with luqix datatypes.</p>
+                                        <p class="text-gray-500 mt-2 mb-2se ">https://www.tutorialspoint.com/</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                     
+
+
+
+                    <div class="mt-14 mb-5 flex justify-between">
+                        <a href="socket.html"><p class="px-7 py-2 text-center text-xl-xxl text-md-md rounded-md hover:text-blue-500"><i class="bi bi-arrow-left"></i>&nbsp;Socket Module</p></a>
+                        <a href="url.html"><p class="px-7 py-2 text-center align-items-center text-xl-xxl text-md-md rounded-md hover:text-blue-500">Url module&nbsp;<i class="bi bi-arrow-right hover:text-blue-300"></i></p></a>
+                    </div>
+                     
+                 </div>
+             </div>
+             <div class="col-3-xxl col-3-md d-none-sm" data-aos="fade-right" id="sidebar"></div>
+         </div>
+
+     </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="../modules/flare/flare.js"></script>
+    <script type="text/javascript" src="../js/docs.js"></script>
+
+</body>
+</html>
+

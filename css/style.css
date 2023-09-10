@@ -1,23 +1,34 @@
-@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/liberation-mono');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 
-.fn{ font-family: 'gg sans Normal', sans-serif !important; }
+.pacific {
+    font-family: 'Poppins', sans-serif !important;
+    color: #008899 !important;
+    font-weight: bold;
+}
 
-.fm{ font-family: 'gg sans Medium', sans-serif !important; }
-
-.fs{ font-family: 'gg sans SemiBold', sans-serif !important; }
-
-.pacific { font-family: 'Pacifico', cursive !important; }
-
-.arvo{ font-family: 'Arvo', serif !important; }
+/*.arvo{ font-family: 'Arvo', serif !important; }*/
 
 *{
-    font-family: 'gg sans Normal', sans-serif;
-    color: #222222;
+    font-size: 16px;
+    line-height: 1.75;
+    /*font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+    font-family: 'Inter', sans-serif;
+    color: #0f172a;
+    border-color: #E5EAF2;
+}
+
+.smoky{
+    background-color: #F1F5F9;
+}
+
+.rise{
+    border-left: 2px solid #00BBD3 !important;
 }
 
 .font-bold{
@@ -28,11 +39,14 @@
 
 nav, .navd{
     background-color: #404EEDba;
+    background-color: white;
     backdrop-filter: blur(5px);
+    border-bottom: 1px solid #CBD5E1;
 }
 
 nav *{
-    color: white !important;
+    font-size: 18px;
+    /*color: white !important;*/
 }
 
 .mic{
@@ -58,6 +72,7 @@ svg { color: inherit !important; }
     border-radius: 10px;
     font-family: 'Liberation Mono', sans-serif !important;
     background-color: #F6F6F6 !important;
+    border: 1px solid #E5EAF2 !important;
 }
 
 
@@ -71,14 +86,22 @@ svg { color: inherit !important; }
 
 
 .sidebar{
-    background-color: #F6F6F6;
     padding: 30px;
     padding-top: 20px;
+    border-right: 1px solid #E5EAF2 !important;
 }
 
 .sidebar *{
-    font-size: 16px !important;
-    color: #3676abc0 !important;
+    font-size: 14px ;
+    color: #0b0d0ed0 ;
+    font-weight: 500;
+}
+
+.sidebar a{
+}
+
+.sidebar a:hover{
+    background-color: #F3F6F9;
 }
 
 .cat{
@@ -100,12 +123,9 @@ svg { color: inherit !important; }
     color: #24292f;
 }
 
-.link { color: #3676abd0 !important; }
+.link { color: #008899 !important; }
 
-.link:hover{
-    color: #3676ab !important;
-    text-decoration: underline;
-}
+.link:hover{text-decoration: underline;}
 
 .text-white{ color: #fff !important; }
 
@@ -129,3 +149,7 @@ svg { color: inherit !important; }
     background-color: #000000b0;
 }
 
+input{
+    background-color: #F3F6F9;
+    border: 1px solid #CBD5E1;
+}
