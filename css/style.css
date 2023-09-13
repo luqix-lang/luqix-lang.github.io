@@ -7,9 +7,9 @@
 
 
 .pacific {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Pacifico', sans-serif !important;
     color: #008899 !important;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /*.arvo{ font-family: 'Arvo', serif !important; }*/
@@ -18,7 +18,7 @@
     font-size: 16px;
     line-height: 1.75;
     font-family: 'Inter', sans-serif;
-    color: #0f172a;
+    color: #303030;
     border-color: #E5EAF2;
 }
 
