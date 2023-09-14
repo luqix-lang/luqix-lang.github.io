@@ -3,7 +3,7 @@ let nav = document.getElementById('nav');
 nav.innerHTML = `
 <div class="col-8 col-10-md px-3-md flex-wrap flex justify-between align-items-center z-10">
     <div class="flex align-items-center justify-between col-10-md">
-        <a href="../index.html"><p class="text-3xl py-3 pacific">Luqix</p></a>
+        <a href="../index.html"><p class="text-xl f5 py-3">Luqix</p></a>
         <p id="bar" class="px-2 d-none-xxl d-block-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg></p>
@@ -24,7 +24,7 @@ nav.innerHTML = `
         <div class="flex relative align-item-center justify-center bg-white col-9 h-90 rounded-md">
             <p id="close-menu" class="text-right absolute top-1 right-0 text-3xl px-3 txt fm"><i class="bi bi-x txt"></i></p>
             <div class="col-10">
-                <a href="index.html"><p class="txt text-xl py-3 px-2 mx-3 pacific">Luqix</p></a>
+                <a href="index.html"><p class="txt text-xl f5 py-3 px-2 mx-3">Luqix</p></a>
                 <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Document</p></a>
                 <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Tutorials</p></a>
                 <a href="blog.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Blog</p></a>
@@ -118,9 +118,9 @@ let navd = document.getElementById('nav-doc');
     ID = document.getElementById('ID');
 
 navd.innerHTML = `
-<div class="flex justify-between align-items-center px-4 py-2 z-90">
-     <a href="../index.html"><p class="pacific font-light text-2xl f5">Luqix-v1.00.1</p></a>
-     <p class="txt">${ID.innerText.toUpperCase()}</p>
+<div class="flex justify-between align-items-center px-4 py-1 z-90">
+     <a href="../index.html"><p class="txt text-lg f5">Luqix-v1.00.1</p></a>
+     <p class="txt text-md">${ID.innerText.toUpperCase()}</p>
      <p class="px-2" id="barz">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="#000" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
