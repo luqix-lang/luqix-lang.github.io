@@ -94,6 +94,8 @@ side.innerHTML = `
          <a href=""><p class="py-1">file</p></a>
          <a href=""><p class="py-1">Path</p></a>
          <a href=""><p class="py-1">Reg</p></a>
+         <a href="sqlite3.html"><p class="py-1">Sqlite3</p></a>
+
 
          <p class=" mt-3  cat">e. Encoding</p>
          <a href="base64.html"><p class="py-1">Base64</p></a>
