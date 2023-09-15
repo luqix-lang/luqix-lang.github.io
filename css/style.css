@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.cdnfonts.com/css/liberation-mono');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
 
 
 *{
-    font-size: 16px;
-    line-height: 1.75;
-    font-family: 'Noto Sans', sans-serif;
-    color: #42494f;
-    border-color: #E5EAF2;
+    font-size: 17px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    /*font-family: 'Futura PT', sans-serif;*/
+    color: #393A3C;
+    border-color: #DADCE0;
 }
 
 .smoky{
@@ -25,16 +27,15 @@
 .txt, .txt *{ color: #222222 !important; }
 
 nav, .navd{
-    background-color: #404EEDba;
     background-color: white;
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid #CBD5E1;
+    box-shadow: 0 3px 3px rgb(0, 0, 0, .07);
+    border: none !important;
 }
 
 nav *{
-    font-size: 15px;
-    color: #101010;
+    font-size: 16px;
 }
+
 
 .mic{
     background-image: url('../img/land.png');
@@ -43,8 +44,31 @@ nav *{
     background-repeat: no-repeat;
 }
 
+.land{
+    display: none !important;
+}
+
+.anim{
+    background-color: #CEEAD6;
+    color: #188038;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 50px;
+    /*font-weight: 500 !important;*/
+}
+
+.blue{
+    background-color: #1A73E8;
+}
+
 .land *{
     color: #ffffff;
+}
+
+.ban{
+    background-color: #FCE8E6;
 }
 
 .bg{ background-color: #23272A; }
@@ -64,10 +88,10 @@ svg { color: inherit !important; }
 
 
 .foot{
-    background-color: #303030;
+    background-color: #F7F7F8 !important;
 }
 
-.foot *{ color: white !important; }
+.foot *{ color: #202020 !important; }
 
 .txc { color: #404EED !important; }
 
@@ -75,12 +99,12 @@ svg { color: inherit !important; }
 .sidebar{
     padding: 30px;
     padding-top: 20px;
-    border-right: 1px solid #E5EAF2 !important;
+    background-color: #E8F0FE;
 }
 
 .sidebar *{
-    font-size: 14px ;
-    color: #0b0d0ed0 ;
+    font-size: 16px ;
+    color: #3f4348;
     font-weight: 500;
 }
 
@@ -92,7 +116,7 @@ svg { color: inherit !important; }
 }
 
 .cat{
-    font-size: 18px !important;
+    /*font-size: 18px !important;*/
     color: #707070 !important;
 }
 
@@ -105,7 +129,7 @@ svg { color: inherit !important; }
 
 .content{ background-color: white; }
 
-.link { color: #0070BB !important; }
+.link { color: #185abc !important; }
 
 .link:hover{text-decoration: underline;}
 
@@ -119,8 +143,6 @@ svg { color: inherit !important; }
     display: none;
 }
 
-/*.navd { background-color: #000000f0; }*/
-.navd *{ color: white; }
 
 .menu{
     position: fixed !important;
