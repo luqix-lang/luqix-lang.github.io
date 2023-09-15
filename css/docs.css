@@ -38,9 +38,10 @@
 .key{
 	background-color: #F3F6F9;
 	border-radius: 5px;
-	padding: 3px !important;
-	padding-left: 4px !important;
-	padding-right: 4px !important;
+	padding: 1px !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-size: 14px;
 	border:  1px solid #DAE2ED;
 }
 
