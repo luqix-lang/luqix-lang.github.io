@@ -49,7 +49,7 @@ for(let i=0; i <code.length; i++)
 
 
 side.innerHTML = `
-<div class="page sidebar mt-5 rounded-lg sm:shadow-lg relative z-40 sm:shadow-none " >
+<div class="page sidebar border-l md:border-l-0 md:mt-5 rounded-lg sm:shadow-lg relative z-40 sm:shadow-none " >
      <a href="docs.html"><p class="mt-1 py-1">Intro</p></a>
      <a href="install.html"><p class="py-1">Installation</p></a>
      <a href="changelog.html"><p class="py-1">Changelog</p></a>
@@ -119,8 +119,8 @@ let navd = document.getElementById('nav-doc');
 
 navd.innerHTML = `
 <div class="flex justify-between align-items-center px-4 py-1 z-90">
-     <a href="../index.html"><p class="text-lg">Luqix <span class="text-sm">.0.1</span></p></a>
-     <p class="txt text-md">${ID.innerText.toUpperCase()}</p>
+     <a href="../index.html"><p class="text-">Luqix <span class="text-sm italic">.0.1</span></p></a>
+     <p class="text-md">${ID.innerText.toUpperCase()}</p>
      <p class="px-2" id="barz">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="#000" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

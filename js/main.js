@@ -25,21 +25,24 @@ nav.innerHTML = `
         <a href=""><p class="px-4 fm">Forum</p></a>
     </div>
     <div class="d-block-xxl d-none-md">
-        <div class="">
-          <input type="search" class="outline-0 py-2 px-3 txt rounded-md w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
+        <div class="flex align-items-center px-2 rounded-md input">
+          <p class=""><i class="bi bi-search"></i></p>
+          <input class="outline-0 py-2 px-3 txt w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
         </div>
     </div>
-    <div class="d-none-md menu d-none-xxl justify-center align-items-center" id="menu">
-        <div class="flex relative justify-center bg-white col-9 h-90 rounded-md">
-            <p id="close-menu" class="text-right absolute top-1 right-0 text-3xl px-3 txt fm"><i class="bi bi-x txt"></i></p>
-            <div class="col-10 pt-5">
-                <a href="index.html"><p class="txt text-xl py-3 px-2 mx-3 ">Luqix</p></a>
-                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Document</p></a>
-                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Tutorials</p></a>
-                <a href="blog.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Blog</p></a>
-                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Support</p></a>
-                <a href="docs/docs.html"><p class="txt sm:text-lg py-2 px-2 mx-3">Forum</p></a>
-                <a href="https://github.com/luqix-lang/luqix"><p class="txt text-xl px-2 py-3 border-t mx-3"><i class="bi bi-github"></i></p></a>
+    <div class="d-none-md menu d-none-xxl justify-start align-items-center" id="menu">
+        <div class="back" id="close-menu"></div>
+        <div class="flex relative justify-start bg-white col-8 h-100">
+            <div class="col-10 pt-2">
+                <a href="index.html"><p class="txt text-xl py-3 bold px-2 mx-3 ">Luqix</p></a>
+                <a href="docs/docs.html"><p class="py-2 px-2 mx-3">Document</p></a>
+                <a href="docs/docs.html"><p class="py-2 px-2 mx-3">Tutorials</p></a>
+                <a href="blog.html"><p class="py-2 px-2 mx-3">Blog</p></a>
+                <a href="docs/docs.html"><p class="py-2 px-2 mx-3">Support</p></a>
+                <a href="docs/docs.html"><p class="py-2 px-2 mx-3">Forum</p></a>
+                <a href="https://github.com/luqix-lang/luqix"><p class=" text-xl px-2 pb-2 pt-3 border-t mx-3"><i class="bi bi-github"></i> <span class="ml-2">github</span></p></a>
+                <a href="https://github.com/luqix-lang/luqix"><p class=" text-xl px-2 py-2 mx-3"><i class="bi bi-twitter"></i> <span class="ml-2">Twitter</span></p></a>
+                <a href="https://github.com/luqix-lang/luqix"><p class=" text-xl px-2 py-2 mx-3"><i class="fab fa-stack-overflow"></i> <span class="ml-2">Stack Overflow</span></p></a>
             </div>
         </div>
     </div>

@@ -37,15 +37,12 @@ nav *{
 }
 
 
-.mic{
-    background-image: url('../img/land.png');
+.landy{
+    height: 100%;
+    background-image: url('../img/land.svg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
-
-.land{
-    display: none !important;
 }
 
 .anim{
@@ -59,12 +56,17 @@ nav *{
     /*font-weight: 500 !important;*/
 }
 
-.blue{
-    background-color: #1A73E8;
+.bolder{
+    font-weight: 700 !important;
 }
 
-.land *{
-    color: #ffffff;
+.blue{
+    background-color: #01D392;
+}
+
+
+.hill{
+    background-color: #CEEAD6;
 }
 
 .ban{
@@ -150,12 +152,33 @@ svg { color: inherit !important; }
     right: 0 !important;
     left: 0 !important;
     height: 100vh;
-    background-color: #000000b0;
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000000a0;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(15px);
+   -moz-backdrop-filter: blur(15px);
+   -ms-backdrop-filter: blur(15px);
+}
+
+.input{
+    background-color: #EBEDF5;
+    border: 1px solid #EBEDF5;
+}
+
+.input:hover{
+    border-color: #CBD5E1;
+    background-color: white;
 }
 
 input{
-    background-color: #F3F6F9;
-    border: 1px solid #CBD5E1;
+    background-color: transparent;
 }
 
 
