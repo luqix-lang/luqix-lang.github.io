@@ -26,7 +26,7 @@ nav.innerHTML = `
     </div>
     <div class="d-block-xxl d-none-md">
         <div class="flex align-items-center px-2 rounded-md input">
-          <p class=""><i class="bi bi-search"></i></p>
+          <p class=""><i class="bi text-black bi-search"></i></p>
           <input class="outline-0 py-2 px-3 txt w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
         </div>
     </div>
@@ -73,10 +73,10 @@ footer.innerHTML = `
     <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
         <p class="font-bold mb-1">Details</p>
         <a href=""><p class="py-1">GNU License</p></a>
-        <div class="mt-1 flex justify-start">
-            <p class="px-2"><a href="https://github.com/luqix-lang/luqix"><i class="fab fa-github"></i></a></p>
-            <p class="px-2"><a href=""><i class="fab fa-twitter"></i></a></p>
-            <p class="px-2"><a href=""><i class="fab fa-stack-overflow"></i></a></p>
+        <div class="mt-1t">
+            <div class="mb-2"><a href="https://github.com/luqix-lang/luqix"><img src="/home/rogers/Downloads/nc-socials/nc-socials/colored/svgs/social-color-1_logo-github.svg" class="img imger" /></a></div>
+            <div class="mb-2"><a href=""><img src="/home/rogers/Downloads/nc-socials/nc-socials/colored/svgs/social-color-1_logo-twitter.svg" class="img imger" /></a></div>
+            <div class="mb-2"><a href=""><img src="/home/rogers/Downloads/nc-socials/nc-socials/colored/svgs/social-color-1_logo-youtube.svg" class="img imger" /></a></div>
         </div>
     </div>
 
