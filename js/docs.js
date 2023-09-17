@@ -56,6 +56,7 @@ side.innerHTML = `
 
      <p class="mt-4 cat">1. Learn basics</p>
      <div class="ml-2">
+         <a href="run.html"><p class="py-1">Get Started</p></a>
          <a href="keywords.html"><p class="py-1">Keywords</p></a>
          <a href="variables.html"><p class="py-1">Variables</p></a>
          <a href="functions.html"><p class="py-1">Functions</p></a>
@@ -99,7 +100,7 @@ side.innerHTML = `
 
          <p class=" mt-3  cat">e. Encoding</p>
          <a href="base64.html"><p class="py-1">Base64</p></a>
-         <a href=""><p class="py-1">Json</p></a>
+         <a href="json.html"><p class="py-1">Json</p></a>
          
 
          <p class=" mt-3  cat">f. Networking</p>

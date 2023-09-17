@@ -1,8 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+.bg-content *{
+	font-weight: 400;
+	color: #252525;
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+}
 
-*{
-	line-height: 1.5 ;
+.gy, .gy *{
+    font-family: 'Gilroy-Medium', sans-serif;
 }
 
 .cmd{
@@ -95,4 +102,20 @@
 .tbb *{
 	font-size: 15px !important;
 	font-family: 'Liberation Mono', sans-serif !important;
+}
+
+.alert-blue{background-color: #E8F0FE;}
+.blue { color: #1967d2; }
+
+.alert-green{background-color: #CEEAD6;}
+.green{ color: #188038; }
+
+.alert-red{background-color: #FCE8E6;}
+.red{ color: #ea4335; }
+
+.alert-yellow{background-color: #FDE293;}
+.yellow { color: #000; }
+
+.bold{
+    font-weight: 600;
 }

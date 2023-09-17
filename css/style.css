@@ -187,10 +187,14 @@ input{
 
 
 .alert{
+    border: 1px solid #DADCE0;
     background-color: #F0F8FF;
-    border: 1px solid #007FFF;
     border-radius: 5px;
     padding: 15px;
+}
+
+.alert *{
+    color: #5f6368;
 }
 
 .alert .at{
@@ -198,4 +202,20 @@ input{
     font-size: 13px;
     color: #0070BB;
     margin-bottom: 4px;
+}
+
+.alert-blue{background-color: #E8F0FE;}
+.blue { color: #1967d2; }
+
+.alert-green{background-color: #CEEAD6;}
+.green{ color: #188038; }
+
+.alert-red{background-color: #FCE8E6;}
+.red{ color: #ea4335; }
+
+.alert-yellow{background-color: #FDE293;}
+.yellow { color: #000; }
+
+.bold{
+    font-weight: 600;
 }
