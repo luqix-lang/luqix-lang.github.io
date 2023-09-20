@@ -1,11 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
 .bg-content *{
 	font-weight: 400;
-	color: #252525;
-	font-size: 16px;
-	font-family: 'Inter', sans-serif;
+	color: #222222;
+	font-size: 18px;
+	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, "helvetica neue", Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol"; 
 }
 
 .gy, .gy *{
@@ -43,13 +44,7 @@
 
 
 .key{
-	background-color: #F3F6F9;
-	border-radius: 5px;
-	padding: 1px !important;
-	padding-left: 2px;
-	padding-right: 2px;
-	font-size: 14px;
-	border:  1px solid #DAE2ED;
+	font-weight: bold !important;
 }
 
 
@@ -119,3 +114,5 @@
 .bold{
     font-weight: 600;
 }
+
+.color *{ color: white; }

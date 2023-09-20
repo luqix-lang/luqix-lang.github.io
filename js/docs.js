@@ -17,7 +17,7 @@ nav.innerHTML = `
     </div>
     <div class="d-block-xxl d-none-md">
         <div class="">
-          <input type="search" class="outline-0 py-2 px-3 txt rounded-md w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
+          <input type="search" class="outline-0 py-2 px-3 rounded-md w-100 placeholder:text-gray-300" d="searcher" placeholder="Search docs" />
         </div>
     </div>
     <div class="d-none-md menu d-none-xxl justify-center align-items-center" id="menu">
@@ -119,7 +119,7 @@ let navd = document.getElementById('nav-doc');
     ID = document.getElementById('ID');
 
 navd.innerHTML = `
-<div class="flex justify-between align-items-center px-4 z-90">
+<div class="flex justify-between align-items-center px-4 z-90 color">
      <a href="../index.html"><p class="logo">Luqix <span class="font-normal italic">.0.1</span></p></a>
      <p class="text-md">${ID.innerText.toUpperCase()}</p>
      <p class="px-2" id="barz">
