@@ -1,12 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
 .bg-content *{
 	font-weight: 400;
-	color: #222222;
-	font-size: 18px;
-	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, "helvetica neue", Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol"; 
+	color: #1d201f;
+	font-size: 17px;
+    font-family: 'Albert Sans', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+
 }
 
 .gy, .gy *{
@@ -44,7 +42,8 @@
 
 
 .key{
-	font-weight: bold !important;
+	font-size: inherit;
+	color: #1b6700;
 }
 
 
@@ -99,17 +98,6 @@
 	font-family: 'Liberation Mono', sans-serif !important;
 }
 
-.alert-blue{background-color: #E8F0FE;}
-.blue { color: #1967d2; }
-
-.alert-green{background-color: #CEEAD6;}
-.green{ color: #188038; }
-
-.alert-red{background-color: #FCE8E6;}
-.red{ color: #ea4335; }
-
-.alert-yellow{background-color: #FDE293;}
-.yellow { color: #000; }
 
 .bold{
     font-weight: 600;

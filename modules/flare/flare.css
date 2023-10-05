@@ -5,10 +5,10 @@
 
 .code *, .code{
 	font-size: 14px !important;
-	line-height: 17px !important;
+	line-height: 18px !important;
     font-family: 'Liberation Mono', sans-serif !important;
     color: #24292f !important;
-    background-color: #F6F6F6 !important;
+    background-color: #F0F0F0 !important;
 }
 
 .flare-keywords{

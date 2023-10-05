@@ -79,7 +79,7 @@ side.innerHTML = `
          <a href="random.html"><p class="py-1">Random</p></a>
 
          <p class=" mt-3  cat">b. System APIs</p>
-         <a href="system.html"><p class="py-1">System</p></a>
+         <a href="os.html"><p class="py-1">Os</p></a>
          <a href="time.html"><p class="py-1">Time</p></a>
          <a href=""><p class="py-1">Threads</p></a>
          <a href=""><p class="py-1">Parallelism</p></a>
@@ -123,7 +123,7 @@ navd.innerHTML = `
      <a href="../index.html"><p class="logo">Luqix <span class="font-normal italic">.0.1</span></p></a>
      <p class="text-md">${ID.innerText.toUpperCase()}</p>
      <p class="px-2" id="barz">
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="#000" class="w-6 h-6">
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
      </p>

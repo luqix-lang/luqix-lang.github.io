@@ -48,6 +48,17 @@
 
                      <div class="line"></div>
 
+                     <p class="mt-5">The <span class="key">random</span> API.</p>
+
+                    <div class="mt-5 tbb">
+                        <div class="flex justify-between py-4 bb">
+                            <p class="col-2 px-1"><a href="#pick" class="link">pick</a></p>
+                            <p class="col-2 px-1"><a href="#random" class="link">random</a></p>
+                            <p class="col-2 px-1"><a href="#uniform" class="link">uniform</a></p>
+                            <p class="col-2 px-1"><a href="#shuffle" class="link">shuffle</a></p>
+                        </div>
+                    </div>
+
                      <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> shuffle<span class="fn">(<span class="args">list n</span>)</span></p>
                      <div class="line mt-4"></div>
                      <p class="mt-3">Shuffles items in list n and so the list changes in all its occurences.</p>
@@ -77,36 +88,12 @@ print(samp) // could be ['c','a','d']</div>
                      <div class="my-6 code">print(random.uniform(0, 70))</div>
 
 
-                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> interger<span class="fn">(<span class="args">int min, opt int max</span>)</span></p>
-                     <div class="line mt-4"></div>
-                     <p class="mt-3">Return the continous uniform distribution but returns a whole number.</p>
-                     <div class="my-6 code">print(random.interger(4, 11)) // either 4,5,6,7,8,9,10</div>
-
-
-                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> bool<span class="fn">(<span class="args"></span>)</span></p>
-                     <div class="line mt-4"></div>
-                     <p class="mt-3">Luckily return <span class="key">true</span> or <span class="key">flase</span>.</p>
-
-
                      <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> pick<span class="fn">(<span class="args">list n</span>)</span></p>
                      <div class="line mt-4"></div>
                      <p class="mt-3">Random picks and returns one item from list n.</p>
                      <div class="my-6 code">n = [1, 2, 'a', 'b', 'b', true, false]
 
 print(random.pick(n)) // could be 2, 'a' or ... in n</div>
-
-
-                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> string<span class="fn">(<span class="args">int length, opt string specials</span>)</span></p>
-                     <div class="line mt-4"></div>
-                     <p class="mt-3">Generates a random string from all <a class="link">alphabetical letters</a> of length <span class="key">length</span> and could add special characters or imojis optionally passed in the specials argument. Can reuse a letter.</p>
-                     <div class="my-6 code">pwd = random.string(8, '45678%') // could be er5KiKy4</div>
-
-
-                     <p class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">#</span> string_pool<span class="fn">(<span class="args">string pool, int length</span>) *</span></p>
-                     <div class="line mt-4"></div>
-                     <p class="mt-3">Takes in a string pool that it uses to generate random strings of length length as specified.</p>
-                     <div class="my-6 code">color = random.string_pool('abcdef0123456789');
-print(f'#{color}') // #aef077</div>
 
 
                     <div class="mt-14 mb-5 flex justify-between">
