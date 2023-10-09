@@ -20,8 +20,9 @@ nav.innerHTML = `
         </p></a>
     </div>
     <div class="d-block-xxl d-none-md">
-        <div class="">
-          <input type="search" class="outline-0 py-2 px-3 rounded-md w-100 placeholder:text-gray-300" d="searcher" placeholder="Search docs" />
+        <div class="flex align-items-center px-2 rounded-md input">
+          <p class=""><i class="bi text-black bi-search"></i></p>
+          <input class="outline-0 py-2 px-3 txt w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
         </div>
     </div>
     <div class="d-none-md menu d-none-xxl justify-center align-items-center" id="menu">
@@ -124,7 +125,7 @@ let navd = document.getElementById('nav-doc');
 
 navd.innerHTML = `
 <div class="flex justify-between align-items-center px-4 z-90 color">
-     <a href="../index.html"><p class="logo">Luqix <span class="font-normal italic">.0.1</span></p></a>
+     <a href="../index.html"><p class="logo">Luqix <sub class="sub">.0.1</sub></p></a>
      <p class="text-md">${ID.innerText.toUpperCase()}</p>
      <p class="px-2" id="barz">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">

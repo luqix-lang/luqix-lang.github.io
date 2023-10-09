@@ -22,11 +22,12 @@ body{
 
 .bg-content *{
 	color: #1d201f;
-	font-size: 18px;
+	color: #333333;
+	font-size: 17px;
 	line-height: 1.9;
     font-family: 'Albert Sans', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     font-family: 'Rubik', sans-serif !important;
-	color: #212222 !important;
+	/*color: #212222 !important;*/
 }
 
 .font-bold{
@@ -129,4 +130,7 @@ body{
     font-weight: 600;
 }
 
-.color *{ color: white; }
+.logo sub{
+	font-size: 14px !important;
+	font-weight: bold;
+}
