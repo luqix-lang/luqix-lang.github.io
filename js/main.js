@@ -57,7 +57,7 @@ nav.innerHTML = `
 </div>`
 
 footer.innerHTML = `
-<footer class="flex flex-wrap col-8 col-8-lg col-9-md col-10-sm px-3-sm justify-around">
+<footer class="flex flex-wrap col-8 col-8-lg col-9-md col-10-sm px-4-sm justify-around">
     <div class="col-2-xxl col-5-md py-10-xxl py-5-md">
         <p class="pacific text-xl">Variable Code</p>
         <p class="arvo">With genuine software</p>
