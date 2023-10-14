@@ -17,6 +17,11 @@ body{
 	color: #373b3d;
 }
 
+.cat{
+	color: #272b2d;
+
+}
+
 .sidebar a:hover{
     background-color: #F3F6F9;
 }

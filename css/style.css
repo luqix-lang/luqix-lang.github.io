@@ -1,9 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/liberation-mono');
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
 @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
     font-size: 16px;
@@ -38,17 +37,16 @@ nav, .navd{
 }
 
 nav *{
-    color: #222222;
     font-weight: 500;
     font-size: 15px;
+    /*font-family: 'Overpass', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;*/
 }
 
 .logo, .logo *{
-    font-weight: 500;
-    /*color: white;*/
+    font-weight: 700;
+    color: #575880;
     text-transform: uppercase;
     font-size: 22px !important;
-    font-family: 'Futura PT', sans-serif !important;
 }
 
 .landy{
@@ -115,10 +113,10 @@ svg { color: inherit !important; }
 .txc { color: #404EED !important; }
 
 
-.cat{
-    /*font-size: 18px !important;*/
+/*.cat{
+    font-size: 18px !important;
     color: #707070 !important;
-}
+}*/
 
 .sidebar a:hover{
     text-decoration: underline !important;
@@ -166,13 +164,14 @@ svg { color: inherit !important; }
 
 .input{
     background-color: #F5F5F5;
-    border: 1px solid #EBEDF5;
     border-radius:100px !important;
+    border: 2px solid #6B9BD2;
 }
 
-.input:hover{
+.input:active{
     border-color: #CBD5E1;
     background-color: white;
+    border: 2px solid #6B9BD2;
 }
 
 input{

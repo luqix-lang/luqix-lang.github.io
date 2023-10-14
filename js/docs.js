@@ -1,9 +1,9 @@
 let nav = document.getElementById('nav');
 
 nav.innerHTML = `
-<div class="col-8 col-10-md px-3-md py-1 flex-wrap flex justify-between align-items-center z-10">
+<div class="col-8 col-10-md px-3-md flex-wrap flex justify-between align-items-center z-10">
     <div class="flex py-3 align-items-center justify-between col-10-md">
-        <a href="../index.html"><p class="text-xl f5 logo">Luqix</p></a>
+        <a href="../index.html"><p class="text-xl f5 logo flex flex-nowrap align-items-center "><img src="https://www.svgrepo.com/show/434351/airbaloon.svg" class="img w-10"/> &nbsp; Luqix</p></a>
         <p id="bar" class="px-2 d-none-xxl d-block-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg></p>
@@ -22,7 +22,7 @@ nav.innerHTML = `
     <div class="d-block-xxl d-none-md">
         <div class="flex align-items-center px-2 rounded-md input">
           <p class=""><i class="bi text-black bi-search"></i></p>
-          <input class="outline-0 py-2 px-3 txt w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
+          <input class="outline-0 py-1 px-3 txt w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
         </div>
     </div>
     <div class="d-none-md menu d-none-xxl justify-center align-items-center" id="menu">
