@@ -49,6 +49,10 @@ nav *{
     font-size: 22px !important;
 }
 
+.c-logo{
+    color: #575880 !important;
+}
+
 .landy{
     height: 100%;
     background-image: url('../img/land.svg');
@@ -105,10 +109,12 @@ svg { color: inherit !important; }
 
 
 .foot{
-    background-color: #F7F7F8 !important;
+    background-color: #F1F5F9 !important;
 }
 
-.foot *{ color: #202020 !important; }
+.foot *{
+    font-size: 15px;
+    color: #202020 !important; }
 
 .txc { color: #404EED !important; }
 
