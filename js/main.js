@@ -34,8 +34,8 @@ nav.innerHTML = `
     </div>
     <div class="d-block-xxl d-none-md">
         <div class="flex align-items-center px-2 rounded-md input">
-          <p class=""><i class="bi text-black bi-search"></i></p>
-          <input class="outline-0 py-1 px-3 txt w-100 placeholder:text-gray-700" d="searcher" placeholder="Search docs" />
+          <p class=""><i class="bi bi-search"></i></p>
+          <input class="outline-0 py-1 px-3 txt w-100 " d="searcher" placeholder="Search docs" />
         </div>
     </div>
     <div class="d-none-md menu d-none-xxl justify-start align-items-center" id="menu">

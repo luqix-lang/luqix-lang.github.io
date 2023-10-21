@@ -1,16 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/liberation-mono');
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800;900&display=swap');
+/*@import url('https://fonts.cdnfonts.com/css/gilroy-bold');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800;900&display=swap');*/
 
 *{
     font-size: 16px;
     color: #373b3d;
     border-color: #DADCE0;
-    line-height: 1.75em;
+    line-height: 1.85;
     font-weight: 400;
-    font-family: 'Inter', __Inter_e66fe9, __Inter_Fallback_e66fe9, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .smoky{
@@ -18,7 +17,6 @@
 }
 
 .b9{
-    color: #374957 !important;
     font-weight: 600 !important;
 }
 
@@ -28,23 +26,27 @@
 
 .f5{ font-weight: 700; }
 
-.txt, .txt *{ color: #222222 !important; }
 
 nav, .navd{
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 3%);
     border: none !important;
     background-color: white;
+    background-color: #381E77f0;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+   -moz-backdrop-filter: blur(2px);
+   -ms-backdrop-filter: blur(2px);
+    z-index: 20;
 }
 
 nav *{
     font-weight: 500;
     font-size: 15px;
-    /*font-family: 'Overpass', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;*/
+    color: #ffffffd0;
 }
 
 .logo, .logo *{
     font-weight: 700;
-    color: #575880;
     text-transform: uppercase;
     font-size: 22px !important;
 }
@@ -75,13 +77,41 @@ nav *{
     font-weight: 700 !important;
 }
 
-.blue{
-    background-color: #FF534F;
+
+.hill{
+    background-image: url('../img/bg3.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 90vh;
+}
+
+.hill *{
+    z-index: 15;
+    color: white !important;
+}
+
+.blue{ 
+    background-color: #AA9258;
+    color: #202020 !important;
+    transition: opacity .2s linear;
+}
+
+.blue:hover{
+    opacity: 80%;
 }
 
 
-.hill{
-    /*background-color: #F1F5F9;*/
+.hill .mask{
+    background-color: #381E7790;
+    /*background-color: #1B6E4490;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .ban{
@@ -169,19 +199,24 @@ svg { color: inherit !important; }
 }
 
 .input{
-    background-color: #F5F5F5;
+    background-color: #ffffff10;
     border-radius:100px !important;
-    border: 2px solid #6B9BD2;
+    border: 1px solid #ffffff10;
 }
 
 .input:active{
-    border-color: #CBD5E1;
+    border-color: #EAC69790;
     background-color: white;
-    border: 2px solid #6B9BD2;
+    border: 2px solid #121212b0;
+    color: white !important;
 }
 
 input{
     background-color: transparent;
+}
+
+.input::placeholder{
+    color: #ffffff50;
 }
 
 
@@ -204,7 +239,6 @@ input{
 }
 
 .alert-blue{background-color: #E8F0FEa0;}
-.blue { color: #1967d2; }
 
 .alert-green{background-color: #CEEAD6a0;}
 .green{ color: #188038; }
