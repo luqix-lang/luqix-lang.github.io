@@ -8,13 +8,11 @@ body{
 .sidebar {
     padding: 30px;
     padding-top: 20px;
-    background-color: #F1F5F9;
-    background-color: #381E7715;
+    background-color: #F3F4F6;
 }
 
 .sidebar *{
-	font-weight: 500;
-	font-size: 15px;
+	font-size: 16px;
 	color: #373b3d;
 }
 
@@ -133,4 +131,13 @@ body{
 .logo sub{
 	font-size: 14px !important;
 	font-weight: bold;
+}
+
+.text-xl-3, .text-4xl, .text-2xl, .text-3xl, .cc{
+	color: #2c4f7c !important;
+	font-weight: 600 !important;
+}
+
+.color *{
+	color: white;
 }

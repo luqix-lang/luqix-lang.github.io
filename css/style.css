@@ -1,23 +1,45 @@
 @import url('https://fonts.cdnfonts.com/css/liberation-mono');
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
-/*@import url('https://fonts.cdnfonts.com/css/gilroy-bold');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/arial-2');
+@import url('https://fonts.cdnfonts.com/css/along-sans-s2');
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 *{
-    font-size: 16px;
-    color: #373b3d;
-    border-color: #DADCE0;
-    line-height: 1.85;
-    font-weight: 400;
+    font-size: 17px;
+    color: #000;
+    border-color: #DDDDDD;
+    font-family: 'Wix Madefor Text', sans-serif;
+
 }
 
 .smoky{
-    background-color: #F1F5F9;
+    background-color: #F3F4FA;
+}
+
+.caret{
+    display: flex;
+    align-items: center;
 }
 
 .b9{
     font-weight: 600 !important;
+}
+
+.b4 { font-weight: 400; }
+.b2 { font-weight: 300; }
+.b5 { font-weight: 500; }
+.b6 { font-weight: 600; }
+.b7 { font-weight: 700; }
+.b8 { font-weight: 800; }
+.b3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200 !important;
+}
+
+
+.pp{
+    font-family: 'Poppins', sans-serif;
 }
 
 .font-bold{
@@ -29,27 +51,72 @@
 
 nav, .navd{
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 3%);
-    border: none !important;
-    background-color: white;
-    background-color: #381E77f0;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-   -moz-backdrop-filter: blur(2px);
-   -ms-backdrop-filter: blur(2px);
+    border-bottom: ;
     z-index: 20;
+    /*box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);*/
+    font-weight: bolder;
+    background-color: #2F40AD;
+    box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    border-bottom: 2px solid #ffffff30;
+}
+
+.map{
+    background-image: url('../img/land.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border-top-left-radius: 100%;*/
+}
+
+.sp{
+    font-family: 'Along Sans s2', sans-serif !important;
+}
+
+.sps{
+    font-weight: 400 !important;
+    font-family: 'Gorditas', serif;
+    color: #ffffffa0 !important;
+}
+
+.cov{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 nav *{
-    font-weight: 500;
-    font-size: 15px;
-    color: #ffffffd0;
+    color: white;
 }
 
 .logo, .logo *{
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 22px !important;
+    font-weight: 700 !important;
+    font-family: 'Along Sans s2', sans-serif !important;
+
 }
+
+.bolder{
+    font-weight: 900;
+}
+
+.land{
+    background-color: #2F40AD;
+    color: white;
+}
+
+.btn{
+    background-color: #2F40ADf0;
+}
+
+.btnz{
+    background-color: #3B4BB2;
+}
+
+.t{ color: #3B4BB2; }
+
+.land *{
+    color: white;
+}
+
 
 .c-logo{
     color: #575880 !important;
@@ -79,22 +146,26 @@ nav *{
 
 
 .hill{
-    background-image: url('../img/bg3.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #3B5677, #3B5677, #4F88C6);
     position: relative;
-    height: 90vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .hill *{
     z-index: 15;
-    color: white !important;
+    color: white;
 }
 
 .blue{ 
-    background-color: #AA9258;
-    color: #202020 !important;
+    background-color: #4F88C6;
+    color: #fff !important;
+    transition: opacity .2s linear;
+}
+
+.d-blue{ 
+    background-color: #446B9E;
+    color: #fff !important;
     transition: opacity .2s linear;
 }
 
@@ -183,6 +254,10 @@ svg { color: inherit !important; }
     right: 0 !important;
     left: 0 !important;
     height: 100vh;
+}
+
+.menu *{
+    color: #101010;
 }
 
 .back{
