@@ -36,3 +36,11 @@
 	color: #6a737d !important;
 	font-style: italic;
 }
+
+@media (max-width: 650px){
+	.code *, .code{
+		font-size: 14px !important;
+		line-height: 24px !important;
+	}
+
+}

@@ -12,7 +12,7 @@ let nav = document.getElementById('nav');
 nav.innerHTML = `
 <div class="col-9 col-10-md px-3-md flex-wrap flex justify-between align-items-center z-10">
     <div class="flex py-2 align-items-center justify-between col-10-md">
-        <a href="index.html"><p class="text-xl-4 text-xl-sm f5 logo mr-3 flex flex-nowrap align-items-center ">Luqix</p></a>
+        <a href="index.html"><p class="text-xl-4 f5 logo mr-3 flex flex-nowrap align-items-center ">Luqix</p></a>
         <p id="bar" class="px-2 d-none-xxl d-block-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg></p>
@@ -41,7 +41,7 @@ nav.innerHTML = `
         <div class="back" id="close-menu"></div>
         <div class="flex relative justify-start bg-white col-8 h-100">
             <div class="col-10 pt-2">
-                <a href="index.html"><p class="txt text-xl py-3 font-bold px-2 mx-3 logo">Luqix</p></a>
+                <a href="index.html"><p class="txt text-xl-2 py-3 font-bold px-2 mx-3 logo">Luqix</p></a>
                 <a href="docs/docs.html"><p class="py-2 px-2 mx-3">Document</p></a>
                 <a href="docs/docs.html"><p class="py-2 px-2 mx-3">Tutorials</p></a>
                 <a href="blog.html"><p class="py-2 px-2 mx-3">Blog</p></a>
