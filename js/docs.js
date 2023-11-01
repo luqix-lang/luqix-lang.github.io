@@ -91,7 +91,7 @@ side.innerHTML = `
          <a href="time.html"><p class="py-1">Time</p></a>
          <a href="thread.html"><p class="py-1">Threads</p></a>
          <a href=""><p class="py-1">Parallelism</p></a>
-         <a href=""><p class="py-1">Process</p></a>
+         <a href="process.html"><p class="py-1">Process</p></a>
 
          <p class=" mt-3  cat">c. Data manuplators</p>
          <a href=""><p class="py-1">Dict</p></a>
