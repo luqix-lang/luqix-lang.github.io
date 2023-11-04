@@ -64,7 +64,7 @@
 
                         <p id="browse" class="mt-10 text-xl font-bold  flex"><span class="blink">$</span> browse<span class="fn">(<span class="args">string cmd</span>) *</span></span></p>
                          <div class="line mt-4"></div>
-                         <p class="mt-3">Open given url string in a new default bwoser window.</p>
+                         <p class="mt-3">Opens given url string in a new Os default browser window.</p>
                          <div class="my-6 code">process.browse('luqix-lang.github.io')</div>
 
                         <p id="Thread" class="mt-10 text-xl font-bold  flex"><span class="blink">$</span> Popen<span class="fn">(<span class="args">string cmd, enum{shell=true, stdout=filename, stdin, stderr}</span>) *</span></p>
@@ -84,17 +84,17 @@ print(pipe.fetch())</div>
                         </div>
 
 
-                        <p id="start" class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">$</span> pipe.wait().<span class="fn">(<span class="args"></span>)</span></p>
+                        <p id="start" class="mt-10 text-xl font-bold  flex"><span class="blink">$</span> pipe.wait<span class="fn">(<span class="args"></span>)</span></p>
                         <div class="line mt-3"></div>
                         <p class="mt-3">Waits for the process to terminate so as to return status code.</p>
                         <div class="my-6 code">pipe.wait()</div>
 
-                        <p id="join" class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">$</span> pipe.kill<span class="fn">(<span class="args">opt int code</span>)</span></p>
+                        <p id="join" class="mt-10 text-xl font-bold  flex"><span class="blink">$</span> pipe.kill<span class="fn">(<span class="args">opt int code</span>)</span></p>
                         <div class="line mt-3"></div>
                         <p class="mt-3">Terminates working thread.</p>
                         <div class="my-6 code">pipe.kill()</div>
 
-                        <p id="start" class="mt-10 text-xl font-bold  flex align-items-center"><span class="blink">$</span> pipe.fetch<span class="fn">(<span class="args"></span>)</span></p>
+                        <p id="start" class="mt-10 text-xl font-bold  flex"><span class="blink">$</span> pipe.fetch<span class="fn">(<span class="args"></span>)</span></p>
                         <div class="line mt-2"></div>
                         <p class="mt-3">Reads data chunks of the running process</p>
                         <div class="my-6 code">pipe.fetch()</div>

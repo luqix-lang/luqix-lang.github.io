@@ -210,7 +210,7 @@ svg { color: inherit !important; }
 
 
 .foot{
-    background-color: #F1F5F9 !important;
+    /*background-color: #F1F5F9 !important;*/
 }
 
 .foot *{
@@ -328,3 +328,53 @@ input{
     font-weight: 500;
 }
 
+.editor{
+    background-color: #F7FAFD;
+    /*box-shadow: 0 14px 28px rgba(0,0,0,0.07), 0 10px 10px rgba(0,0,0,0.04);*/
+    border: 1px solid #A6A6A640;
+    border-radius: 10px;
+}
+
+.editor *{
+    border-color: #A6A6A6;
+}
+
+.tab-links{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #101010;
+    user-select: none;
+}
+
+.texts{
+    border-top: 1px solid #A6A6A6;
+}
+
+.edit-base{
+    background-color: #fcfcfc;
+}
+
+.editor .code, .editor .code *{
+    font-size: 14px !important;
+}
+
+.counts{
+    font-size: 14px;
+    line-height: 22px !important;
+    text-align: right;
+    color: #9f9c93;
+}
+
+.editor .code{
+    background-color: #F7FAFD !important;
+    border: none !important;
+}
+
+
+
+#line-count{
+    background-color: #F7FAFD;
+}
