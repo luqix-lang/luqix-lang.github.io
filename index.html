@@ -106,14 +106,14 @@
             <div class="flex editor mt-7 justify-between">
                 <div class="w-100-xxl border-r">
                     <div class="tabs flex align-items-center overflow-y-scroll-sm">
-                        <p class="py-3 tab-links" id="game">game.lqs</p>
+                        <p class="py-3 tab-links act" id="game">game.lqs</p>
                         <p class="py-3 tab-links" id="fib">fib.lqs</p>
                         <p class="py-3 tab-links" id="_math">math.lqs</p>
                         <p class="py-3 tab-links">console.lqs</p>
                     </div>
-                    <div class="vh- py-2 texts overflow-y-scroll flex">
+                    <div class="vh-50 vh-60-lg vh-70-md vh-80-sm overflow-y-scroll py-2 texts overflow-y-scroll flex">
                         <div class="py-2" id="line-count"></div>
-                        <div id="codec" class="code px-4 flex-grow h-max">animal = 'lion'
+                        <div id="codec" class="code px-4 flex-grow">animal = 'lion'
 
 fn play(score) {
     print('What is the bravest animal?')
@@ -221,6 +221,12 @@ print(f'Thanks for play.\nscores: {play(5)}')`
         light.light(codec);
 }
 
+    function rem_act(){
+        _fib.classList.remove('act');
+        _game.classList.remove('act');
+        _math.classList.remove('act');
+    }
+
     function maths(){
             count_lines(12);
             codec.innerHTML = `math = importc('math')
@@ -237,9 +243,23 @@ print(math.floor(90.475)) // 90
         light.light(codec);
 }
 
-        _fib.onclick = ()=>{fib()}
-        _game.onclick = ()=>{games()}
-        _math.onclick = ()=>{maths()}
+        _fib.onclick = ()=>{
+            rem_act();
+            _fib.classList.add('act');
+            fib()
+        }
+
+        _game.onclick = ()=>{
+            rem_act();
+            _game.classList.add('act');
+            games()
+        }
+
+        _math.onclick = ()=>{
+            rem_act();
+            _math.classList.add('act');
+            maths()
+        }
 
         count_lines(27)
 

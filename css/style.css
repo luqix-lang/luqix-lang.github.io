@@ -4,12 +4,18 @@
 @import url('https://fonts.cdnfonts.com/css/arial-2');
 @import url('https://fonts.cdnfonts.com/css/along-sans-s2');
 @import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
 
 *{
     font-size: 17px;
     color: #000;
+    color: #1b2733;
     border-color: #DDDDDD;
-    font-family: 'Wix Madefor Text', sans-serif;
+    /*font-family: 'Wix Madefor Text', sans-serif;*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
 
 }
 
@@ -330,9 +336,9 @@ input{
 
 .editor{
     background-color: #F7FAFD;
-    /*box-shadow: 0 14px 28px rgba(0,0,0,0.07), 0 10px 10px rgba(0,0,0,0.04);*/
-    border: 1px solid #A6A6A640;
+    border: 1px solid #A6A6A6f0;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .editor *{
@@ -347,10 +353,11 @@ input{
     cursor: pointer;
     color: #101010;
     user-select: none;
+    border-bottom: 3px solid #fff;
 }
 
 .texts{
-    border-top: 1px solid #A6A6A6;
+    border-top: 1px solid #A6A6A690;
 }
 
 .edit-base{
@@ -360,12 +367,19 @@ input{
 .editor .code, .editor .code *{
     font-size: 14px !important;
 }
+.editor .act{
+    color: #2F40AD !important;
+    transition: background-color .1s ease-in;
+    background-color: #2f40ad20;
+    border-color: #2f40ad;
+}
 
 .counts{
     font-size: 14px;
     line-height: 22px !important;
     text-align: right;
     color: #9f9c93;
+    font-family: 'Fira Mono', monospace !important;
 }
 
 .editor .code{
@@ -377,4 +391,9 @@ input{
 
 #line-count{
     background-color: #F7FAFD;
+}
+
+.big-2{
+    font-weight: 700;
+    font-size: 30px !important;
 }
