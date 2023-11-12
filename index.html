@@ -68,8 +68,8 @@
         </div>
     </div>
 
-    <div class="flex flex-wrap-md justify-between">
-        <div class="col-6-xxl col-4-lg col-10-md align-items-center flex smoky justify-center cov vh-50-sm" style="background-image: url('img/ambition.png');"></div>
+    <div class="flex flex-wrap-md py-10 py-5-sm justify-between smoky">
+        <div class="col-6-xxl col-4-lg col-10-md align-items-center flex smoky justify-center cov vh-50-sm" style="background-image: url('img/ambition.svg');"></div>
         <div class="col-4-xxl col-6-lg land col-10-md py-15-xxl py-10-md px-10-xxl px-4-sm">
             <p class="b2 big-2 big-1-md text-xl-8-sm sp b4">Why luqix exists ?</p>
 
@@ -104,12 +104,12 @@
         <div class="col-9-xxl col-10-md px-4-md">
             <p class="b2 pp big-2 big-1-md text-xl-8-sm t">Explore some examples</p>
             <div class="flex editor mt-7 justify-between">
-                <div class="w-100-xxl border-r">
+                <div class="w-100-xxl">
                     <div class="tabs flex align-items-center overflow-y-scroll-sm">
                         <p class="py-3 tab-links act" id="game">game.lqs</p>
                         <p class="py-3 tab-links" id="fib">fib.lqs</p>
                         <p class="py-3 tab-links" id="_math">math.lqs</p>
-                        <p class="py-3 tab-links">console.lqs</p>
+                        <p class="py-3 tab-links" id="_socket">socket_server.lqs</p>
                     </div>
                     <div class="vh-50 vh-60-lg vh-70-md vh-80-sm overflow-y-scroll py-2 texts overflow-y-scroll flex">
                         <div class="py-2" id="line-count"></div>
@@ -159,6 +159,7 @@ print(f'Thanks for play.\nscores: {play(5)}')</div>
         let _fib = document.getElementById('fib');
         let _game = document.getElementById('game');
         let _math = document.getElementById('_math');
+        let _socket = document.getElementById('_socket');
         let codec = document.getElementById('codec');
 
         let light = new Flare();
@@ -225,6 +226,7 @@ print(f'Thanks for play.\nscores: {play(5)}')`
         _fib.classList.remove('act');
         _game.classList.remove('act');
         _math.classList.remove('act');
+        _socket.classList.remove('act');
     }
 
     function maths(){
@@ -239,6 +241,44 @@ print(math.pow(3, 4)) // 81
 print(math.cbrt(27)) // 3
 print(math.ceil(90.475)) // 91
 print(math.floor(90.475)) // 90
+`
+        light.light(codec);
+}
+
+
+    function sockets(){
+            count_lines(37);
+            codec.innerHTML = `socket = require('socket')
+bytes = require('bytes')
+str = require('string')
+
+hostname = 'localhost'
+port = 7070
+
+sock = socket.Socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.bind(hostname, port)
+
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+sock.listen(5)
+
+print(f'listen ast address http://{hostname}:{port}')
+
+while true { 
+    client = sock.accept()
+
+    msg = bytes.decode(client.recv(1024))
+
+    req = f'HTTP/1.1 200 OK\n\n\r\n\r\n<h1>{msg}</h1>'
+    client.send(str.encode(req))
+
+    client.shutdown()
+    client.close()
+}
+
+sock.close()
+
+
 `
         light.light(codec);
 }
@@ -259,6 +299,12 @@ print(math.floor(90.475)) // 90
             rem_act();
             _math.classList.add('act');
             maths()
+        }
+
+        _socket.onclick = ()=>{
+            rem_act();
+            _socket.classList.add('act');
+            sockets()
         }
 
         count_lines(27)

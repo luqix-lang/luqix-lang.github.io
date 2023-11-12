@@ -8,16 +8,18 @@ body{
 .sidebar {
     padding: 30px;
     padding-top: 20px;
-    background-color: #F3F4F6;
+    background-color: #242424;
+    height: 100vh !important;
+    overflow-y: scroll;
 }
 
 .sidebar *{
+	color: #a6a6a6;
 	font-size: 16px;
-	color: #373b3d;
 }
 
 .cat{
-	color: #272b2d;
+	color: #fff;
 
 }
 
@@ -62,8 +64,6 @@ body{
 .show-side *{
 	/*font-size: 15px;*/
 }
-
-.code {background-color: inherit !important;}
 
 
 .key{
@@ -134,7 +134,7 @@ body{
 }
 
 .text-xl-3, .text-4xl, .text-2xl, .text-3xl, .cc{
-	color: #2c4f7c !important;
+	color: #fff !important;
 	font-weight: 600 !important;
 }
 

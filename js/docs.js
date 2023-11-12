@@ -112,7 +112,7 @@ side.innerHTML = `
          
 
          <p class=" mt-3  cat">f. Networking</p>
-         <a href=""><p class="py-1">Socket</p></a>
+         <a href="socket.html"><p class="py-1">Socket</p></a>
          <a href="websocket.html"><p class="py-1">Websocket</p></a>
          <a href=""><p class="py-1">Url</p></a>
      </div>

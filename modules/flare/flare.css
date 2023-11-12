@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
 
 .code *, .code{
-	font-size: 16px !important;
+	font-size: 15px !important;
 	line-height: 22px !important;
     font-family: 'Fira Mono', monospace !important;
-    color: #2f2c23 !important;
+    /*color: #2f2c23 !important;*/
+    background-color: #242424;
 }
 
 .flare-keywords{
-	color: #0b69a8 !important;
+	color: #57b5f4 !important;
 }
 
 .flare-call{
-	color: #bb5525 !important;
+	color: #eab095 !important;
 }
 
 .flare-attributes{
-	color: #0b69a8 !important;
+	color: #eab095 !important;
 }
 
 .flare-numbers{
@@ -29,11 +30,11 @@
 
 
 .flare-strings, span2, .flare-strings *{
-	color: #5f5c53 !important;
+	color: #ccb88f !important;
 }
 
 .flare-comments, .flare-comments *{
-	color: #6a737d !important;
+	color: #8c8c8c !important;
 	font-style: italic;
 }
 
