@@ -1,320 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luqix lang</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luqix progamming language</title>
 
-    <meta name="description" content="Luqix lang, a new programming language builtin on research."/>
+	<link rel="stylesheet" href="https://unpkg.com/@clr/ui@16.0.0/clr-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/clarity-icons/0.10.28/clarity-icons.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-
-    <link rel="stylesheet" type="text/css" href="css/fancy.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <link rel="stylesheet" type="text/css" href="modules/flare/flare.css">
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clarity-icons/0.10.28/clarity-icons.min.js" defer></script>
+   
+  <link rel="stylesheet" type="text/css" href="css/fancy.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body>
-
-    <nav class="flex sticky-top text-white justify-center align-items-center" id="nav"></nav>
-
-    <div class="land mb-10-xxl">
-        <div class="flex justify-between flex-Rcolumn-md flex-wrap">
-            <div class="col-5-xxl col-8-md col-10-sm pb-20-xxl pb-10-sm flex justify-end">
-                <div class="px-2-xxl px-4-sm col-9 col-10-md pt-20-xxl pt-0-md">
-                    <p class="big-2 big-1-md text-xl-9-sm mt-20-xxl mt-5-sm">Built and based <span class="sps big-2 big-1-md text-xl-9-sm">on research</span></p>
-                    <p class="text-xl mt-5 font-extralight b3">Did u know? Luqix lang get it concepts from open concerns raised on different platforms, things fluently asked for will appear in here. Built on global knowledge from our open ideas, expect fantasy.</p>
-
-                    <a href="docs/docs.html"><div class="mt-8-xxl bg-white flex py-1-xxl round-full w-max-content w-90-sm flex-wrap-sm px-3 align-items-center justify-around">
-                        <p class="text-black py-2">Get started</p>
-                        <p class="px-4 py-2 btn text-white round-full ml-3-xxl contact"><i class="fas fa-location"></i> Read Docs</p>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-5-xxl col-8-md col-10-sm pt-7-xxl pt-0-sm">
-                <div class="map h-100 vh-100 vh-40-md vh-50-sm"></div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="flex justify-center py-20-xxl py-10-md py-5-sm">
-        <div class="col-9 col-10-md px-4-md">
-            <p class="b2 pp big-2 big-1-md text-xl-8-sm t">All these features in one</p>
-
-            <div class="flex flex-wrap-md justify-between mt-10">
-                <div class="col-3-xxl col-10-sm px-2 bt-1 pt-4 mt-2-xxl mt-0-sm">
-                    <p class="b7 text-xl-2">Cross platform code</p>
-                    <p class="py-3 ln">Write a single code base to run everywhere the luqix runtime is installed without any additional configurations.</p>
-                </div>
-                <div class="col-3-xxl col-10-sm px-2 bt-1 pt-4 mt-2">
-                    <p class="b7 text-xl-2">Weak Dynamic coding</p>
-                    <p class="py-3 ln">Embrace the power of dynamic typing too, quickly figure out algorithms and put them out to practice right away.</p>
-                </div>
-                <div class="col-3-xxl col-10-sm px-2 bt-1 pt-4 mt-2">
-                    <p class="b7 text-xl-2">Reliable Power builtin</p>
-                    <p class="py-3 ln">Explore low level system power you can access with luqix, things like manuplating data or handling APIs.</p>
-                </div>
-            </div>
-
-            <a href=""><p class="mt-8 contact btnz w-max-content text-white text-lg b5 py-3 px-8 round-full">Discover more</p></a>
-        </div>
-    </div>
-
-    <div class="flex flex-wrap-md py-10 py-5-sm justify-between smoky">
-        <div class="col-6-xxl col-4-lg col-10-md align-items-center flex smoky justify-center cov vh-50-sm" style="background-image: url('img/ambition.svg');"></div>
-        <div class="col-4-xxl col-6-lg land col-10-md py-15-xxl py-10-md px-10-xxl px-4-sm">
-            <p class="b2 big-2 big-1-md text-xl-8-sm sp b4">Why luqix exists ?</p>
-
-            <p class="ln mt-4">Luqix is a new programming language, a personal project built on research with aim to positively impact concerns raised by differen progammers on many coding platforms. And this is why the writer choose it easy and extensible.</p>
-            <p class="ln mt-4">Luqix is in early development although provided for usage so that it can grow it the ecosystem, thank you.</p>
-
-            <a href="docs/docs.html"><p class="mt-8 bg-white contact w-max-content text-black text-xl b5 py-2 px-8 round-full">Download</p></a>
-        </div>
-    </div>
-
-    <div class="flex justify-center py-20-xxl py-10-md">
-        <div class="col-9 col-10-md px-4-md flex flex-wrap-sm align-items-center justify-center">
-            <div class="col-5 col-10-sm px-4-xxl px-1-md px-0-sm">
-                <p class="b2 pp big-2 big-1-md text-xl-8-sm t">Starter's tutorial.</p>
-            </div>
-
-            <div class="col-5-xxl col-10-sm px-4-xxl px-1-md px-0-sm">
-                <p class="ln mt-5-md">This is to provide a full tutorial for the usage of luqix for complete beginners or pro programmers who cn even proceed to the docs.</p>
-                <p class="ln mt-4">But we are sorry this is stilling made, and for sure you can help us on this one. Learn the syntax and make a full tutorial similar to those of <a href="freecodecamp.org">freecode camp</a>. All will be recommended in the luqix docs.</p>
-
-                <a href="docs/docs.html">
-                    <div class="mt-8-xxl shadow-md bg-white flex py-1-xxl round-full w-max-content w-90-sm flex-wrap-sm px-3 align-items-center justify-around">
-                        <p class="text-black py-2">Read docs</p>
-                        <p class="px-4 py-2 btn text-white round-full ml-3-xxl contact"><i class="fas fa-location"></i> On site</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="flex justify-center py-20-xxl px-5-xxl px-0-md py-15-lg py-10-md py-7-sm edit-base">
-        <div class="col-9-xxl col-10-md px-4-md">
-            <p class="b2 pp big-2 big-1-md text-xl-8-sm t">Explore some examples</p>
-            <div class="flex editor mt-7 justify-between">
-                <div class="w-100-xxl">
-                    <div class="tabs flex align-items-center overflow-y-scroll-sm">
-                        <p class="py-3 tab-links act" id="game">game.lqs</p>
-                        <p class="py-3 tab-links" id="fib">fib.lqs</p>
-                        <p class="py-3 tab-links" id="_math">math.lqs</p>
-                        <p class="py-3 tab-links" id="_socket">socket_server.lqs</p>
-                    </div>
-                    <div class="vh-50 vh-60-lg vh-70-md vh-80-sm overflow-y-scroll py-2 texts overflow-y-scroll flex">
-                        <div class="py-2" id="line-count"></div>
-                        <div id="codec" class="code px-4 flex-grow">animal = 'lion'
-
-fn play(score) {
-    print('What is the bravest animal?')
-
-    while (score) {
-        player = prompt('guess: ')
-
-        if (player == animal)
-            print('You win')
-            return score
-        else 
-            print('No, try again')
-        
-        score = score-1
-
-        if(score == 1)
-            print('One chance to go')
-    }
-    return 0
-}
-
-print(f'Thanks for play.\nscores: {play(5)}')</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <div class="flex flex-wrap foot pt-5-xxl pb-10-xxl justify-center" id="footer"></div>
-
-</div>
-
-
-    <script type="text/javascript" src="modules/flare/flare.js"></script>
-
-
-    <script type="text/javascript">
-        let counter = document.getElementById('line-count');
-        let _fib = document.getElementById('fib');
-        let _game = document.getElementById('game');
-        let _math = document.getElementById('_math');
-        let _socket = document.getElementById('_socket');
-        let codec = document.getElementById('codec');
-
-        let light = new Flare();
-
-
-        function count_lines(limit){
-            counter.innerHTML = ''
-            for(let i = 1; i < limit; i++){
-                counter.innerHTML += `<p class="px-4-xxl px-2-md counts">${i}</p>`
-            }
-        }
-
-        function fib(){
-            count_lines(17);
-            codec.innerHTML = `array = importc('list');
-
-nums = [0, 1]
-
-a = 1
-b = 1
-
-fn finabocci(limit){
-    for(i; i < limit; i++)  {
-        c = a + b;
-        array.append(nums, c)
-        a = b
-        b = c
-    }
-}
-`
-        light.light(codec);
-}
-
-        function games(){
-            count_lines(27);
-            codec.innerHTML = `animal = 'lion'
-
-fn play(score) {
-    print("What is the bravest animal?")
-
-    while (score) {
-        player = prompt('guess: ')
-
-        if (player == animal)
-            print('You win')
-            return score
-        else 
-            print('No, try again')
-        
-        score = score-1
-
-        if(score == 1)
-            print('One chance to go')
-    }
-    return 0
-}
-
-print(f'Thanks for play.\nscores: {play(5)}')`
-
-        light.light(codec);
-}
-
-    function rem_act(){
-        _fib.classList.remove('act');
-        _game.classList.remove('act');
-        _math.classList.remove('act');
-        _socket.classList.remove('act');
-    }
-
-    function maths(){
-            count_lines(12);
-            codec.innerHTML = `math = importc('math')
-
-print(math.cos(90)) // -0.448074
-print(math.sin(90)) // 0.893997
-print(math.tan(90)) // -1.9952
-print(math.sqrt(4)) // 2
-print(math.pow(3, 4)) // 81
-print(math.cbrt(27)) // 3
-print(math.ceil(90.475)) // 91
-print(math.floor(90.475)) // 90
-`
-        light.light(codec);
-}
-
-
-    function sockets(){
-            count_lines(37);
-            codec.innerHTML = `socket = require('socket')
-bytes = require('bytes')
-str = require('string')
-
-hostname = 'localhost'
-port = 7070
-
-sock = socket.Socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(hostname, port)
-
-sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-
-sock.listen(5)
-
-print(f'listen ast address http://{hostname}:{port}')
-
-while true { 
-    client = sock.accept()
-
-    msg = bytes.decode(client.recv(1024))
-
-    req = f'HTTP/1.1 200 OK\n\n\r\n\r\n<h1>{msg}</h1>'
-    client.send(str.encode(req))
-
-    client.shutdown()
-    client.close()
-}
-
-sock.close()
-
-
-`
-        light.light(codec);
-}
-
-        _fib.onclick = ()=>{
-            rem_act();
-            _fib.classList.add('act');
-            fib()
-        }
-
-        _game.onclick = ()=>{
-            rem_act();
-            _game.classList.add('act');
-            games()
-        }
-
-        _math.onclick = ()=>{
-            rem_act();
-            _math.classList.add('act');
-            maths()
-        }
-
-        _socket.onclick = ()=>{
-            rem_act();
-            _socket.classList.add('act');
-            sockets()
-        }
-
-        count_lines(27)
-
-    </script>
-
-    <script type="text/javascript" src="js/main.js"></script>
-
-
+<body cds-theme="light">
+
+	<div class="main-container">
+
+	  <header class="header-6 nav py-6">
+	    <div class="branding">
+	      <a href="javascript://">
+	        <clr-icon shape="vm-bug"></clr-icon>
+	        <span class="title">Luqix Language</span>
+	      </a>
+	    </div>
+	    <div class="settings">
+	      <span class="nav-link nav-icon menu" id="open-menu">
+	        <clr-icon shape="bars" class="lit"></clr-icon>
+	      </span>
+	    </div>
+	  </header>
+
+	  <div class="content interface">
+	    <div class="content-area">
+	      <div class="flex justify-between">
+
+	      	<div id="sidebar" class="sidebar vh-100">
+	      		<p class="menu-close" id="close-menu"><clr-icon shape="times" size="35" class="lit"></clr-icon></p>
+
+	      		<div class="side-child py-14 pb-10-sm pt-0-sm">
+
+	      			<header class="header-6 bg sticky-top bench">
+						    <div class="branding">
+						      <a href="javascript://">
+						        <clr-icon shape="vm-bug"></clr-icon>
+						        <span class="title">Luqix Language</span>
+						      </a>
+						    </div>
+						  </header>
+
+		      		<div class="px-4 mb-7">
+		      			<div class="">
+		      				<clr-tree>
+									  <clr-tree-node [clrExpanded]="true">
+									    <p cds-text="body semibold" class="mt-3 py-2 light">Get Started</p>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link getStartedPage" routerLinkActive="active">Introduction</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" href="#index-programming" routerLinkActive="active">Programming</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link developingPage" routerLinkActive="active">Installation</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" href="#index-support" routerLinkActive="active">Support Policies</a>
+									    </clr-tree-node>
+									  </clr-tree-node>
+									</clr-tree>
+		      			</div>
+
+		      			<div class="">
+		      				<clr-tree>
+									  <clr-tree-node [clrExpanded]="true">
+									    <p cds-text="body semibold" class="mt-3 py-2 light">Get Started</p>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Introduction</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Programming</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Developing</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Support Policies</a>
+									    </clr-tree-node>
+									  </clr-tree-node>
+									</clr-tree>
+		      			</div>
+
+		      			<div class="">
+		      				<clr-tree>
+									  <clr-tree-node [clrExpanded]="true">
+									    <p cds-text="body semibold" class="mt-3 py-2 light">Foundation</p>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Introduction</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Programming</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Developing</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Support Policies</a>
+									    </clr-tree-node>
+									  </clr-tree-node>
+									</clr-tree>
+		      			</div>
+
+		      			<div class="">
+		      				<clr-tree>
+									  <clr-tree-node [clrExpanded]="true">
+									    <p cds-text="body semibold" class="mt-3 py-2">Get Started</p>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Introduction</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Programming</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Developing</a>
+									    </clr-tree-node>
+									    <clr-tree-node>
+									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Support Policies</a>
+									    </clr-tree-node>
+									  </clr-tree-node>
+									</clr-tree>
+		      			</div>
+
+		      		</div>
+	      		</div>
+	      	</div>
+
+	      	<div class="contents vh-100">
+	      		<div class="flex flex-wrap justify-start pb-20">
+	      			<div class="col-7-xxl col-8-md col-10-sm vh-100">
+	      				<div class="pl-8 px-4-sm pt-17 pb-15" id="app">
+
+	      					
+
+	      				</div>
+
+	      				<footer class="flex pl-8 px-4-sm pb-10 bt-1 mx-1">
+	      					<div class="">
+	      						<p _ngcontent-ng-c2621901486="" class="footer-content-paragraph"> Powered by VariableCode, Inc © 2023. All rights reserved.<br _ngcontent-ng-c2621901486=""> Code licensed by <a _ngcontent-ng-c2621901486="" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" class="mit-link underlined px-2">Apache License 2.0</a><a _ngcontent-ng-c2621901486="" href="#" target="_blank" class="underlined px-2">Privacy Policy</a></p>
+	      					</div>
+	      					<div class=""></div>
+
+	      				</footer>
+
+
+
+	      			</div>
+	      		</div>
+	      	</div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
-
