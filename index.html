@@ -5,162 +5,103 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Luqix progamming language</title>
 
-	<link rel="stylesheet" href="https://unpkg.com/@clr/ui@16.0.0/clr-ui.min.css" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/clarity-icons/0.10.28/clarity-icons.min.css">
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clarity-icons/0.10.28/clarity-icons.min.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
    
-  <link rel="stylesheet" type="text/css" href="css/fancy.css">
+  	<link rel="stylesheet" type="text/css" href="css/fancy.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body cds-theme="light">
 
 	<div class="main-container">
+	  
 
-	  <header class="header-6 nav py-6">
-	    <div class="branding">
-	      <a href="javascript://">
-	        <clr-icon shape="vm-bug"></clr-icon>
-	        <span class="title">Luqix Language</span>
-	      </a>
-	    </div>
-	    <div class="settings">
-	      <span class="nav-link nav-icon menu" id="open-menu">
-	        <clr-icon shape="bars" class="lit"></clr-icon>
-	      </span>
-	    </div>
-	  </header>
+	<div class="nav flex sticky-top pos-relative-md align-items-center px-6 px-4-lg px-2-md justify-center">
+		<nav class="col-8 col-10-md flex justify-between">
+			<div class="flex align-items-center justify-start justify-between col-10-sm">
+				<a href=""><p class="title">Luqix Language</p></a>
+				<p class="px-2 text-xl-2 d-none d-block-sm icon" id="open-menu"><i class="fas fa-bars"></i></p>
+			</div>
+			<div class="flex align-items-center d-none-sm">
+				<p class="shade round-full py-2 px-4">Hello world welcome to luqix land</p>
+			</div>
+			<div class="flex align-items-center justify-end d-none-sm">
+				<p class="py-2 px-2"><a href="">Docs</a></p>
+				<p class="py-2 px-2"><a href="">Install</a></p>
+				<p class="py-2 px-2"><a href="">Blog</a></p>
+				<p class="py-2 px-2"><a href=""><i class="fab fa-github text-xl-4 icon"></i></a></p>
+			</div>
+		</nav>  
+	</div>
 
-	  <div class="content interface">
-	    <div class="content-area">
+	<div class="flex justify-center">
+	  <div class="content">
 	      <div class="flex justify-between">
 
-	      	<div id="sidebar" class="sidebar vh-100">
-	      		<p class="menu-close" id="close-menu"><clr-icon shape="times" size="35" class="lit"></clr-icon></p>
+      		<div id="app" class="contents flex justify-end flex-wrap"></div>
 
-	      		<div class="side-child py-14 pb-10-sm pt-0-sm">
+	      	<div id="sidebar" class="sidebar">
+	      		<p class="menu-close icon py-2 px-2 mt-2" id="close-menu"><i class="fas fa-times"></i></p>
 
-	      			<header class="header-6 bg sticky-top bench">
-						    <div class="branding">
-						      <a href="javascript://">
-						        <clr-icon shape="vm-bug"></clr-icon>
-						        <span class="title">Luqix Language</span>
-						      </a>
-						    </div>
-						  </header>
+	      		<div class="side-child py-4 pl-5 pb-10-sm pt-0-sm">
+
+	      			<div class="sticky-top px-2 pb-1 pt-3 flex align-items-center">
+	      				<p class="title px-2"><a href="" class="title">Luqix Language</a></p>
+	      			</div>
 
 		      		<div class="px-4 mb-7">
-		      			<div class="">
-		      				<clr-tree>
-									  <clr-tree-node [clrExpanded]="true">
-									    <p cds-text="body semibold" class="mt-3 py-2 light">Get Started</p>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link getStartedPage" routerLinkActive="active">Introduction</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" href="#index-programming" routerLinkActive="active">Programming</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link developingPage" routerLinkActive="active">Installation</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" href="#index-support" routerLinkActive="active">Support Policies</a>
-									    </clr-tree-node>
-									  </clr-tree-node>
-									</clr-tree>
+		      			<div class="tree">
+		      				<ul>
+							    <p class="mt-3 p1-2 light">Get Started</p>
+							    <li class="introductionPage"><a>Introduction</a></li>
+							    <li class="installPage"><a>Installation</a></li>
+							    <li><a>Contribution</a></li>
+							</ul>
 		      			</div>
 
-		      			<div class="">
-		      				<clr-tree>
-									  <clr-tree-node [clrExpanded]="true">
-									    <p cds-text="body semibold" class="mt-3 py-2 light">Get Started</p>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Introduction</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Programming</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Developing</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Support Policies</a>
-									    </clr-tree-node>
-									  </clr-tree-node>
-									</clr-tree>
+		      			<div class="tree">
+		      				<ul>
+							    <p class="mt-3 p1-2 light">Get Started</p>
+							    <li><a>Introduction</a></li>
+							    <li><a>Programming</a></li>
+							    <li><a>Installation</a></li>
+							    <li><a>Support Policies</a></li>
+							</ul>
 		      			</div>
 
-		      			<div class="">
-		      				<clr-tree>
-									  <clr-tree-node [clrExpanded]="true">
-									    <p cds-text="body semibold" class="mt-3 py-2 light">Foundation</p>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Introduction</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Programming</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Developing</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Support Policies</a>
-									    </clr-tree-node>
-									  </clr-tree-node>
-									</clr-tree>
+		      			<div class="tree">
+		      				<ul>
+							    <p class="mt-3 p1-2 light">Get Started</p>
+							    <li><a>Introduction</a></li>
+							    <li><a>Programming</a></li>
+							    <li><a>Installation</a></li>
+							    <li><a>Support Policies</a></li>
+							</ul>
 		      			</div>
 
-		      			<div class="">
-		      				<clr-tree>
-									  <clr-tree-node [clrExpanded]="true">
-									    <p cds-text="body semibold" class="mt-3 py-2">Get Started</p>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Introduction</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Programming</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Developing</a>
-									    </clr-tree-node>
-									    <clr-tree-node>
-									      <a [routerLink]="['./album1']" class="clr-treenode-link" routerLinkActive="active">Support Policies</a>
-									    </clr-tree-node>
-									  </clr-tree-node>
-									</clr-tree>
+		      			<div class="tree">
+		      				<ul>
+							    <p class="mt-3 p1-2 light">Get Started</p>
+							    <li><a>Introduction</a></li>
+							    <li><a>Programming</a></li>
+							    <li><a>Installation</a></li>
+							    <li><a>Support Policies</a></li>
+							</ul>
 		      			</div>
 
 		      		</div>
 	      		</div>
 	      	</div>
 
-	      	<div class="contents vh-100">
-	      		<div class="flex flex-wrap justify-start pb-20">
-	      			<div class="col-7-xxl col-8-md col-10-sm vh-100">
-	      				<div class="pl-8 px-4-sm pt-17 pb-15" id="app">
-
-	      					
-
-	      				</div>
-
-	      				<footer class="flex pl-8 px-4-sm pb-10 bt-1 mx-1">
-	      					<div class="">
-	      						<p _ngcontent-ng-c2621901486="" class="footer-content-paragraph"> Powered by VariableCode, Inc © 2023. All rights reserved.<br _ngcontent-ng-c2621901486=""> Code licensed by <a _ngcontent-ng-c2621901486="" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" class="mit-link underlined px-2">Apache License 2.0</a><a _ngcontent-ng-c2621901486="" href="#" target="_blank" class="underlined px-2">Privacy Policy</a></p>
-	      					</div>
-	      					<div class=""></div>
-
-	      				</footer>
-
-
-
-	      			</div>
-	      		</div>
-	      	</div>
-
 	      </div>
 	    </div>
-	  </div>
+	</div>
+
+	<div class="flex ban justify-around flex-wrap pos-fixed pos-relative-md">
+		<p class="text-center px-2 py-1-sm text-sm-sm text-md-md py-2"><a class="underlined" href="#">Jesus</a> is Lord.</p>
+		<p class="text-center px-2 py-1-sm text-sm-sm text-md-md py-2">Software from <a href="">Variable code</a></p>
+		<p class="text-center px-2 py-1-sm text-sm-sm text-md-md py-2">@copyright Nov 2023</p>
 	</div>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

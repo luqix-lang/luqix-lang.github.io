@@ -11,11 +11,15 @@ function closeMenu(){
     $('#close-menu').hide();
 }
 
+function changeState(route){
+    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${route}`;
+    window.history.pushState({path:newurl},'',newurl);
+}
+
 $(document).ready(()=>{
 
-
 	$('#close-menu').click(() => {
-		closeMenu();
+	   closeMenu();
     });
 
     $('#open-menu').click(() => {
@@ -24,13 +28,13 @@ $(document).ready(()=>{
     });
 
     // first page render
-    $('#app').html(getStartedPage());
+    $('#app').html(introductionPage());
 
-    $('.developingPage').click(()=>{
-    	app(developingPage());
+    $('.installPage').click(()=>{
+    	app(installPage());
     })
 
-    $('.getStartedPage').click(()=>{
-    	app(getStartedPage());
+    $('.introductionPage').click(()=>{
+    	app(introductionPage());
     })
 })
