@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/general-sans');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 /*00880d*/
 
@@ -11,54 +11,55 @@
 	color: #333333;
 	font-size: 16px;
 	line-height: 1.5;
-	font-family: 'Inter', __Inter_e66fe9, __Inter_Fallback_e66fe9, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: 'Inter', sans-serif;
 }
 
 body{
-	background-color: #F1F5F9;
 }
 
 
 .nav{
 	z-index: 5;
-	background-color: #6B9BD2;
-	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 3%);
-	height: 60px;
+	background-color: #ffffffe0;
+	backdrop-filter:  blur(2px);
+	border-bottom: 1px solid #ECECEC;
+	height: 65px;
 }
 
 .nav *{
-	color: #fff !important;
-	font-size: 15px;
-	font-weight: 700;
+	font-size: 14px;
+	color: #1f2937 !important;
 }
 
-.icon *{
+.icon{
 	font-size: 25px;
 }
 
 
 .contents{
-	width: 70%;
+	width: 80%;
 	background-color: white;
 	border-right: 1px solid #F1F1F1;
 }
 
 
 .sidebar{
-	width: 30%;
+	width: 20%;
 	z-index: 4;
 }
 
 .side-child{
-	background-color: #F1F5F9;
+	width: 80%;
 }
 
 .side-child *{
 	color: #444;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .title{
+	font-weight: bold;
 	font-size: 23px !important;
 }
 
@@ -104,6 +105,19 @@ body{
 	background-color: #3276C3e0;
 	backdrop-filter:  blur(1px);
 	z-index: 5;
+}
+
+.light{
+	border-radius: 5px;
+	padding: 5px;
+	color: #004ca3;
+	background-color: #004ca310;
+}
+
+.sidebar li{
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .ban *{
@@ -189,6 +203,12 @@ footer{
 		background-color: #000000d0;
 		z-index: 6;
 		display: none;
+	}
+
+	.side-child{
+		height: 100vh;
+		overflow-y: scroll;
+		background-color: white;
 	}
 
 	.bench{

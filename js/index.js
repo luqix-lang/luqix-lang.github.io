@@ -42,53 +42,49 @@ function introductionPage(){
 
 	return `
 
-<div class="col-9 col-10-lg">
-	<div class="pl-13 pr-15 px-4-md">
-		<p class="text-xl-10 hl bold mt-4">LPL</p>
-		<p class="mt-2">A programming language built on research, Luqix is a dynamically typed interpreted high level programming language that ships with alot of amazing concepts and ideas from the very many exisiting programming languages like python and javascript.</p>
+<p class="text-xl-10 hl bold mt-4">LPL</p>
+<p class="mt-2">A programming language built on research, Luqix is a dynamically typed interpreted high level programming language that ships with alot of amazing concepts and ideas from the very many exisiting programming languages like python and javascript.</p>
 
-		<div class="flex flex-wrap justify-between mt-10">
-			<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-				<p>${code}</p>
-				<p class="bl mt-4">Weaking dynamic typing</p>
-				<p class="mt-2">Not something to brag about if used wrongly but its time saving if done in the right way</p>
-			</div>
+<div class="flex flex-wrap justify-between mt-10">
+	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
+		<p>${code}</p>
+		<p class="bl mt-4">Weaking dynamic typing</p>
+		<p class="mt-2">Not something to brag about if used wrongly but its time saving if done in the right way</p>
+	</div>
 
-			<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-				<p>${small}</p>
-				<p class="bl mt-4">Less code</p>
-				<p class="mt-2">Very common to interpreted languages and so this one, modules can be made to pronounce it more.</p>
-			</div>
+	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
+		<p>${small}</p>
+		<p class="bl mt-4">Less code</p>
+		<p class="mt-2">Very common to interpreted languages and so this one, modules can be made to pronounce it more.</p>
+	</div>
 
-			<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3 mb-0-sm">
-				<p>${pack}</p>
-				<p class="bl mt-4">Modulization and packaging</p>
-				<p class="mt-2">As easy as handling a big project in chuncks. This too is made possible in luqix code.</p>
-			</div>
-		</div>
-
-		<div class="flex flex-wrap justify-between mt-10">
-			<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-				<p>${community}</p>
-				<p class="bl mt-4">Our Community</p>
-				<p class="mt-2">You better join and make up the community, well we are raising on many platforms where possible.</p>
-			</div>
-
-			<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-				<p>${update}</p>
-				<p class="bl mt-4">Updates and blogs</p>
-				<p class="mt-2">Thanks to whatsapp channels, we nolonger even need a blog page, find everything there.</p>
-			</div>
-
-			<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-				<p>${more}</p>
-				<p class="bl mt-4">More info</p>
-				<p class="mt-2">Luqix is so far from stable i guess but we can test it out, its a normal project from scratch.</p>
-			</div>
-		</div>
-
+	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3 mb-0-sm">
+		<p>${pack}</p>
+		<p class="bl mt-4">Modulization and packaging</p>
+		<p class="mt-2">As easy as handling a big project in chuncks. This too is made possible in luqix code.</p>
 	</div>
 </div>
+
+<div class="flex flex-wrap justify-between mt-10">
+	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
+		<p>${community}</p>
+		<p class="bl mt-4">Our Community</p>
+		<p class="mt-2">You better join and make up the community, well we are raising on many platforms where possible.</p>
+	</div>
+
+	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
+		<p>${update}</p>
+		<p class="bl mt-4">Updates and blogs</p>
+		<p class="mt-2">Thanks to whatsapp channels, we nolonger even need a blog page, find everything there.</p>
+	</div>
+
+	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
+		<p>${more}</p>
+		<p class="bl mt-4">More info</p>
+		<p class="mt-2">Luqix is so far from stable i guess but we can test it out, its a normal project from scratch.</p>
+	</div>
+</div>
+
 
 ${footer}
 
