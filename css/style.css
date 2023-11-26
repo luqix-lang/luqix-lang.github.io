@@ -1,40 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/general-sans');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap');
-
-/*00880d*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
 *{
 	padding: 0;
 	margin: 0;
-	color: #222;
+	color: #000;
 	font-size: 17px;
-	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	font-family: 'Source Sans 3', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 }
-
-body{
-}
-
 
 .nav{
 	z-index: 5;
-	background-color: #162f44;
-	backdrop-filter:  blur(2px);
-	border-bottom: 1px solid #ECECEC;
-	height: 65px;
 }
 
 .nav *{
-	font-size: 17px;
-	color: #ffff !important;
+	font-size: 16px;
+	color: #fff !important;
+	transition: opacity .2s ease-in;
+}
+
+.nav p:hover{
+	opacity: 70%;
+}
+
+.segoe, .segoe *{
+	font-family: 'Noto Sans', sans-serif;
 }
 
 .icon{
 	font-size: 25px;
 }
 
+.content{
+}
 
 .contents{
 	width: 80%;
@@ -49,19 +48,122 @@ body{
 }
 
 .side-child{
+	border-right: 1px solid #6A472370;
 	width: 80%;
+	background-color: #DDF17160;
 }
 
 .side-child *{
-	color: #444;
+	color: #6A4723;
 	font-size: 15px;
 }
 
 .title{
-	font-weight: bold;
-	font-size: 23px !important;
-	color: #FFD43C !important;
+	font-weight: 600 !important;
+	text-transform: uppercase;
+	font-size: 20px !important;
 }
+
+.b3{ font-weight: 300; }
+.b4{ font-weight: 400; }
+.b5{ font-weight: 500; }
+.b6{ font-weight: 600; }
+.b7{ font-weight: 700; }
+.b8{ font-weight: 800; }
+.b9{ font-weight: 900; }
+.lh1{ line-height: 1.5; }
+.lh2{ line-height: 1.3; }
+
+.smoky{ background-color: #F1EDE990; }
+.blue{ background-color: #0185dF; }
+.blue *{ color: #ffffff; }
+
+.btn{
+	border-radius: 15px;
+	padding: 8px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+}
+
+.btn-dark{
+	background-color: #182229;
+	border: 1px solid #182229;
+	transition: opacity .1s ease-in;
+}
+
+.btn-dark-outline{
+	border: 1px solid #182229;
+	transition: background-color .1s ease-in;
+}
+
+.btn-dark *{ color: white; }
+.btn-dark:hover{ opacity: 70%; }
+.btn-dark-outline:hover { background-color: #182229d0; }
+
+.ban{
+	position: relative;
+}
+
+.ban-on{
+	position: relative;
+	z-index: 3;
+	background-color: #dF7BaD;
+	padding: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 15px;
+}
+
+.ban-on *{
+	font-size: 17px !important;
+	color: #000000 !important;
+}
+
+.ban-on p{
+	padding-left: 10px;
+	border-left: 2px solid #000;
+}
+
+.ban-on .img { height: 40px; }
+
+.ban-off{
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+	background-color: #000;
+	bottom: -8px;
+	right: -8px;
+}
+
+.book{
+	position: relative;
+}
+
+.book-mask{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #ffffffb0;
+	z-index: 3;
+}
+
+.code, .code *{
+	line-height: 1.5;
+	white-space: pre-wrap;
+	font-size: 15px;
+}
+
+.code-hl{
+	padding: 12px;
+	border-left: 1px solid #719AF4;
+	border-bottom: 1px solid #719AF4;
+}
+
 
 .t1, .t1 *{
 	font-size: 58px;
@@ -98,20 +200,11 @@ body{
 	font-weight: normal;
 }
 
-.ban{
-	bottom: 0;
-	right: 0;
-	left: 0;
-	background-color: #3276C3e0;
-	backdrop-filter:  blur(1px);
-	z-index: 5;
-}
-
 .light{
 	border-radius: 5px;
 	padding: 5px;
-	color: #004ca3;
-	background-color: #004ca310;
+	color: #644420;
+	background-color: #FEC774;
 }
 
 .sidebar li{
@@ -172,23 +265,6 @@ footer{
 	font-weight: 600;
 	cursor: default;
 }
-
-.btn{
-	font-size: 17px;
-	padding: 15px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 500px;
-	font-weight: 600;
-	width: max-content;
-	user-select: none;
-	background-color: #F38111;
-	color: white;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	background-image: radial-gradient(to left, #FB922C, #F38111);
-}
-
-
 
 
 @media (max-width:  768px){

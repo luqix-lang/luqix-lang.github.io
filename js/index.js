@@ -86,7 +86,7 @@ function introductionPage(){
 </div>
 
 
-${footer}
+
 
 	`
 }
