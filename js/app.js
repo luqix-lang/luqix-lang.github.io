@@ -6,10 +6,7 @@ function app(ctx){
 		closeMenu();
 }
 
-function closeMenu(){
-	$('.sidebar').hide();
-    $('#close-menu').hide();
-}
+
 
 function changeState(route){
     var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${route}`;
@@ -18,23 +15,17 @@ function changeState(route){
 
 $(document).ready(()=>{
 
-	$('#close-menu').click(() => {
-	   closeMenu();
-    });
-
-    $('#open-menu').click(() => {
-          $('.sidebar').show();
-          $('#close-menu').show();
-    });
 
     // first page render
-    $('#app').html(introductionPage());
+    $('#app').html(indexPage());
+    syntaxLight();
 
-    $('.installPage').click(()=>{
-    	app(installPage());
+    $('.downloadPage').click(()=>{
+    	app(downloadPage());
     })
 
-    $('.introductionPage').click(()=>{
-    	app(introductionPage());
+    $('.indexPage').click(()=>{
+    	app(indexPage());
+        syntaxLight()
     })
 })

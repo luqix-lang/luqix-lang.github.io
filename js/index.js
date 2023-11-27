@@ -1,141 +1,314 @@
-footer = `<footer class="pt-10 pt-4-sm col-10 pb-14 pb-5-md px-20 px-15-lg px-5-md px-0-sm mt-15 mt-5-sm mt-10-md alice">
-		<div class="flex justify-between">
-			<div class="mb-5 mb-0-md px-3-md col-10-md">
-				<p class=" text-md-sm"><span class="bold">Quick remainder</span>, the project is full of bugs so its not fit at all for production.</p>
-			</div>
-			<div class="mb-5 mb-0-md px-3-md col-10-md">
-				<p class="bold text-md-sm">Powered by ...</p>
-			</div>
-		</div>
-	</footer>`
+footer = `<div class="pb-10 pt-10 flex flex-wrap justify-center blue">
+ 			<p class="text-center text-xl-5 col-10 mb-4">Thank you</p>
+ 			<div class="col-7 bt-1 flex flex-wrap pt-5 col-8-lg col-10-md px-3-md" style="border-color: #ffffff50;">
+ 				<div class="col-2 col-10-md mb-5-md">
+ 					<p class="segoe"><span class="b6 text-xl-2">Luqix</span><span class="b3 text-xl-2">Language</span></p>
+ 					<p class="mt-2 mb-5 text-md">Made and maintained by <span class="b5">Variable<span class="b3">Code</span></span></p>
+
+ 					<p class="segoe"><span class="text-xl">Variable</span><span class="b3 text-xl">Code</span></p>
+ 					<p class="mb-3 mt-2 text-md">@ 2023 Nov</p>
+ 				</div>
+ 				<div class="col-4 col-10-md mb-5-md flex flex-wrap">
+ 					<p class="mb-4 b5 text-xl-1 col-10">Using luqix</p>
+
+ 					<div class="col-4">
+ 						<a href=""><p class="mb-3 text-md b5 underlined">Author docs</p></a>
+	 					<a href=""><p class="mb-3 text-md b5 underlined">Soon book</p></a>
+	 					<a href=""><p class="mb-3 text-md b5 underlined">Tutorials</p></a>
+	 					<a href=""><p class="mb-3 text-md b5 underlined">Channels</p></a>
+ 					</div>
+ 					<div class="col-4">
+ 						<a href=""><p class="mb-3 text-md b5 underlined">Download</p></a>
+	 					<a href=""><p class="mb-3 text-md b5 underlined">Source code</p></a>
+	 					<a href=""><p class="mb-3 text-md b5 underlined">Online soon</p></a>
+ 					</div>
+ 				</div>
+ 				<div class="col-4 col-10-md flex flex-wrap">
+ 					<p class="mb-4 b5 text-xl-1 col-10">Community</p>
+
+ 					<div class="col-4">
+ 						<a href=""><p class="mb-3 text-md b5 underlined"><i class="fab fa-whatsapp"></i> Whatsapp</p></a>
+ 						<a href=""><p class="mb-3 text-md b5 underlined"><i class="fab fa-stack-overflow"></i> Stack Overflow</p></a>
+ 						<a href=""><p class="mb-3 text-md b5 underlined"><i class="fab fa-twitter"></i> LuqixLang</p></a>
+ 					</div>
+ 					<div class="col-4">
+ 						<a href=""><p class="mb-3 text-md b5 underlined"><i class="fab fa-github"></i> Github</p></a>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>`
 
 
-function introductionPage(){
-	pack = `<svg fill="#6B9BD2" stroke-width="2" width="40px" height="40px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-    <path stroke-width="2" d="M31.89,8.75a.85.85,0,0,0-.17-.25l0,0a1.28,1.28,0,0,0-.22-.17L16.48.12a1,1,0,0,0-1,0L.57,8.28s0,.05-.08.06a1.3,1.3,0,0,0-.23.18,1.25,1.25,0,0,0-.08.12,1,1,0,0,0-.12.23s0,0,0,.06a.92.92,0,0,0,0,.16s0,.06,0,.09V22.81A.86.86,0,0,0,0,23l0,.14a1,1,0,0,0,.48.59l15,8.18.06,0,.08,0A1,1,0,0,0,16,32a1.09,1.09,0,0,0,.35-.07l.07,0,.06,0,15-8.18a1,1,0,0,0,.52-.88V9.18a1,1,0,0,0-.07-.34A.36.36,0,0,0,31.89,8.75ZM15,29.32,2,22.22V10.87L15,18Zm1-13.1-12.91-7L16,2.14l12.91,7Zm14,6-13,7.1V18l13-7.09Z"/>
-</svg>`
-
-	code = `<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 8L3 11.6923L7 16M17 8L21 11.6923L17 16M14 4L10 20" stroke="#6B9BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>`
-
-	more = `<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="24" height="24" fill="white"/>
-<circle cx="12" cy="7" r="0.5" transform="rotate(90 12 7)" stroke="#6B9BD2" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="12" cy="12" r="0.5" transform="rotate(90 12 12)" stroke="#6B9BD2" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="12" cy="17" r="0.5" transform="rotate(90 12 17)" stroke="#6B9BD2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>`
-
-	update = `<svg fill="#6B9BD2" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="update-alt" class="icon glyph"><path d="M12,3A9,9,0,0,0,6,5.32V3A1,1,0,0,0,4,3V8a1,1,0,0,0,.92,1H10a1,1,0,0,0,0-2H7.11A7,7,0,0,1,19,12a1,1,0,0,0,2,0A9,9,0,0,0,12,3Z"></path><path d="M19.08,15H14a1,1,0,0,0,0,2h2.89A7,7,0,0,1,5,12a1,1,0,0,0-2,0,9,9,0,0,0,15,6.68V21a1,1,0,0,0,2,0V16A1,1,0,0,0,19.08,15Z"></path></svg>`
-
-	community = `<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#6B9BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>`
-	
-	small = `<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.25 4.5C5.2835 4.5 4.5 5.2835 4.5 6.25V7.75C4.5 8.16421 4.16421 8.5 3.75 8.5C3.33579 8.5 3 8.16421 3 7.75V6.25C3 4.45507 4.45507 3 6.25 3H7.75C8.16421 3 8.5 3.33579 8.5 3.75C8.5 4.16421 8.16421 4.5 7.75 4.5H6.25Z" fill="#6B9BD2" stroke-width="2" />
-<path d="M7.95001 10.25C7.95001 9.00736 8.95737 8 10.2 8H13.7C14.9427 8 15.95 9.00736 15.95 10.25V13.75C15.95 14.9926 14.9427 16 13.7 16H10.2C8.95737 16 7.95001 14.9926 7.95001 13.75V10.25ZM10.2 9.5C9.7858 9.5 9.45001 9.83579 9.45001 10.25V13.75C9.45001 14.1642 9.7858 14.5 10.2 14.5H13.7C14.1142 14.5 14.45 14.1642 14.45 13.75V10.25C14.45 9.83579 14.1142 9.5 13.7 9.5H10.2Z" fill="#6B9BD2" stroke-width="2" />
-<path d="M17.75 4.5C18.7165 4.5 19.5 5.2835 19.5 6.25V7.75C19.5 8.16421 19.8358 8.5 20.25 8.5C20.6642 8.5 21 8.16421 21 7.75V6.25C21 4.45507 19.5449 3 17.75 3H16.25C15.8358 3 15.5 3.33579 15.5 3.75C15.5 4.16421 15.8358 4.5 16.25 4.5L17.75 4.5Z" fill="#6B9BD2" stroke-width="2" />
-<path d="M17.75 19.5C18.7165 19.5 19.5 18.7165 19.5 17.75V16.25C19.5 15.8358 19.8358 15.5 20.25 15.5C20.6642 15.5 21 15.8358 21 16.25V17.75C21 19.5449 19.5449 21 17.75 21H16.25C15.8358 21 15.5 20.6642 15.5 20.25C15.5 19.8358 15.8358 19.5 16.25 19.5H17.75Z" fill="#6B9BD2" stroke-width="2" />
-<path d="M6.25 19.5C5.2835 19.5 4.5 18.7165 4.5 17.75L4.5 16.25C4.5 15.8358 4.16421 15.5 3.75 15.5C3.33579 15.5 3 15.8358 3 16.25V17.75C3 19.5449 4.45507 21 6.25 21H7.75C8.16421 21 8.5 20.6642 8.5 20.25C8.5 19.8358 8.16421 19.5 7.75 19.5H6.25Z" fill="#6B9BD2" stroke-width="2" />
-</svg>`
-
+function indexPage(){
 	return `
+		<div class="flex flex-wrap blue justify-center py-10">
+ 			<div class="col-7 col-8-lg col-10-md px-3-md flex flex-wrap">
+ 				<div class="col-5-xxl col-10-sm">
+ 					<p class="big-1 text-xl-10-lg text-xl-8-md b6 mt-3 mt-0-sm segoe">Luqix <span class="big-1 b3 text-xl-10-lg text-xl-8-md">Programming</span> <span class="text-xl-10-lg text-xl-8-md big-1 b4">Language</span>.</p>
+ 					<p class="mt-5 lh1">A language built on research and all our personal preferences.<br>Luqix is an interpreted programming language built by a small team with an aim to simpify coding just like AI is doing. Done by providing greater power in easy weak looks.</p>
 
-<p class="text-xl-10 hl mt-4">LPL</p>
-<p class="mt-2">A programming language built on research, Luqix is a dynamically typed interpreted high level programming language that ships with alot of amazing concepts and ideas from the very many exisiting programming languages like python and javascript.</p>
+ 					<div class="flex flex-wrap mt-7">
+ 						<a href="" class="mb-3-lg"><p class="btn-dark btn"><span class="text-white b5">Download Luqix</span><br><span class="col-7-sm mb-3-sm text-white text-md mt-2">latest v0.07.0</span></p></a>
 
-<div class="flex flex-wrap justify-between mt-10">
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${code}</p>
-		<p class="bl mt-4">Weaking dynamic typing</p>
-		<p class="mt-2">Not something to brag about if used wrongly but its time saving if done in the right way</p>
-	</div>
+ 						<a href="" class="ml-2"><p class="btn-dark-outline btn"><span class="b5">Read Docs</span><br><span class="mt-2 text-md">Less Docs</span></p></a>
+ 					</div>
 
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${small}</p>
-		<p class="bl mt-4">Less code</p>
-		<p class="mt-2">Very common to interpreted languages and so this one, modules can be made to pronounce it more.</p>
-	</div>
+ 					<p class="mt-5 text-sm">Better to built from source code on <a href="" class="text-black  underlined text-sm">github <i class="fab fa-github"></i></a></p>
+ 				</div>
+ 				<div class="col-5-xxl col-10-sm"></div>
+ 			</div>
 
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3 mb-0-sm">
-		<p>${pack}</p>
-		<p class="bl mt-4">Modulization and packaging</p>
-		<p class="mt-2">As easy as handling a big project in chuncks. This too is made possible in luqix code.</p>
-	</div>
+ 			<div class="col-4 col-5-lg col-7-md col-9-sm mt-10 ban">
+ 				<p class="ban-off"></p>
+ 				<div class="ban-on flex align-items-center">
+ 					<img src="img/warning.png" class="img mr-3">
+ 					<p class="text-md-sm">Luqix language is in early development so its not suit to build any production project although its turing complete.</p>
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<div class="py-20 py-18-sm flex justify-center">
+ 			<div class="col-7 col-8-lg col-10-md px-3-md flex flex-wrap">
+ 				<p class="text-xl-7 b5 text-center">What is in Luqix lang?</p>
+
+ 				<div class="flex flex-wrap justify-around mt-7">
+ 					<div class="col-3-xxl col-4-md col-10-sm mb-7-sm">
+ 						<p class="text-xl-1 text-right text-left-md bold-sm">Light weight and less</p>
+ 						<p class="mt-4 lh1">Luqix is light weight starting from setup and needs to run a program almost similar to <a href="" class="bold text-black">Lua</a>. By less thats for the <b class="text-black">less code written</b> to do dynamic tasks.</p>
+ 					</div>
+ 					<div class="col-3-xxl col-4-md col-10-sm mb-7-sm">
+ 						<p class="text-xl-1 text-right text-left-md bold-sm">Dynamic and weak typing</p>
+ 						<p class="mt-4 lh1">Weak typing is not a feature to boost by when needed you can release why it exists. I think <b>interpreters</b> are always dynamic.</p>
+ 					</div>
+ 					<div class="col-3-xxl col-4-md col-10-sm">
+ 						<p class="text-xl-1 text-right text-left-md bold-sm">With all concepts</p>
+ 						<p class="mt-3 lh1">Luqix aims to provide all concepts that make the work easy in one base. Both <b>existing and new</b> ones. The likes of objects.</p>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<div class="py-20 py-10-md flex justify-center smoky">
+ 			<div class="col-7 col-8-lg col-10-md px-3-md">
+ 				<p class="text-xl-7 b5 text-center">Get started</p>
+
+ 				<div class="flex flex-wrap justify-around mt-7">
+ 					<div class="col-3-xxl col-4-md col-10-sm mb-6-md">
+ 						<div class="book b-1 bg-white p-4 b-solid mx-3">
+ 							<div class="flex book justify-center d-none-sm"><div class="book-mask"></div><img src="img/book.png" class="img col-7"></div>
+ 							<div class="flex align-items-center justify-evenly justify-between-sm px-2-sm">
+ 								<div class="mt-5 mt-0-sm">
+ 									<p class="text-xl b5">Read docs</p>
+ 									<p class="text-md mt-1">Author docs</p>
+ 								</div>
+ 								<p class=""><i class="fas fa-arrow-right"></i></p>
+ 							</div>
+ 							
+ 						</div>
+ 					</div>
+ 					<div class="col-3-xxl col-4-md col-10-sm mb-6-md">
+ 						<div class="book b-1 bg-white p-4 b-solid mx-3">
+ 							<div class="flex book justify-center d-none-sm"><div class="book-mask"></div><img src="img/example.png" class="img col-7"></div>
+ 							<div class="flex align-items-center justify-evenly justify-between-sm px-2-sm">
+ 								<div class="mt-5 mt-0-sm">
+ 									<p class="text-xl b5">Navigate examples</p>
+ 									<p class="text-md mt-1">Author samples</p>
+ 								</div>
+ 								<p class=""><i class="fas fa-arrow-right"></i></p>
+ 							</div>
+ 							
+ 						</div>
+ 					</div>
+ 					<div class="col-3-xxl col-4-md col-10-sm">
+ 						<div class="book b-1 bg-white p-4 b-solid mx-3">
+ 							<div class="flex book justify-center d-none-sm"><div class="book-mask"></div><img src="img/linux.png" class="img col-7"></div>
+ 							<div class="flex align-items-center justify-evenly justify-between-sm px-2-sm">
+ 								<div class="mt-5 mt-0-sm">
+ 									<p class="text-xl b5">Download</p>
+ 									<p class="text-md mt-1">Platform dependant</p>
+ 								</div>
+ 								<p class=""><i class="fas fa-arrow-right"></i></p>
+ 							</div>
+ 							
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<div class="py-20 py-10-md flex justify-center">
+ 			<div class="col-7 col-8-lg col-10-md">
+
+ 				<div class="flex flex-wrap justify-around mt-7">
+ 					<div class="col-3-xxl col-4-md col-10-sm mb-5-md px-3-md">
+ 						<p class="lh1 mb-3 text-xl-2">Luqix code overview</p>
+ 						<p class="lh1">Luqix code is meant to be as <b>readable</b> as possible.</p>
+ 						<p class="lh1 mt-3">Code <b>demacation</b> is archived in very many ways, take your prefered one.</p>
+ 						<p class="lh1 mt-3">I had a dream of having <b>jquery outside the browser.</b></p>
+ 					</div>
+ 					<div class="col-3-xxl col-4-md col-10-sm mb-5-md">
+ 						<div class="code code-hl text-xl-sm">let str = require('string')
+
+fn greeting(name) {
+	name = str.capitalize(name)
+	return f'How are you {name}'
+}
+
+get_name = prompt('Name: ')
+print(greeting(get_name))</div>
+ 					</div>
+ 					<div class="col-3-xxl col-4-md col-10-sm">
+ 						<div class="code code-hl text-xl-sm">let list = require('list')
+
+fruits = ['apple', 'melon', 'orange']
+print(fruits)
+
+print(dir(list))
+list.pop(fruits)
+
+list.extend(fruits, ['pear', 'carrot'])
 </div>
+ 					</div>
+ 				</div>
 
-<div class="flex flex-wrap justify-between mt-10">
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${community}</p>
-		<p class="bl mt-4">Our Community</p>
-		<p class="mt-2">You better join and make up the community, well we are raising on many platforms where possible.</p>
-	</div>
-
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${update}</p>
-		<p class="bl mt-4">Updates and blogs</p>
-		<p class="mt-2">Thanks to whatsapp channels, we nolonger even need a blog page, find everything there.</p>
-	</div>
-
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${more}</p>
-		<p class="bl mt-4">More info</p>
-		<p class="mt-2">Luqix is so far from stable i guess but we can test it out, its a normal project from scratch.</p>
-	</div>
-</div>
+ 			</div>
+ 		</div>
 
 
-
-
+ 		${footer}
 	`
 }
 
 
-function installPage(){
-	return `
-<p class="text-xl-7 hl  mt-6">Installation</p>
-<p class="mt-2">A programming language built on research, Luqix is a dynamically typed interpreted high level programming language that ships with alot of amazing concepts and ideas from the very many exisiting programming languages like python and javascript.</p>
+function downloadPage(){
+	return `<div class="flex justify-center smoky f16">
+ 			<div class="col-7 col-8-lg col-10-md py-4 px-3-md">
+ 				<div class="p-4 bg-white mb-3 card">
+ 					<p class="text-xl-6 b6 mb-3">Download Luqix Language</p>
+ 					<p class="mb-3 lh1">Luqix due to its unstability, we provide two methods for its installation, one using binaries and the other is downloading and compiling source code.</p>
+ 					<p class=" lh1 mb-2">Reasons for compiling with source code so that you can have a build for your own platform if the developer team doesn't support it for now.</p>
+ 				</div>
 
-<div class="flex flex-wrap justify-between mt-10">
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${code}</p>
-		<p class="bl mt-4">Weaking dynamic typing</p>
-		<p class="mt-2">Not something to brag about if used wrongly but its time saving if done in the right way</p>
-	</div>
+ 				<div class="p-4 bg-white mb-3 card">
+ 					<p class="text-xl-2 mb-3">Compiling source code</p>
+ 					<p class="mb-3 lh1">The luqix language source code is hosted on github and it is free to use compile and redistribute. Updates to the source code by individuals may not be put in consideration but you knows what the future awaits.</p>
+ 					
+ 					<div class="flex flex-wrap mt-4">
+ 						<div class="col-5 col-10-sm">
+ 							<div class="px-2 px-1-md px-0-sm br-1 b-none-md bd">
+ 								<p class="lh1 mb-4 pt-2">First you should know that luqix is written in <a href="dlang.org">dlang</a> a low level compiled programming language with so many features thats power up luqix.</p>
+ 								<p class="mb-3 lh1">So that means the dlang compiler <a href="">dmd</a> should be installed on the compiling platform, there exists many dlang compilers but we have tested <a href="">dmd</a> and recommend mostly it for now.</p>
 
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${small}</p>
-		<p class="bl mt-4">Less code</p>
-		<p class="mt-2">Very common to interpreted languages and so this one, modules can be made to pronounce it more.</p>
-	</div>
+ 								<p class="code2">install dmd</p>
+ 								<p><a href="https://dlang.org/download.html"><i class="fas fa-arrow-right pr-3"></i> dmd official website</a></p>
 
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3 mb-0-sm">
-		<p>${pack}</p>
-		<p class="bl mt-4">Modulization and packaging</p>
-		<p class="mt-2">As easy as handling a big project in chuncks. This too is made possible in luqix code.</p>
-	</div>
-</div>
+ 								<p class="code2 mt-5">clone and unzip luqix lang source code</p>
+ 								<p><a href="https://github.com/luqix-lang/luqix"><i class="fab fa-github pr-3"></i> github.com</a></p>
 
-<div class="flex flex-wrap justify-between mt-10">
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${community}</p>
-		<p class="bl mt-4">Our Community</p>
-		<p class="mt-2">You better join and make up the community, well we are raising on many platforms where possible.</p>
-	</div>
+ 								<p class="code2 mt-5">enter luqix folder and run <span class="b6">make</span> command</p>
+ 								<p>make</p>
 
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${update}</p>
-		<p class="bl mt-4">Updates and blogs</p>
-		<p class="mt-2">Thanks to whatsapp channels, we nolonger even need a blog page, find everything there.</p>
-	</div>
+ 								<p class="mb-3 lh1 mt-5">I don't expect any errors during compiling atleast for windows and linux but if any <b>please report on any of our platform</b> for immediate repair.</p>
+ 							</div>
+ 						</div>
 
-	<div class="col-3-xxl col-5-md px-2-md col-10-sm px-0-sm mb-3">
-		<p>${more}</p>
-		<p class="bl mt-4">More info</p>
-		<p class="mt-2">Luqix is so far from stable i guess but we can test it out, its a normal project from scratch.</p>
-	</div>
-</div>
+
+ 						<div class="col-5 col-10-sm">
+ 							<div class="px-2 px-1-md px-0-sm">
+ 								<p class="lh1 mb-4 pt-2">Thats it, no other method is safer that building from source code, so build and distribute to a friend and don't forget to make regular build.</p>
+ 								<p class="mb-3 lh1">Since the language is in early development and fluent development,  addition of functionality plus fixing bug.</p>
+
+ 								<a href="" class="">Privacy policy and terms</a>
+
+ 								<p class="mt-5 mb-3">Just to be on a safer side, we are not concerned with changes made to your build. Thank you.</p>
+
+ 								<p class="mb-3"><a href="" class="">License</a></p>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+
+ 				<div class="flex justify-center p-3 mb-3 card bg-white py-5">
+ 					<div class="col-5 col-5-lg col-7-md col-10-sm ban">
+		 				<p class="ban-off"></p>
+		 				<div class="ban-on ban-blue flex align-items-center">
+		 					<img src="img/info.png" class="img mr-3">
+		 					<p class="text-md-sm">Mac builds are so much welcome to the developer team and so if willing you can distribute a package to this download page.</p>
+		 				</div>
+		 			</div>
+ 				</div>
+
+ 				<div class="p-3 mb-3 card bg-white">
+ 					<p class="text-xl-2 mb-3">Downloading binaries</p>
+ 					<p class="mb-3 lh1">These are compiled already as a single file, fix for embedding and packaging but i would prefer you to build your own from the previous information above since we tested our builds on less platforms.</p>
+ 					<p class="lh1 mb-3">And know that the mac build is not provided due to a reason you may know or ask individually.</p>
+
+ 					<div class="flex flex-wrap justify-start-md justify-around">
+ 						<div class="col-3-xxl col-4-md col-10-sm py-2 px-2 br-1 bd">
+ 							<p class="b6 mb-3">Linux</p>
+ 							<p class="mb-2"><a href="" class="text-md ">Luqix 0.7.1 Nov 29, 2023</a></p>
+ 						</div>
+ 						<div class="col-3-xxl col-4-md col-10-sm py-2 px-2 br-1 bd">
+ 							<p class="b6 mb-3">Windows</p>
+ 							<p class="mb-2"><a href="" class="text-md ">Luqix 0.7.1 Nov 29, 2023</a></p>
+ 						</div>
+ 						<div class="col-3-xxl col-4-md col-10-sm py-2 px-2">
+ 							<p class="b6 mb-3">Mac</p>
+ 							<p class="mb-2 opacity-50 user-none">Luqix 0.7.1 Nov 29, 2023</p>
+ 						</div>
+ 					</div>
+ 				</div>
+
+ 				<div class="card bg-white p-3">
+ 					<div class="flex justify-center">
+			 			<div class="px-3-md px-0-sm">
+			 				<div class="flex flex-wrap justify-around mt-7">
+			 					<div class="col-3-xxl col-4-md col-10-sm mb-6-md">
+			 						<div class="book b-1 bg-white p-4 b-solid mx-3">
+			 							<div class="flex book justify-center d-none-sm"><div class="book-mask"></div><img src="img/book.png" class="img col-7"></div>
+			 							<div class="flex align-items-center justify-evenly justify-between-sm px-2-sm">
+			 								<div class="mt-5 mt-0-sm">
+			 									<p class="text-xl b5">Read docs</p>
+			 									<p class="text-md mt-1">Author docs</p>
+			 								</div>
+			 								<p class=""><i class="fas fa-arrow-right"></i></p>
+			 							</div>
+			 							
+			 						</div>
+			 					</div>
+			 					<div class="col-3-xxl col-4-md col-10-sm mb-6-md">
+			 						<div class="book b-1 bg-white p-4 b-solid mx-3">
+			 							<div class="flex book justify-center d-none-sm"><div class="book-mask"></div><img src="img/example.png" class="img col-7"></div>
+			 							<div class="flex align-items-center justify-evenly justify-between-sm px-2-sm">
+			 								<div class="mt-5 mt-0-sm">
+			 									<p class="text-xl b5">Navigate examples</p>
+			 									<p class="text-md mt-1">Author samples</p>
+			 								</div>
+			 								<p class=""><i class="fas fa-arrow-right"></i></p>
+			 							</div>
+			 							
+			 						</div>
+			 					</div>
+			 					<div class="col-3-xxl col-4-md col-10-sm">
+			 						<div class="book b-1 bg-white p-4 b-solid mx-3">
+			 							<div class="flex book justify-center d-none-sm"><div class="book-mask"></div><img src="img/linux.png" class="img col-7"></div>
+			 							<div class="flex align-items-center justify-evenly justify-between-sm px-2-sm">
+			 								<div class="mt-5 mt-0-sm">
+			 									<p class="text-xl b5">Download</p>
+			 									<p class="text-md mt-1">Platform dependant</p>
+			 								</div>
+			 								<p class=""><i class="fas fa-arrow-right"></i></p>
+			 							</div>
+			 							
+			 						</div>
+			 					</div>
+			 				</div>
+			 			</div>
+			 		</div>
+ 				</div>
+
+ 			</div>
+ 		</div>
 
 
 ${footer}
