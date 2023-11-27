@@ -18,24 +18,79 @@
 	<div class="main-container">
 	  
 
-	<div class="nav blue flex sticky-top py-1 justify-center px-2-md overflow-x-scroll-sm">
-		<nav class="col-7-xxl col-10-md flex justify-between">
+	<div class="nav blue flex sticky-to justify-center pl-2 overflow-x-scroll-s">
+		<nav class="col-10-xxl col-10-md flex justify-between overflow-x-scroll-sm">
 			<div class="flex align-items-center justify-start justify-between col-10-sm">
-				<a class="indexPage cursor-pointer"><p class="segoe"><span class="b6 text-xl-2 text-xl-md">Luqix</span><span class="b3 text-xl-2 text-xl-md">Language</span></p></a>
+				<a onclick="indexPage()" class="cursor-pointer"><p class="segoe py-2"><span class="b7 text-xl text-xl-md">Luqix</span><span class="b3 text-xl text-xl-md">Language</span></p></a>
+
+				<div class="flex align-items-center justify-start ml-4">
+					<p onclick="downloadPage()" class="py-2 px-2 cursor-pointer"><a class="b6">Download</a></p>
+					<p class="py-2 px-2 cursor-pointer" onclick="docsPage()"><a class="b6">Docs</a></p>
+					<p class="py-2 px-2 cursor-pointer"><a class="b6">Blog</a></p>
+					<p class="py-2 px-2 cursor-pointer"><a><i class="fab fa-github icon"></i></a></p>
+				</div>
 			</div>
-			<div class="flex align-items-center justify-end">
-				<p class="py-2 px-2 cursor-pointer ml-4-sm"><a class="b6 downloadPage">Download</a></p>
-				<p class="py-2 px-2 cursor-pointer docsPage"><a class="b6">Docs</a></p>
-				<p class="py-2 px-2 cursor-pointer"><a class="b6">Blog</a></p>
-				<p class="py-2 px-2 cursor-pointer"><a><i class="fab fa-github icon"></i></a></p>
+			<div class="align-items-center justify-end search flex">
+				<p class="px-2"><i class="fas fa-search"></i></p>
+				<input type="" placeholder="Search docs" name="" class="pr-2">
 			</div>
 		</nav>
 	</div>
 
-  	<div class="content" id="app">
+  	<div class="content" id="app"></div>
 
- 		
+  	<div class="content sticky-top" id="docs">
+  		<div class="flex sticky-top">
+  			<div class="sidebar sticky-top" id="sidebar">
+  				<div class="">
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<p class="side-nav px-4">Introduction</p>
+  						<p class="side-nav px-4">Setup</p>
+  						<p class="side-nav px-4">Basics</p>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<p class="side-nav px-4">Introduction</p>
+  						<p class="side-nav px-4">Setup</p>
+  						<p class="side-nav px-4">Basics</p>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<p class="side-nav px-4">Introduction</p>
+  						<p class="side-nav px-4">Setup</p>
+  						<p class="side-nav px-4">Basics</p>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<p class="side-nav px-4">Introduction</p>
+  						<p class="side-nav px-4">Setup</p>
+  						<p class="side-nav px-4">Basics</p>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<p class="side-nav px-4">Introduction</p>
+  						<p class="side-nav px-4">Setup</p>
+  						<p class="side-nav px-4">Basics</p>
+  					</div>
+  					<p class="side-link flex justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<p class="side-nav px-4">Introduction</p>
+  						<p class="side-nav px-4">Setup</p>
+  						<p class="side-nav px-4">Basics</p>
+  					</div>
+  				</div>
+  			</div>
 
+  			<p class="menu-call" onclick="toggleMenu()"><i class="fas fa-bars"></i></p>
+
+  			<div id="app2" class="contents contents2">
+
+  				
+
+  			</div>
+
+  		</div>
   	</div>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -55,6 +110,7 @@
 
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/docs.js"></script>
 
 
 </body>

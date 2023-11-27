@@ -1,3 +1,5 @@
+
+
 footer = `<div class="pb-10 pt-10 flex flex-wrap justify-center blue">
  			<p class="text-center text-xl-5 col-10 mb-4">Thank you</p>
  			<div class="col-7 bt-1 flex flex-wrap pt-5 col-8-lg col-10-md px-3-md" style="border-color: #ffffff50;">
@@ -39,7 +41,7 @@ footer = `<div class="pb-10 pt-10 flex flex-wrap justify-center blue">
  		</div>`
 
 
-function indexPage(){
+function _indexPage(){
 	return `
 		<div class="flex flex-wrap blue justify-center py-10">
  			<div class="col-7 col-8-lg col-10-md px-3-md flex flex-wrap">
@@ -47,10 +49,10 @@ function indexPage(){
  					<p class="big-1 text-xl-10-lg text-xl-8-md b6 mt-3 mt-0-sm segoe">Luqix <span class="big-1 b3 text-xl-10-lg text-xl-8-md">Programming</span> <span class="text-xl-10-lg text-xl-8-md big-1 b4">Language</span>.</p>
  					<p class="mt-5 lh1">A language built on research and all our personal preferences.<br>Luqix is an interpreted programming language built by a small team with an aim to simpify coding just like AI is doing. Done by providing greater power in easy weak looks.</p>
 
- 					<div class="flex flex-wrap mt-7">
- 						<a href="" class="mb-3-lg"><p class="btn-dark btn"><span class="text-white b5">Download Luqix</span><br><span class="col-7-sm mb-3-sm text-white text-md mt-2">latest v0.07.0</span></p></a>
+ 					<div class="flex flex-wrap mt-7 cursor-default">
+ 						<a class="mb-3-lg" onclick="downloadPage()"><p class="btn-dark btn"><span class="text-white b5">Download Luqix</span><br><span class="col-7-sm mb-3-sm text-white text-md mt-2">latest v0.07.0</span></p></a>
 
- 						<a href="" class="ml-2"><p class="btn-dark-outline btn"><span class="b5">Read Docs</span><br><span class="mt-2 text-md">Less Docs</span></p></a>
+ 						<a href="" class="ml-2 cursor-default"><p class="btn-dark-outline btn"><span class="b5">Read Docs</span><br><span class="mt-2 text-md">Less Docs</span></p></a>
  					</div>
 
  					<p class="mt-5 text-sm">Better to built from source code on <a href="" class="text-black  underlined text-sm">github <i class="fab fa-github"></i></a></p>
@@ -67,9 +69,9 @@ function indexPage(){
  			</div>
  		</div>
 
- 		<div class="py-20 py-18-sm flex justify-center">
+ 		<div class="py-15 py-10-sm flex justify-center">
  			<div class="col-7 col-8-lg col-10-md px-3-md flex flex-wrap">
- 				<p class="text-xl-7 b5 text-center">What is in Luqix lang?</p>
+ 				<p class="text-xl-8 text-xl-5-md mb-3 text-center col-10">What is in Luqix lang?</p>
 
  				<div class="flex flex-wrap justify-around mt-7">
  					<div class="col-3-xxl col-4-md col-10-sm mb-7-sm">
@@ -121,7 +123,7 @@ function indexPage(){
  					</div>
  					<div class="col-3-xxl col-4-md col-10-sm">
  						<div class="book b-1 bg-white p-4 b-solid mx-3">
- 							<div class="flex book justify-center d-none-sm"><div class="book-mask"></div><img src="img/linux.png" class="img col-7"></div>
+ 							<div class="flex book justify-center d-none-sm downloadPage"><div class="book-mask"></div><img src="img/linux.png" class="img col-7"></div>
  							<div class="flex align-items-center justify-evenly justify-between-sm px-2-sm">
  								<div class="mt-5 mt-0-sm">
  									<p class="text-xl b5">Download</p>
@@ -146,7 +148,7 @@ function indexPage(){
  						<p class="lh1 mt-3">Code <b>demacation</b> is archived in very many ways, take your prefered one.</p>
  						<p class="lh1 mt-3">I had a dream of having <b>jquery outside the browser.</b></p>
  					</div>
- 					<div class="col-3-xxl col-4-md col-10-sm mb-5-md">
+ 					<div class="col-3-xxl col-4-md col-10-sm mb-5-md px-2-md">
  						<div class="code code-hl text-xl-sm">let str = require('string')
 
 fn greeting(name) {
@@ -157,7 +159,7 @@ fn greeting(name) {
 get_name = prompt('Name: ')
 print(greeting(get_name))</div>
  					</div>
- 					<div class="col-3-xxl col-4-md col-10-sm">
+ 					<div class="col-3-xxl col-4-md col-10-sm px-2-md">
  						<div class="code code-hl text-xl-sm">let list = require('list')
 
 fruits = ['apple', 'melon', 'orange']
@@ -175,12 +177,11 @@ list.extend(fruits, ['pear', 'carrot'])
  		</div>
 
 
- 		${footer}
-	`
+ 		${footer}	`
 }
 
 
-function downloadPage(){
+function _downloadPage(){
 	return `<div class="flex justify-center smoky f16">
  			<div class="col-7 col-8-lg col-10-md py-4 px-3-md">
  				<div class="p-4 bg-white mb-3 card">
@@ -290,7 +291,7 @@ function downloadPage(){
 			 						</div>
 			 					</div>
 			 					<div class="col-3-xxl col-4-md col-10-sm">
-			 						<div class="book b-1 bg-white p-4 b-solid mx-3">
+			 						<div class="book b-1 bg-white p-4 b-solid mx-3 downloadPage">
 			 							<div class="flex book justify-center d-none-sm"><div class="book-mask"></div><img src="img/linux.png" class="img col-7"></div>
 			 							<div class="flex align-items-center justify-evenly justify-between-sm px-2-sm">
 			 								<div class="mt-5 mt-0-sm">
@@ -310,8 +311,6 @@ function downloadPage(){
  			</div>
  		</div>
 
-
-${footer}
-
+		${footer}
 	`
 }
