@@ -20,8 +20,8 @@ footer = `<div class="pb-10 pt-10 flex flex-wrap justify-center blue">
 	 					<a href=""><p class="mb-3 text-md b5 underlined">Channels</p></a>
  					</div>
  					<div class="col-4">
- 						<a href=""><p class="mb-3 text-md b5 underlined">Download</p></a>
-	 					<a href=""><p class="mb-3 text-md b5 underlined">Source code</p></a>
+ 						<a onclick="downloadPage()"><p class="mb-3 text-md b5 underlined">Download</p></a>
+	 					<a href="https://github.com/luqix-lang/luqix"><p class="mb-3 text-md b5 underlined">Source code</p></a>
 	 					<a href=""><p class="mb-3 text-md b5 underlined">Online soon</p></a>
  					</div>
  				</div>
@@ -34,7 +34,7 @@ footer = `<div class="pb-10 pt-10 flex flex-wrap justify-center blue">
  						<a href=""><p class="mb-3 text-md b5 underlined"><i class="fab fa-twitter"></i> LuqixLang</p></a>
  					</div>
  					<div class="col-4">
- 						<a href=""><p class="mb-3 text-md b5 underlined"><i class="fab fa-github"></i> Github</p></a>
+ 						<a href="https://github.com/luqix-lang/luqix"><p class="mb-3 text-md b5 underlined"><i class="fab fa-github"></i> Github</p></a>
  					</div>
  				</div>
  			</div>
