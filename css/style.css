@@ -18,9 +18,7 @@
 }
 
 
-.nav{
-	z-index: 5;
-}
+#nav{ z-index: 5; }
 
 .nav *{
 	font-size: 16px;
@@ -298,10 +296,6 @@
 	font-size: 15px;
 	color: #fff;
 }
-
-#docs{ display: none; }
-
-#app{ /*display: none !important;*/ }
 
 .navigator a{
 	text-decoration: none !important;

@@ -1,22 +1,14 @@
-caret = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18px" height='18px'>
-  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-</svg>
-
-`
-
-$('.caret-right').html(caret);
-
 
 let nav = document.getElementById('nav');
 
 nav.innerHTML = `<div class="nav blue flex sticky-to justify-center pl-2 overflow-x-scroll-s">
 		<nav class="col-10-xxl col-10-md flex justify-between overflow-x-scroll-sm">
 			<div class="flex align-items-center justify-start justify-between col-10-sm">
-				<a href="../index.html" class="cursor-pointer"><p class="segoe py-2"><span class="b7 text-xl text-xl-md">Luqix</span><span class="b3 text-xl text-xl-md">Language</span></p></a>
+				<a href="index.html" class="cursor-pointer"><p class="segoe py-2"><span class="b7 text-xl text-xl-md">Luqix</span><span class="b3 text-xl text-xl-md">Language</span></p></a>
 
 				<div class="flex align-items-center justify-start ml-4">
-					<p onclick="downloadPage()" class="py-2 px-2 cursor-pointer"><a href="../download.html">Download</a></p>
-					<p class="py-2 px-2 cursor-pointer"><a href="docs.html" class="b6">Docs</a></p>
+					<p onclick="downloadPage()" class="py-2 px-2 cursor-pointer"><a href="download.html">Download</a></p>
+					<p class="py-2 px-2 cursor-pointer"><a href="docs/docs.html" class="b6">Docs</a></p>
 					<p class="py-2 px-2 cursor-pointer"><a class="b6">Blog</a></p>
 					<p class="py-2 px-2 cursor-pointer"><a href="https://github.com/luqix-lang/luqix"><i class="fab fa-github icon"></i></a></p>
 				</div>
@@ -29,13 +21,13 @@ nav.innerHTML = `<div class="nav blue flex sticky-to justify-center pl-2 overflo
 	</div>`
 
 
-let bod = document.getElementById('app2');
+let bod = document.getElementsByTagName('body')[0];
 
 
 bod.innerHTML += `
 	<div class="pb-10 pt-10 flex flex-wrap justify-center blue">
  			<p class="text-center text-xl-5 col-10 mb-4">Thank you</p>
- 			<div class="col-9 bt-1 flex flex-wrap pt-5  col-10-md px-3-md" style="border-color: #ffffff50;">
+ 			<div class="col-7 bt-1 flex flex-wrap pt-5 col-8-lg col-10-md px-3-md" style="border-color: #ffffff50;">
  				<div class="col-2 col-10-md mb-5-md">
  					<p class="segoe"><span class="b6 text-xl-2">Luqix</span><span class="b3 text-xl-2">Language</span></p>
  					<p class="mt-2 mb-5 text-md">Made and maintained by <span class="b5">Variable<span class="b3">Code</span></span></p>
@@ -47,12 +39,13 @@ bod.innerHTML += `
  					<p class="mb-4 b5 text-xl-1 col-10">Using luqix</p>
 
  					<div class="col-4">
+ 						<a href="docs/docs.html"><p class="mb-3 text-md b5 underlined">Author docs</p></a>
 	 					<a href=""><p class="mb-3 text-md b5 underlined">Soon book</p></a>
 	 					<a href=""><p class="mb-3 text-md b5 underlined">Tutorials</p></a>
 	 					<a href=""><p class="mb-3 text-md b5 underlined">Channels</p></a>
  					</div>
  					<div class="col-4">
- 						<a href="../download.html"><p class="mb-3 text-md b5 underlined">Download</p></a>
+ 						<a href="download.html"><p class="mb-3 text-md b5 underlined">Download</p></a>
 	 					<a href="https://github.com/luqix-lang/luqix"><p class="mb-3 text-md b5 underlined">Source code</p></a>
 	 					<a href=""><p class="mb-3 text-md b5 underlined">Online soon</p></a>
  					</div>
@@ -73,25 +66,10 @@ bod.innerHTML += `
  		</div>
 `
 
-if (true) {
-    modules = ["base64", "bytes", "locals", "dict", "dtypes", "file", "json", "list", "math", "number", "os", "parallelism", "path", "process", "random", "reg", "socket", "string", "sys", "sqlite3", "thread", "time", "url", "websocket"]
-    modules.sort()
 
-    let mod = document.getElementById('modules-nav')
+let hd = document.getElementsByClassName('code');
+let syn = new Flare();
 
-    for(let i = 0; i < modules.length; i++){
-        mod.innerHTML += `<a href="${modules[i]}.html"><p class="side-nav px-4">${modules[i]}</p></a>`
-    }
+for(let i=0; i < hd.length; i++){
+	syn.light(hd[i]);
 }
-
-if (true) {
-	let hd = document.getElementsByClassName('code');
-	let syn = new Flare();
-
-	for(let i=0; i < hd.length; i++){
-		syn.light(hd[i]);
-	}
-}
-
-
-function toggleMenu(){ $('#sidebar').toggle(); }
