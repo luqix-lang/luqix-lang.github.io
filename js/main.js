@@ -1,13 +1,13 @@
 
 let nav = document.getElementById('nav');
 
-nav.innerHTML = `<div class="nav blue flex sticky-to justify-center pl-2 overflow-x-scroll-s">
+nav.innerHTML = `<div class="nav py-1 blue flex sticky-to justify-center pl-2 overflow-x-scroll-s">
 		<nav class="col-10-xxl col-10-md flex justify-between overflow-x-scroll-sm">
 			<div class="flex align-items-center justify-start justify-between col-10-sm">
-				<a href="index.html" class="cursor-pointer"><p class="segoe py-2"><span class="b7 text-xl text-xl-md">Luqix</span><span class="b3 text-xl text-xl-md">Language</span></p></a>
+				<a href="index.html" class="cursor-pointer"><p class="title py-2">Luqix Language</p></a>
 
 				<div class="flex align-items-center justify-start ml-4">
-					<p onclick="downloadPage()" class="py-2 px-2 cursor-pointer"><a href="download.html">Download</a></p>
+					<p class="py-2 px-2 cursor-pointer"><a href="download.html" class="b6">Download</a></p>
 					<p class="py-2 px-2 cursor-pointer"><a href="docs/docs.html" class="b6">Docs</a></p>
 					<p class="py-2 px-2 cursor-pointer"><a class="b6">Blog</a></p>
 					<p class="py-2 px-2 cursor-pointer"><a href="https://github.com/luqix-lang/luqix"><i class="fab fa-github icon"></i></a></p>

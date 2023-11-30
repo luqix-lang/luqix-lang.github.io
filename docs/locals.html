@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luqix progamming language</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
+   
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  	<link rel="stylesheet" type="text/css" href="../css/fancy.css">
+  	<link rel="stylesheet" type="text/css" href="../modules/flare/flare.css">
+
+</head>
+<body >
+
+	<div class="main-container">
+
+	<div id="nav"></div>
+	  
+  	<div class="content sticky-top" id="docs">
+  		<div class="flex sticky-top">
+  			<div class="sidebar sticky-top" id="sidebar">
+  				<div class="">
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<a href="docs.html"><p class="side-nav px-4">Introduction</p></a>
+  						<a href="basics.html"><p class="side-nav px-4">Basics and syntax</p></a>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Builtin module</span> <span class="caret-right"></span></p>
+  					<div class="side-dec" id="modules-nav">
+  					</div>
+  					
+  				</div>
+  			</div>
+
+  			<p class="menu-call" onclick="toggleMenu()"><i class="fas fa-bars"></i></p>
+
+  			<div id="app2" class="contents contents2">
+  				<div class="flex flex-wrap-md py-10 py-5-md f16">
+  					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
+
+  						<div class="card p-3 mb-4 bg-white">
+	  						<p class="hi2 mb-3 ">Locals module</p>
+	  						<p class="lh1"><b>locals</b> is a builtin module that is readily imported to every new scope formed by the interpreter since it holds greater functionality that must be at hand. This is similar to python's <a href="https://docs.python.org/3/library/functions.html">builtins module</a> having functions like printing to the console, getting data length and much more.</p>
+	  					</div>
+
+			 			<div id="basic-variables" class="py-3 px-5 px-3-md card bg-white mt-7">
+			 				<p class="mt-3 hi mb-3">Table of functions</p>
+
+			 				<div class="mt-3">
+			 					<table class="styled-table">
+			 						<thead class="">
+			 							<tr>
+			 								<th>attribute</th>
+			 								<th>function</th>
+			 							</tr>
+			 						</thead>
+			 						<tbody class="">
+			 							<tr>
+			 								<td>print</td>
+			 								<td>writes to standard output or screen</td>
+			 							</tr>
+			 							<tr>
+			 								<td>prompt</td>
+			 								<td>gets user input from standard input</td>
+			 							</tr>
+			 							<tr>
+			 								<td>len</td>
+			 								<td>gets the length of a datatype</td>
+			 							</tr>
+			 							<tr>
+			 								<td>attr</td>
+			 								<td>lists all attributes of the given data</td>
+			 							</tr>
+			 							<tr>
+			 								<td>exit</td>
+			 								<td>terminates execution of calling process</td>
+			 							</tr>
+			 							<tr>
+			 								<td>require</td>
+			 								<td>imports and then return a builtin module</td>
+			 							</tr>
+			 							<tr>
+			 								<td>getattr</td>
+			 								<td>gets data attribute dynamically</td>
+			 							</tr>
+			 							<tr>
+			 								<td>setattr</td>
+			 								<td>sets or replace data attribute dynamically</td>
+			 							</tr>
+			 							<tr>
+			 								<td>delattr</td>
+			 								<td>deletes an attribute from data.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>Exception</td>
+			 								<td>returns a recognisable error object for luqix</td>
+			 							</tr>
+			 							<tr>
+			 								<td>super</td>
+			 								<td>handles inheritance unpackaging.</td>
+			 							</tr>
+			 						</tbody>
+			 					</table>
+			 				</div>
+						</div>
+
+
+
+  					</div>
+  					<div class="col-2-xxl px-4 col-3-md col-10-sm navigator">
+  						<div class="pt-4 px-2 py-3 card bg-white">
+  							<p class="b6 mb-2 text-lg hd">On this page</p>
+  							<ul class="ml-4">
+	  							<li class="mb-1"><a href="#basic-variables" class="px-1">Variables</a></li>
+	  							<li class="mb-1"><a href="#basic-functions" class="px-1">Functions</a></li>
+	  							<li class="mb-1"><a href="#basic-if" class="px-1">If statement</a></li>
+	  							<li class="mb-1"><a href="#basic-while" class="px-1">While loop</a></li>
+	  							<li class="mb-1"><a href="#basic-for" class="px-1">For loop</a></li>
+	  							<li class="mb-1"><a href="#basic-classes" class="px-1">Classes</a></li>
+	  							<li class="mb-1"><a href="#basic-from" class="px-1">from and import</a></li>
+	  						</ul>
+
+  							<a href=""><p class="btn mb-1 mt-4 btn-dark-outline">Learn tutorial</p></a>
+  						</div>
+  					</div>
+  				</div>
+
+  			</div>
+
+  		</div>
+  	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../modules/flare/flare.js"></script>
+
+
+	<script type="text/javascript" src="../js/docs.js"></script>
+
+
+</body>
+</html>

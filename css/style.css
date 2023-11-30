@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
 	padding: 0;
 	margin: 0;
-	color: #000;
-	font-size: 17px;
-	font-family: 'Work Sans', sans-serif;
+	color: #171717;
+	/*font-size: 17px;*/
+	/*font-family: 'Work Sans', sans-serif;*/
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 18px;
 }
 
-.f16 *{ font-size: 16px; }
+.f16 *{ font-size: 18px; }
 
 .f16 a{
-	color: #235a97;
+	color: #2f3ab2f0;
 	text-decoration: underline;
 }
 
@@ -38,7 +41,7 @@
 	width: 83%;
 }
 
-.contents2{ background-color: #FAF9F8; }
+.contents2{ background-color: #F5F5F5; }
 
 .contents2 .code{
 	border: 1px solid #999999;
@@ -52,14 +55,14 @@
 	z-index: 4;
 	height: 100vh;
 	overflow-y: scroll;
-	background-color: #E3E8EC;
+	background-color: #F5F5F5;
 }
 
-.sidebar p, .side-dec{	border-bottom: 1px solid #00000010; }
+/*.sidebar p, .side-dec{	border-bottom: 1px solid #00000010; }*/
 
 .sidebar *{
-	font-size: 15px;
-	color: #000;
+	font-size: 17px;
+	color: #373737;
  }
 
 .menu-call{
@@ -81,22 +84,22 @@
 
 
 .side-link{
-	background-color: #EEEEEE;
+	/*background-color: #EEEEEE;*/
 	padding-top: 11px;
 	padding-bottom: 11px;
 	cursor: pointer;
 	font-weight: 500;
-	font-size: 15px;
+	/*font-size: 15px;*/
 }
 
 .side-nav{
 	padding-top: 11px;
 	padding-bottom: 11px;
 	color: #333;
-	border-color: #00000005;
+	/*border-color: #00000005;*/
 	margin-left: 4px;
 	cursor: pointer;
-	font-size: 14.5px;
+	/*font-size: 14.5px;*/
 }
 
 .sidebar p{
@@ -120,9 +123,13 @@
 }
 
 .title{
-	font-weight: 600 !important;
-	text-transform: uppercase;
 	font-size: 20px !important;
+	font-family: 'Ubuntu', sans-serif !important;
+	font-weight: 400;
+}
+
+.ubuntu{ 
+	font-family: 'Ubuntu', sans-serif !important;
 }
 
 .b3{ font-weight: 300; }
@@ -137,8 +144,8 @@
 
 .smoky{ background-color: #F1EDE990; }
 
-.blue{ background-color: #0185dF; }
-.blue *{ color: #ffffff; }
+.blue{ background-color: #3B49DF; }
+.blue *{ color: white; }
 
 .search{
 	background-color: #00000020;
@@ -178,7 +185,11 @@
 .btn-dark:active{ opacity: 50%; }
 .btn-dark-outline:hover { background-color: #182229d0; }
 
-.card { box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,0.132),0 0.3px 0.9px 0 rgba(0,0,0,0.108); }
+/*.card { box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,0.132),0 0.3px 0.9px 0 rgba(0,0,0,0.108); }*/
+.card{
+	border: 1px solid #EAEAEA;
+	border-radius: 15px;
+}
 
 .ban{ position: relative;}
 
@@ -297,16 +308,32 @@
 	color: #fff;
 }
 
+.navigator .hd{
+	color: #2f3ab2 !important;
+	text-decoration: underline;
+}
+
 .navigator a{
 	text-decoration: none !important;
-	color: #000 !important;
-	font-size: 14px;
-	border-left: 2px solid #ffffff00;
-	margin-left: 15px;
+	color: #404040 !important;
+	font-size: 16px;
 }
 
 .navigator a:hover{
 	border-left-color: #0185DFd0;
+}
+
+.navigator .btn{
+	border-color: #2f3ab2;
+	color: #2f3ab2;
+	border-radius: 7px;
+	font-size: 15px;
+}
+
+.btn:hover{
+	background-color: #2f3ab2;
+	color: white;
+
 }
 
 
@@ -315,6 +342,66 @@ footer{
 	border-color: #AEB8BC;
 }
 
+.a-none, .a-none *{
+	text-decoration: none !important;
+	color: #235a97;
+	font-family: 'Segoe', sans-serif;
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.styled-table thead tr {
+    background-color: #003DFF;
+    color: #ffffff !important;
+    text-align: left;
+}
+
+.styled-table thead tr th{ color: #fff; }
+
+.styled-table th{
+	font-weight: 600;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 14px 17px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ccc;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.hi{
+	font-size: 25px;
+	font-weight: 700 !important;
+}
+
+.hi2{
+	font-size: 30px;
+	font-weight: 700 !important;
+}
 
 
 
