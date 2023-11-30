@@ -25,9 +25,8 @@ let bod = document.getElementsByTagName('body')[0];
 
 
 bod.innerHTML += `
-	<div class="pb-10 pt-10 flex flex-wrap justify-center blue">
- 			<p class="text-center text-xl-5 col-10 mb-4">Thank you</p>
- 			<div class="col-7 bt-1 flex flex-wrap pt-5 col-8-lg col-10-md px-3-md" style="border-color: #ffffff50;">
+	<div class="pb-10 pt-10 flex flex-wrap justify-center footer">
+ 			<div class="col-7 flex flex-wrap pt-5 col-8-lg col-10-md px-3-md">
  				<div class="col-2 col-10-md mb-5-md">
  					<p class="segoe"><span class="b6 text-xl-2">Luqix</span><span class="b3 text-xl-2">Language</span></p>
  					<p class="mt-2 mb-5 text-md">Made and maintained by <span class="b5">Variable<span class="b3">Code</span></span></p>

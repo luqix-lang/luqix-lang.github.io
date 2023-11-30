@@ -188,21 +188,21 @@
 	border-radius: 15px;
 }
 
-.ban{ position: relative;}
+.ban{
+	position: relative;
+	border-radius: 10px;
+	border: 1px solid #00000020;
+	overflow: hidden;
+}
 
 .ban-on{
-	position: relative;
-	z-index: 3;
-	background-color: #dF7BaD;
-	padding: 20px;
-	padding-left: 15px;
-	padding-right: 15px;
-	border-radius: 15px;
+	background-color: #FFF3CD;
+	padding: 10px;
 }
 
 .ban-on *{
 	font-size: 17px !important;
-	color: #000000 !important;
+	color: #755403 !important;
 }
 
 .ban-on p{
@@ -218,7 +218,6 @@
 	height: 100%;
 	width: 100%;
 	border-radius: 15px;
-	background-color: #000;
 	bottom: -8px;
 	right: -8px;
 }
@@ -238,7 +237,7 @@
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background-color: #ffffffb0;
+	/*background-color: #ffffffb0;*/
 	z-index: 3;
 }
 
@@ -337,10 +336,14 @@
 
 }
 
-
-
-footer{
+.footer{
 	border-color: #AEB8BC;
+	background-color: #e9e9e9 !important;
+}
+
+.footer *{
+	color: #000 !important;
+	text-decoration: none !important;
 }
 
 .a-none, .a-none *{
