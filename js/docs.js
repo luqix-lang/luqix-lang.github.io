@@ -3,6 +3,8 @@ caret = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 </svg>
 
 `
+document.getElementsByTagName('title')[0].innerText = 'Luqix says hello world!'
+
 
 $('.caret-right').html(caret);
 

@@ -8,6 +8,8 @@ for(let i =0; i < code.length; i++){
 
 let nav = document.getElementById('nav');
 
+document.getElementsByTagName('title')[0].innerText = 'Luqix says hello world!'
+
 nav.innerHTML = `
 <div class="nav flex align-items-center justify-center">
 		<nav class="flex justify-between align-items-center col-8 col-8-lg col-10-sm px-2-sm overflow-x-scroll-sm">
