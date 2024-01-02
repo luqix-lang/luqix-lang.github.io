@@ -1,0 +1,66 @@
+
+/*body, .bg-white{*/
+.dark-bg {
+	background-color: #212529 !important;
+}
+
+/*.smoky, .smoky-blue, .key, .sidebar{*/
+.dark-smoky{
+	background-color: #2B3035 !important;
+}
+
+/**, .contents *{*/
+.dark-all{
+	color: #ffffffb0;
+	border-color: #495057 !important;
+}
+
+/*.side-nav{*/
+.dark-side-nav{ color: #ffffffb0 !important; }
+
+.dark-side-nav:hover { color: #ffffff !important; }
+
+/*.hi4, .hi, .hi2, .hi3, .hi5, .key, .nav *, .fn, .args, .tb{*/
+.dark-hi1 { color: #ffffffc0 !important; }
+
+/*.nav{*/
+.dark-nav{
+	background-color: #212529;
+	border-bottom: 1px solid;
+}
+
+/*.code, .code2{*/
+.dark-code{ background-color: #2B3035 !important; }
+
+/*.alert{*/
+.dark-alert{
+	background-color: #60A5FA;
+	color: black !important;
+}
+
+.dark-table *{ color: #ffffffc0 !important; }
+
+.dark-table td:nth-child(odd), .dark-table td:nth-child(odd) *{ color: #3d8ff7 !important; }
+
+.dark-table svg { fill: #3d8ff7 !important; }
+
+.dark-table .obj span{ color: #9b56f1 !important; }
+
+.dark-table .obj * { fill: #9b56f1 !important; }
+
+.dark-table thead th { color: #ffffffc0 !important; }
+
+/*.tablez *{*/
+.dark-purple{
+	color: #9b56f1 !important;
+	fill: #9b56f1 !important;
+}
+
+/*.f16 a{*/
+.dark-a{ color: #7d9ef8 !important; }
+
+.dark-warning{ background-color: #FEd3d1; }
+
+/*footer a*/
+.dark-footer{ color: rgb(108,117,125) !important; }
+

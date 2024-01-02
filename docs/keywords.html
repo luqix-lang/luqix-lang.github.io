@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luqix - keywords used</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
+   
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  	<link rel="stylesheet" type="text/css" href="../css/fancy.css">
+  	<link rel="stylesheet" type="text/css" href="../modules/flare/flare.css">
+
+</head>
+<body >
+
+	<div class="main-container">
+
+	<div id="nav"></div>
+	  
+  	<div class="content sticky-top" id="docs">
+  		<div class="flex sticky-top">
+  			<div class="sidebar sticky-top" id="sidebar">
+  				<div class="">
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<a href="docs.html"><p class="side-nav px-3">Introduction</p></a>
+  						<a href="basics.html"><p class="side-nav px-3">Basics and syntax</p></a>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Builtin module</span> <span class="caret-right"></span></p>
+  					<div class="side-dec" id="modules-nav">
+  					</div>
+  					
+  				</div>
+  			</div>
+
+  			<div class="menu-call flex align-items-center">
+  				<p class="px-2" onclick="toggleMenu()"><i class="fas fa-bars"></i></p>
+  				<p class="px-2 bl-1"><a href="#"><i class="fas fa-caret-up"></i></a></p>
+  			</div>
+
+  			<div id="app2" class="contents contents2">
+  				<div class="flex flex-wrap-md py-10 py-5-md f16">
+  					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
+
+  						<div class="p-3 mb-w bg-white">
+	  						<p class="hi2">Keywords words</p>
+	  						<div class="b-none dv mb-3 mt-1"></div>
+	  						
+	  						<p class="lh1 mb-3">Luqix has <span class="b6"></span> keywords all doing different functions apart from two. Many are got from other giant programming languages as many of these were just perfect, easy to understand and common to coder.</p>
+
+	  						<p class="">So this makes luqix look like already existing giant languages like <a href="">python</a> and <a href="">javascript</a> but remember to not judge a book by its cover, the core and architectural build is very diffent.</p>
+	  					</div>
+
+			 			<div class="">
+		 					<table class="styled-table">
+		 						<thead class="">
+		 							<tr>
+		 								<th>keyword</th>
+		 								<th>usage</th>
+		 							</tr>
+		 						</thead>
+		 						<tbody class="" id="keyz">
+		 						</tbody>
+		 					</table>
+		 				</div>
+
+  					</div>
+
+  					<div class="col-2-xxl px-4 col-3-md col-10-sm navigator">
+  						<div class="pt-4 px-2 py-3 card bg-white">
+  							<p class="b5 tb mb-2 text-lg hd">On this page</p>
+  							<ul class="ml-4">
+	  							<!-- <li class="mb-1"><a href="#" class="px-1">coming soon</a></li> -->
+	  						</ul>
+
+  						</div>
+  					</div>
+  				</div>
+
+  			</div>
+
+  		</div>
+  	</div>
+
+
+  	<script type="text/javascript">
+  		let keys = {
+  			"if": "States a new if statement.",
+  			"elif": "Makes multiple options for an if statement",
+  			"else": "Incase all if statement options fail.",
+  			"switch": "	States as switch statement.",
+  			"case": "Makes options for the switch statement.",
+  			"default": "Executes incases no switch case break.",
+  			"break": "Stops loops and switch blocks execution.",
+  			"not": "Works as readable ! token, for not condition.",
+  			"in": "Checks for the presence of string in string",
+  			"from": "Locates a module or library from import.",
+  			"import": "Imports a file to the working runtime.",
+  			"as": "Renames imported file for easy access.",
+  			"or": "Works as readable || token, for or condition.",
+  			"and": "Works as readable && token, for and condition.",
+  			"true": "Creates true boolean",
+  			"false": "Creates false boolean",
+  			"none": "Creates the null or none data.",
+  			"fn": "Both fn and function define a new functions.",
+  			"function": "Both fn and function define a new functions.",
+  			"enum": "Defines the enum datatype.",
+  			"while": "Starts defining the while loop.",
+  			"for": "Started defining the for loop.",
+  			"continue": "Stops and restarts loop execution.",
+  			"return": "Assignes return data to a function.",
+  			"throw": "throws an error exeception to the runtime.",
+  			"del": "Deletes variable, fuction or object from runtime.",
+  			"class": "Starts defining a new class or object.",
+  			"let": "Un seen by parser but good for variable assigning.",
+  			"try": "Starts the try catch statement.",
+  			"catch": "Makes an option incase try statement fails.",
+  			"pass": "Ignored by parser but placeholder for scopes.",
+  		}
+
+  		let keyz = document.getElementById('keyz');
+
+  		let names = Object.keys(keys);
+  		names.sort();
+
+  		console.log(names);
+
+  		for(let i =0; i < names.length; i++){
+			keyz.innerHTML += `<tr>
+	 								<td>${names[i]}</td>
+	 								<td>${keys[names[i]]}</td>
+	 							</tr>`
+  		}
+  	</script>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../modules/flare/flare.js"></script>
+
+
+	<script type="text/javascript" src="../js/docs.js"></script>
+
+
+</body>
+</html>

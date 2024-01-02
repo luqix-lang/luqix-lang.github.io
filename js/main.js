@@ -1,74 +1,140 @@
+let code = document.getElementsByClassName('code');
+
+let fl = new Flare();
+
+for(let i =0; i < code.length; i++){
+	fl.light(code[i]);
+}
 
 let nav = document.getElementById('nav');
 
-nav.innerHTML = `<div class="nav py-1 blue flex sticky-to justify-center pl-2 overflow-x-scroll-s">
-		<nav class="col-10-xxl col-10-md flex justify-between overflow-x-scroll-sm">
-			<div class="flex align-items-center justify-start justify-between col-10-sm">
-				<a href="index.html" class="cursor-pointer"><p class="title py-2 flex flex-nowrap">LuqixLanguage</p></a>
+nav.innerHTML = `
+<div class="nav flex align-items-center justify-center">
+		<nav class="flex justify-between align-items-center col-8 col-8-lg col-10-sm px-2-sm overflow-x-scroll-sm">
+			<div class="flex justify-start align-items-center">
+				<p class=""><a href="index.html" class="logo text-xl-3 text-xl-md px-2">LUQIX</a></p>
+			</div>
+			<div class="flex justify-center align-items-center">
+				
+			</div>
+			<div class="flex justify-end align-items-center">
+				<p class="py-2 px-2"><a href="docs/docs.html">Docs</a></p>
+				<p class="py-2 px-2"><a href="download.html">Install</a></p>
+				<p class="py-2 px-2"><a href="changelog.html">Changelog</a></p>
+				<p class="py-2 px-2"><a href="blog.html">Blog</a></p>
 
-				<div class="flex align-items-center justify-start ml-4">
-					<p class="py-2 px-2 cursor-pointer"><a href="download.html">Download</a></p>
-					<p class="py-2 px-2 cursor-pointer"><a href="docs/docs.html">Docs</a></p>
-					<p class="py-2 px-2 cursor-pointer"><a>Blog</a></p>
-					<p class="py-2 px-2 cursor-pointer"><a href="https://github.com/luqix-lang/luqix"><i class="fab fa-github icon"></i></a></p>
+				<p class="py-2 px-2 mt-1"><a href="https://github.com/luqix-lang/luqix">
+					<svg xmlns="http://www.w3.org/2000/svg" width="17" fill="currentColor" height="17" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+					
+				</a></p>
+				<div class="switch">
+					<p id="darkmode" class="py-2 mt-1 pl-1">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 22" stroke-width="1.5" stroke="currentColor" width = '17px' height = '17px'>
+						  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+						</svg>
+					</p>
 				</div>
 			</div>
-			<div class="align-items-center justify-end search flex">
-				<p class="px-2"><i class="fas fa-search"></i></p>
-				<input type="" placeholder="Search docs" name="" class="pr-2">
-			</div>
 		</nav>
-	</div>`
-
-
-let bod = document.getElementsByTagName('body')[0];
-
-
-bod.innerHTML += `
-	<div class="pb-10 pt-10 flex flex-wrap justify-center footer">
- 			<div class="col-7 flex flex-wrap pt-5 col-8-lg col-10-md px-3-md">
- 				<div class="col-2 col-10-md mb-5-md">
- 					<p class="segoe"><span class="b6 text-xl-2">Luqix</span><span class="b3 text-xl-2">Language</span></p>
- 					<p class="mt-2 mb-5 text-md">Made and maintained by <span class="b5">Variable<span class="b3">Code</span></span></p>
-
- 					<p class="segoe"><span class="text-xl">Variable</span><span class="b3 text-xl">Code</span></p>
- 					<p class="mb-3 mt-2 text-md">@ 2023 Nov</p>
- 				</div>
- 				<div class="col-4 col-10-md mb-5-md flex flex-wrap">
- 					<p class="mb-4 b5 text-xl-1 col-10">Using luqix</p>
-
- 					<div class="col-4">
- 						<a href="docs/docs.html"><p class="mb-3 text-md b5 underlined">Author docs</p></a>
-	 					<a href=""><p class="mb-3 text-md b5 underlined">Soon book</p></a>
-	 					<a href=""><p class="mb-3 text-md b5 underlined">Tutorials</p></a>
-	 					<a href=""><p class="mb-3 text-md b5 underlined">Channels</p></a>
- 					</div>
- 					<div class="col-4">
- 						<a href="download.html"><p class="mb-3 text-md b5 underlined">Download</p></a>
-	 					<a href="https://github.com/luqix-lang/luqix"><p class="mb-3 text-md b5 underlined">Source code</p></a>
-	 					<a href=""><p class="mb-3 text-md b5 underlined">Online soon</p></a>
- 					</div>
- 				</div>
- 				<div class="col-4 col-10-md flex flex-wrap">
- 					<p class="mb-4 b5 text-xl-1 col-10">Community</p>
-
- 					<div class="col-4">
- 						<a href=""><p class="mb-3 text-md b5 underlined"><i class="fab fa-whatsapp"></i> Whatsapp</p></a>
- 						<a href=""><p class="mb-3 text-md b5 underlined"><i class="fab fa-stack-overflow"></i> Stack Overflow</p></a>
- 						<a href=""><p class="mb-3 text-md b5 underlined"><i class="fab fa-twitter"></i> LuqixLang</p></a>
- 					</div>
- 					<div class="col-4">
- 						<a href="https://github.com/luqix-lang/luqix"><p class="mb-3 text-md b5 underlined"><i class="fab fa-github"></i> Github</p></a>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
+	</div>
 `
 
 
-let hd = document.getElementsByClassName('code');
-let syn = new Flare();
 
-for(let i=0; i < hd.length; i++){
-	syn.light(hd[i]);
+document.getElementById('foot').innerHTML = `<footer class="flex justify-center flex-wrap pb-5 mt-20 pt-7">
+		<div class="flex justify-between flex-wrap col-7 col-8-lg col-10-sm px-4-sm">
+			<div class="col-2 col-5-sm col-3-md mb-3">
+				<img src="img/logo2.svg" height="30px">
+			</div>
+			<div class="col-2 col-5-sm col-3-md mb-3">
+				<p class="bold mb-1">Links</p>
+				<p class="mb-1"><a href="index.html" class="text-md">Home</a></p>
+				<p class="mb-1"><a href="docs/docs.html" class="text-md">Docs</a></p>
+				<p class="mb-1"><a href="download.html" class="text-md">Install</a></p>
+				<p class="mb-1"><a href="changelog.html" class="text-md">Changelog</a></p>
+				<p class="mb-1"><a href="blog.html" class="text-md">Blog</a></p>
+			</div>
+			<div class="col-2 col-5-sm col-3-md mb-3">
+				<p class="bold mb-1">Contribute</p>
+				<p class="mb-1"><a href="" class="text-md">Share code</a></p>
+				<p class="mb-1"><a href="" class="text-md">Documentation</a></p>
+				<p class="mb-1"><a href="" class="text-md">More</a></p>
+			</div>
+			<div class="col-2 col-5-sm col-3-md mb-3">
+				<p class="bold mb-1">Join us</p>
+				<p class="mb-1"><a href="" class="text-md">Youtube</a></p>
+				<p class="mb-1"><a href="" class="text-md">Twitter</a></p>
+				<p class="mb-1"><a href="" class="text-md">Telegram</a></p>
+				<p class="mb-1"><a href="" class="text-md">Whatsapp channels</a></p>
+			</div>
+		</div>
+		<p class="col-10 text-center px-4 text-md mt-2 opacity-80">© 2024 <a href="">Variable code</a>, &nbsp; Author <a href="" class="bold">Kabuye Rogers</a></p>
+	</footer>`
+
+
+
+if(true) {
+	let lk = document.createElement('link');
+	lk.rel = "stylesheet";
+	lk.type="text/css";
+	lk.href="css/dark.css";
+
+	document.getElementsByTagName('head')[0].appendChild(lk);
 }
+
+
+(() => {
+  	'use strict'
+
+	function totheme(ch=1){
+		if (ch)
+			realTimeTheme();
+
+		$('body, .bg-white').toggleClass('dark-bg');
+		$('.smoky, .smoky-blue, .key, .sidebar').toggleClass('dark-smoky');
+		$('*, .contents *').toggleClass('dark-all');
+		$('.side-nav').toggleClass('dark-side-nav');
+		$('.hi4, .hi, .hi2, .hi3, .hi5, .key, .nav *, .fn, .args, .tb').toggleClass('dark-hi1');
+		$('.nav').toggleClass('dark-nav');
+		$('.code, .code2').toggleClass('dark-code');
+		$('.alert').toggleClass('dark-alert');
+		$('.styled-table td:nth-child(odd), td:nth-child(odd) *').toggleClass('dark-table');
+		$('.styled-table *, .styled-table thead tr').toggleClass('dark-table-head');
+		$('.styled-table .obj, .styled-table .obj *, .styled-table td .obj, .tablez').toggleClass('dark-purple');
+		$('.f16 a').toggleClass('dark-a');
+		$('.alert-warning').toggleClass('dark-warning');
+		$('footer a').toggleClass('dark-footer');
+	}
+
+
+	const getStoredTheme = () => localStorage.getItem('theme')
+	const setStoredTheme = (theme) => localStorage.setItem('theme', theme)
+
+	const getPreferredTheme = () => {
+		const storedTheme = getStoredTheme()
+
+		if (storedTheme) {
+	  		return storedTheme
+		}
+
+		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+	}
+
+	const theme = getPreferredTheme();
+	const darkmodes = document.getElementById('darkmode');
+
+	function realTimeTheme(){
+		if (getPreferredTheme() == 'light'){
+			setStoredTheme('dark');
+		} else {
+			setStoredTheme('light')
+		}
+	}
+
+
+	darkmodes.addEventListener('click', totheme);
+
+	if (theme != "light") {
+		totheme(0);
+	}
+})();

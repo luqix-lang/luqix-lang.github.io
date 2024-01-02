@@ -1,44 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
 
-.code *, .code, .code2{
-	color: #001080;
-	font-family: 'Cousine', monospace;
-	font-size: 15px !important;
-	line-height: 1.2;
+
+.code *, .code, .code2, .code2 *{
+	color: #fff;
+	font-family: 'Fira Mono', monospace;
+	font-size: 14px !important;
+	line-height: 20px;
 }
 
 .flare-keywords{
-	color: #af00db !important;
+	color: #ff9a8d !important;
 }
 
 .flare-call{
-	color: #0000ff !important;
+	color: #e0ade3 !important;
 }
 
 .flare-attributes{
-	color: #795e26 !important;
+	color: #faffb2 !important;
 }
 
 .flare-numbers{
-	color: #267f99 !important;
+	color: #63b3ed !important;
 }
 
 .flare-operators{
-	color: #22863a !important;
+	color: #63b3ed !important;
 }
 
 
-.flare-strings, span2, .flare-strings *{
-	color: #a31515 !important;
+.flare-strings, span2, .flare-strings *, .c-string{
+	color: #77b3d1 !important;
 }
 
 .flare-comments, .flare-comments *{
-	color: #8c8c8c !important;
+	color: #718096 !important;
 	font-style: italic;
 }
 
+.c-green{
+	color: #faffb2 !important;
+}
+
 @media (max-width: 650px){
-	.code *, .code{
+	.code *, .code, .code2, .code2 *{
 		font-size: 14px !important;
 		line-height: 24px !important;
 	}

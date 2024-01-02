@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Luqix progamming language</title>
+	<title>Luqix - number module docs</title>
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
@@ -18,7 +18,7 @@
 	<div class="main-container">
 
 	<div id="nav"></div>
-
+	  
   	<div class="content sticky-top" id="docs">
   		<div class="flex sticky-top">
   			<div class="sidebar sticky-top" id="sidebar">
@@ -40,41 +40,42 @@
   				<p class="px-2 bl-1"><a href="#"><i class="fas fa-caret-up"></i></a></p>
   			</div>
 
-
   			<div id="app2" class="contents contents2">
-  				<div class="flex flex-wrap py-10 py-5-md f16">
+  				<div class="flex flex-wrap-md py-10 py-5-md f16">
+  					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
 
-  					<div class="col-8 col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
-  						<div class="px-3 ">
-	  						<p class="hi4">Documentation</p>
-	  						<div class="dv b-none mb-3"></div>
-
-	  						<p class="lh1 mb-4">The Luqix programming language is built on weak standards atleast for now thats to say there is alot of unoptimized code running in there. But that indicates signs of greater improvements from whats provided.</p>
-
-	  						<p class="alert mb-3">Remember the language is very unstable with lots of unspotted bugs, so use but not for production programs as for now .</p>
-				 		</div>
-
-			 			<div class="px-3 mt-5">
-			 				<p class="hi">What is luqix ?</p>
+  						<div class="card p-3 mb-w bg-white">
+	  						<p class="hi2">Number module</p>
 	  						<div class="dv mb-3 mt-2"></div>
+	  						
+	  						<p class="lh1"><b class="b5">number</b> has functions for working with numbers and more are to come.</p>
+	  					</div>
+
+			 			<div id="basic-variables" class="p-3">
 			 				
-			 				<p class="mb-3 lh1">Luqix (pronounced /loo-kee-shː/) is a high level programming language that brings the real easy to coding. It isn't backended by any module otherwise its low level write to bring the real power to the process. Its simply an <span class="b5 tb">interpreter</span> similar to many other languages and provides functionality in almost the same way i guess.</p>
-			 				
-			 				<p class="lh1">Luqix code is meant to be very readable and enforcing <span class="b5">write less, do more</span> the <a href="https://jquery.com/">jquery</a> style.</p>
-			 				<p class="lh1 mb-1 b5">An example</p>
+			 				<p class="hi">Module Attributes</p>
+			 				<div class="dv mt-2 mb-3"></div>
 
-			 				<div class="code mt-5 mb-3">fn hello(name){
-  return f'Hello {name}'
-}
-
-user = prompt('Name: ')
-print(hello(user))</div>
-
-							<p class="mt-2 lh1">That small code can be called a full program.</p>
-						</div>
+			 				<div>
+			 					<div></div>
+			 					<div class="flex flex-wrap table-many">
+			 						<p><a href="#">max</a></p> 
+			 						<p><a href="#">min</a></p> 
+			 					</div>
+			 				</div>
+			 			</div>
 
   					</div>
-  					<div class="col-2 col-3-md col-10-sm"></div>
+
+  					<div class="col-2-xxl px-4 col-3-md col-10-sm navigator">
+  						<div class="pt-4 px-2 py-3 card bg-white">
+  							<p class="b5 tb mb-2 text-lg hd">On this page</p>
+  							<ul class="ml-4">
+	  							<!-- <li class="mb-1"><a href="#" class="px-1">coming soon</a></li> -->
+	  						</ul>
+
+  						</div>
+  					</div>
   				</div>
 
   			</div>
@@ -85,16 +86,7 @@ print(hello(user))</div>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 	<script type="text/javascript" src="../modules/flare/flare.js"></script>
-	<!-- <script type="text/javascript">
-		function syntaxLight(){
-			let hd = document.getElementsByClassName('code');
-			let syn = new Flare();
 
-			for(let i=0; i < hd.length; i++){
-				syn.light(hd[i]);
-			}
-		}
-	</script> -->
 
 	<script type="text/javascript" src="../js/docs.js"></script>
 

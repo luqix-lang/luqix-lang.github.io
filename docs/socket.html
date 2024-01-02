@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luqix socket module</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
+   
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  	<link rel="stylesheet" type="text/css" href="../css/fancy.css">
+  	<link rel="stylesheet" type="text/css" href="../modules/flare/flare.css">
+
+</head>
+<body >
+
+	<div class="main-container">
+
+	<div id="nav"></div>
+	  
+  	<div class="content sticky-top" id="docs">
+  		<div class="flex sticky-top">
+  			<div class="sidebar sticky-top" id="sidebar">
+  				<div class="">
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<a href="docs.html"><p class="side-nav px-3">Introduction</p></a>
+  						<a href="basics.html"><p class="side-nav px-3">Basics and syntax</p></a>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Builtin module</span> <span class="caret-right"></span></p>
+  					<div class="side-dec" id="modules-nav">
+  					</div>
+  					
+  				</div>
+  			</div>
+
+  			<div class="menu-call flex align-items-center">
+  				<p class="px-2" onclick="toggleMenu()"><i class="fas fa-bars"></i></p>
+  				<p class="px-2 bl-1"><a href="#"><i class="fas fa-caret-up"></i></a></p>
+  			</div>
+
+  			<div id="app2" class="contents contents2">
+  				<div class="flex flex-wrap-md py-10 py-5-md f16">
+  					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
+
+  						<div class="p-3 mb-w">
+	  						<p class="hi2">Socket module</p>
+	  						<div class="dv mb-3 mt-2"></div>
+	  						
+	  						<p class="lh1"><b>socket</b> provides networking to a program using the <b>Berkeley Socket Interface</b> that is commonly seen in many programming language. Docs like for <a href="">python socket</a> module will greatly help as no change was possible for this module in luqix implimentation.</p>
+	  					</div>
+
+			 			<div id="basic-variables" class="p-3">
+			 				<p class=" mb-3 alert">Remeber that this module if used to greatest greatest power you can even download from the internet and scrap the web plus building servers</p>
+			 				
+			 				<p class="mt-7 hi">Module Attributes</p>
+			 				<div class="dv mt-2 mb-3"></div>
+
+			 				<div>
+			 					<div></div>
+			 					<div class="flex flex-wrap table-many">
+			 						<p><a href="#">AF_APPLETALK</a></p> 
+									<p><a href="#">AF_INET</a></p> 
+									<p><a href="#">AF_INET6</a></p> 
+									<p><a href="#">AF_IPX</a></p> 
+									<p><a href="#">AF_UNIX</a></p> 
+									<p><a href="#">AF_UNSPEC</a></p> 
+									<p><a href="#">IPPROTO_GGP</a></p> 
+									<p><a href="#">IPPROTO_ICMP</a></p> 
+									<p><a href="#">IPPROTO_IDP</a></p> 
+									<p><a href="#">IPPROTO_IGMP</a></p> 
+									<p><a href="#">IPPROTO_IP</a></p> 
+									<p><a href="#">IPPROTO_IPV6</a></p> 
+									<p><a href="#">IPPROTO_PUP</a></p> 
+									<p><a href="#">IPPROTO_RAW</a></p> 
+									<p><a href="#">IPPROTO_TCP</a></p> 
+									<p><a href="#">IPPROTO_UDP</a></p> 
+									<p><a href="#">SHUT_RD</a></p> 
+									<p><a href="#">SHUT_RDWR</a></p> 
+									<p><a href="#">SHUT_WR</a></p> 
+									<p><a href="#">SOCK_DGRAM</a></p> 
+									<p><a href="#">SOCK_RAW</a></p> 
+									<p><a href="#">SOCK_RDM</a></p> 
+									<p><a href="#">SOCK_SEQPACKET</a></p> 
+									<p><a href="#">SOCK_STREAM</a></p> 
+									<p><a href="#">SOL_GGP</a></p> 
+									<p><a href="#">SOL_ICMP</a></p> 
+									<p><a href="#">SOL_IDP</a></p> 
+									<p><a href="#">SOL_IGMP</a></p> 
+									<p><a href="#">SOL_IP</a></p> 
+									<p><a href="#">SOL_IPV6</a></p> 
+									<p><a href="#">SOL_PUP</a></p> 
+									<p><a href="#">SOL_RAW</a></p> 
+									<p><a href="#">SOL_SOCKET</a></p> 
+									<p><a href="#">SOL_TCP</a></p> 
+									<p><a href="#">SOL_UDP</a></p> 
+									<p><a href="#">SO_ACCEPTCONN</a></p> 
+									<p><a href="#">SO_BROADCAST</a></p> 
+									<p><a href="#">SO_DEBUG</a></p> 
+									<p><a href="#">SO_DONTROUTE</a></p> 
+									<p><a href="#">SO_ERROR</a></p> 
+									<p><a href="#">SO_IPV6_JOIN_GROUP</a></p> 
+									<p><a href="#">SO_IPV6_LEAVE_GROUP</a></p> 
+									<p><a href="#">SO_IPV6_MULTICAST_HOPS</a></p> 
+									<p><a href="#">SO_IPV6_MULTICAST_IF</a></p> 
+									<p><a href="#">SO_IPV6_MULTICAST_LOOP</a></p> 
+									<p><a href="#">SO_IPV6_UNICAST_HOPS</a></p> 
+									<p><a href="#">SO_IPV6_V6ONLY</a></p> 
+									<p><a href="#">SO_KEEPALIVE</a></p> 
+									<p><a href="#">SO_LINGER</a></p> 
+									<p><a href="#">SO_OOBINLINE</a></p> 
+									<p><a href="#">SO_RCVBUF</a></p> 
+									<p><a href="#">SO_RCVLOWAT</a></p> 
+									<p><a href="#">SO_RCVTIMEO</a></p> 
+									<p><a href="#">SO_REUSEADDR</a></p> 
+									<p><a href="#">SO_SNDBUF</a></p> 
+									<p><a href="#">SO_SNDLOWAT</a></p> 
+									<p><a href="#">SO_SNDTIMEO</a></p> 
+									<p><a href="#">SO_TCP_NODELAY</a></p> 
+									<p><a href="#">SO_TYPE</a></p> 
+									<p><a href="#Socket">Socket</a></p> 
+									<p><a href="#">getaddrinfo</a></p> 
+									<p><a href="#">gethostbyaddr</a></p> 
+									<p><a href="#">gethostbyname</a></p>
+			 					</div>
+			 				</div>
+			 			</div>
+
+			 			<div id="Socket" class="py-3 px-5 px-3-md">
+			 				<p class="mb-3 b5 tb fn">socket.Socket<span class="args">(AF, SOCK)</span></p>
+			 				
+			 				<p class="mb-4 lh1">Creates a socket object ready for interfacing with connection of the type specified by the <a href="">address family</a> and <a href="">socket type</a> which would include <a href="">TCP</a>, <a href="">UDP</a> and many more.</p>
+
+			 				<div class="code mb-4 mt-2">conn = socket.Socket(socket.AF_INET, socket.SOCK_STREAM) // tcp socket</div>
+
+			 				<div class="mt-3">
+			 					<table class="styled-table">
+			 						<thead class="">
+			 							<tr>
+			 								<th>attribute</th>
+			 								<th>function</th>
+			 							</tr>
+			 						</thead>
+			 						<tbody class="">
+			 							<tr>
+			 								<td>accept</td>
+			 								<td>accepts connection to the server returning an individual client handling object.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>addr_family</td>
+			 								<td>returns the string address family of the stream</td>
+			 							</tr>
+			 							<tr>
+			 								<td>bind</td>
+			 								<td>binds the socket object to the given localhost and port</td>
+			 							</tr>
+			 							<tr>
+			 								<td>close</td>
+			 								<td>closes the connection</td>
+			 							</tr>
+			 							<tr>
+			 								<td>connect</td>
+			 								<td>connects socket object to a server at the given localhost and port.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>hostname</td>
+			 								<td>returns the hostname string used by the server.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>isalive</td>
+			 								<td>returns true if the connection is still running or false.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>listen</td>
+			 								<td>determines the maximum number of clients the server should listen to at a time.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>send</td>
+			 								<td>sends bytes data on the network</td>
+			 							</tr>
+			 							<tr>
+			 								<td>sendto</td>
+			 								<td>sends byte data on the network like <b>UDP</b> that requires no validation.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>setblocking</td>
+			 								<td>if given true set socket to blocking or false to not blocking.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>setsockopt</td>
+			 								<td>Helps in reusing the port and more.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>shutdown</td>
+			 								<td>shutdowns connections to the socket either for one side or all.</td>
+			 							</tr>
+			 						</tbody>
+			 					</table>
+			 				</div>
+
+			 			</div>
+
+  					</div>
+
+  					<div class="col-2-xxl px-4 col-3-md col-10-sm navigator">
+  						<div class="pt-4 px-2 py-3">
+  							<p class="b5 tb mb-2 text-lg hd">On this page</p>
+  							<ul class="ml-4">
+	  							<!-- <li class="mb-1"><a href="#" class="px-1">coming soon</a></li> -->
+	  						</ul>
+  						</div>
+  					</div>
+  				</div>
+
+  			</div>
+
+  		</div>
+  	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../modules/flare/flare.js"></script>
+
+
+	<script type="text/javascript" src="../js/docs.js"></script>
+
+
+</body>
+</html>

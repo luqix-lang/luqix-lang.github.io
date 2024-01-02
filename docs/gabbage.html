@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luqix - Gabbage collection tool docs</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
+   
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  	<link rel="stylesheet" type="text/css" href="../css/fancy.css">
+  	<link rel="stylesheet" type="text/css" href="../modules/flare/flare.css">
+
+</head>
+<body >
+
+	<div class="main-container">
+
+	<div id="nav"></div>
+	  
+  	<div class="content sticky-top" id="docs">
+  		<div class="flex sticky-top">
+  			<div class="sidebar sticky-top" id="sidebar">
+  				<div class="">
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<a href="docs.html"><p class="side-nav px-3">Introduction</p></a>
+  						<a href="basics.html"><p class="side-nav px-3">Basics and syntax</p></a>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Builtin module</span> <span class="caret-right"></span></p>
+  					<div class="side-dec" id="modules-nav">
+  					</div>
+  					
+  				</div>
+  			</div>
+
+  			<div class="menu-call flex align-items-center">
+  				<p class="px-2" onclick="toggleMenu()"><i class="fas fa-bars"></i></p>
+  				<p class="px-2 bl-1"><a href="#"><i class="fas fa-caret-up"></i></a></p>
+  			</div>
+
+  			<div id="app2" class="contents contents2">
+  				<div class="flex flex-wrap-md py-10 py-5-md f16">
+  					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
+
+  						<div class="p-3 mb-w bg-white">
+	  						<p class="hi2">Gabbage collection</p>
+	  						<div class="b-none dv mb-3 mt-1"></div>
+	  						
+	  						<p class="lh1 mb-3">Luqix is a gabbage collected programming language that uses the gabbage collector the compiling dlang compiler provided. This has proven to be working but as you compile, if you know how turn off the <span class="key">gc</span> for testing.</p>
+
+	  						<p class="alert-warning alert mt-2"><b>to be sincere</b>, during luqix development the <a href="">GC</a> work has not been put into much though has the compiler or parent language proves to be efficient.</p>
+
+	  						<p class="alert mt-4">Be aware of any <span class="b5">change</span> that may arise if the gabbage collector is put into great consideration.</p>
+	  					</div>
+
+
+			 			<div class="py-3 px-5 px-3-md card bg-white">
+			 				<p class="hi">Functions to work with gabbage</p>
+			 				<div class="dv mt-1 mb-3"></div>
+			 			
+			 				<p class="mb-3 lh1">I would consider calling <span class="key">gabbage</span> variables or data nolonger needed in your code space or runtime, well then its better to release them out.</p>
+
+			 				<p class="mb-3 lh1">But this must be done when your are making great and kin follow up of your code because this may result into <a href="">burdening errors</a> as the deleted data may still or be in use but some executing function.</p>
+
+			 				<p class="mt-5 hi3"><span class="b4">#</span> del <span class="args">name</span> statement</p>
+			 				<div class="dv mt-1 mb-3"></div>
+			 				<p class="mb-3 lh1"><span class="key">del</span> is used to delete variables that includes functions and objects residing in the runtime from the storage <a href="">heap</a> by their name.</p>
+
+			 				<p class="mb-3 lh1">This deletes the variable from the <span class="key">heap</span> and the instance of the data its pointing to, if it was the last instance like if it were a <span class="key">list</span> then the list finally goes.</p>
+
+			 				<div class="code mb-4 mt-4">a = 90
+print(a)
+
+del a
+print(a) // reference-error because 'a' nolonger exists.</div>
+
+							<p class="alert"><b>del</b> is a statement parsed by the parser and poor usage leads to a syntax error, <b>del is followed by a variable</b>, its a must do.</p>
+
+			 			</div>
+
+  					</div>
+
+  					<div class="col-2-xxl px-4 col-3-md col-10-sm navigator">
+  						<div class="pt-4 px-2 py-3 card bg-white">
+  							<p class="b5 tb mb-2 text-lg hd">On this page</p>
+  							<ul class="ml-4">
+	  							<!-- <li class="mb-1"><a href="#" class="px-1">coming soon</a></li> -->
+	  						</ul>
+
+  						</div>
+  					</div>
+  				</div>
+
+  			</div>
+
+  		</div>
+  	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../modules/flare/flare.js"></script>
+
+
+	<script type="text/javascript" src="../js/docs.js"></script>
+
+
+</body>
+</html>
