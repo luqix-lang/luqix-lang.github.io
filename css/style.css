@@ -65,6 +65,7 @@
 
 .blue{ color: #68eEe3; }
 
+
 .smoky{ background-color: #F5F5f5; }
 .smoky-blue{ background-color: #Efefef; }
 .b4{ font-weight: 400; }
@@ -451,6 +452,8 @@ footer .b5{
 .args{
 	font-family: monospace;
 	font-size: 16px;
+
+
 }
 
 .table-many p{
@@ -467,6 +470,7 @@ footer .b5{
 	font-size: 18px;
 	font-weight: 500;
 }
+
 
 @media (max-width:  1400px){
 	.contents{
