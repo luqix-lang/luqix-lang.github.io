@@ -41,39 +41,49 @@
   			</div>
 
   			<div id="app2" class="contents contents2">
-  				<div class="flex flex-wrap-md py-10 py-5-md f16">
+  				<div class="flex flex-wrap-md py-5 py-2-sm">
   					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
 
   						<div class="card p-3 mb-w bg-white">
-	  						<p class="hi2">Json module</p>
-	  						<div class="dv mb-3 mt-2"></div>
+	  						<p class="page mb-3">Json module</p>
 	  						
-	  						<p class="lh1"><b class="b5">json</b> the javascript object notation data is provided as a builtin module that could not be that necessary mainly because of speed, who knows the large sum of data this functionality may have to handle in the least time possible.</p>
-	  					</div>
+	  						<p class="lh1 mb-3"><b>JSON</b> the javascript object notation data is provided as a builtin module that could not be that necessary mainly because of speed, who knows the large sum of data this functionality may have to handle in the least time possible.</p>
+	  						
+	  						<div class="code mt-3">let json = require('json');</div>
 
-			 			<div id="basic-variables" class="p-3">
-			 				
-			 				<p class="hi">Module Attributes</p>
-			 				<div class="dv mt-2 mb-3"></div>
+	  						<p class="text-md mt-3 mb-1">Summarised table</p>
 
-			 				<div>
-			 					<div></div>
-			 					<div class="flex flex-wrap table-many">
-			 						<p><a href="#">parse</a></p> 
-									<p><a href="#">stringify</a></p> 
-			 					</div>
+	  						<div class="">
+			 					<table class="styled-table">
+			 						<thead class="">
+			 							<tr>
+			 								<th>Function&nbsp;<span class="d-none-sm">name</span></th>
+			 								<th>Usage and Description</th>
+			 							</tr>
+			 						</thead>
+			 						<tbody class="">
+			 							<tr>
+			 								<td><a href="#Open">parse</a></td>
+			 								<td>Converts a json string to a luqix data <b class="mn">parse('[1,2,3,4]')</b> endavour its well formatted.</td>
+			 							</tr>
+			 							<tr>
+			 								<td><a href="#Open">stringify</a></td>
+			 								<td>Converts luqix data to a json string <b class="mn">stringify([1,2,3,4])</b>, any apart from custom object.</td>
+			 							</tr>
+			 						</tbody>
+			 					</table>
 			 				</div>
 			 			</div>
 
 			 			<div id="Socket" class="py-3 px-5 px-3-md px-0-sm card bg-white">
-			 				<div class="code mb-4">JSON = require('json')
+			 				<div class="code mb-4">let json = require('json')
 
 obj = {a: 'hello', b: 'world', c: [1, 2, 3, 'a', 'bc', 'def', {w: 'xyz'}]}
 
-st = JSON.stringify(obj)
+st = json.stringify(obj)
 print(st)
 
-print(JSON.parse(st))</div>
+print(json.parse(st))</div>
 
 
 			 			</div>

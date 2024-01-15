@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luqix progamming language</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
+   
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  	<link rel="stylesheet" type="text/css" href="../css/fancy.css">
+  	<link rel="stylesheet" type="text/css" href="../modules/flare/flare.css">
+
+</head>
+<body >
+
+	<div class="main-container">
+
+	<div id="nav"></div>
+	  
+  	<div class="content sticky-top" id="docs">
+  		<div class="flex sticky-top">
+  			<div class="sidebar sticky-top" id="sidebar">
+  				<div class="">
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<a href="docs.html"><p class="side-nav px-3">Introduction</p></a>
+  						<a href="basics.html"><p class="side-nav px-3">Basics and syntax</p></a>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Builtin module</span> <span class="caret-right"></span></p>
+  					<div class="side-dec" id="modules-nav">
+  					</div>
+  					
+  				</div>
+  			</div>
+
+  			<div class="menu-call flex align-items-center">
+  				<p class="px-2" onclick="toggleMenu()"><i class="fas fa-bars"></i></p>
+  				<p class="px-2 bl-1"><a href="#"><i class="fas fa-arrow-up"></i></a></p>
+  			</div>
+  			
+  			<div id="app2" class="contents contents2">
+  				<div class="flex flex-wrap-md py-3 py-2-sm f16">
+
+  					<div class="col-8 col-10-sm pl-10 pl-7-lg pl-0-md pl-5 mb-3">
+
+  						<div class="py-3 px-5">
+  							<p class="page mb-3">Datatypes</p>
+  							<p class="lh1 mb-3">Luqix has a few datatypes since its interpreted, but i think they can suit to carry all data required in your code and they only total to 7.</p>
+
+  							<p class="lh1 mb-3">You are also capable of creating your own datatypes called <b class="key">objects</b> from the existing datatypes to which you provide methods for their manuplation. <a href="" class="b6">coming soon example</a>.</p>
+
+  							<p class="lh1 mb-3">You may find others provided as simple libraries either written in native code or built on top of luqix classes.</p>
+
+  							<p class="mt-3 alert"><b>Info</b><br>First to check the type of the data use the <a href="#" class="b6">type(...)</a> function or find data length using <a href="#" class="b6">len(...)</a>. All these are from <a class="key" href="locals.html">locals module</a>. Good enough all its functions are already imported to the working scope.</p>
+						</div>
+  						
+			 			<div id="number" class="mt-5 px-5 px-3-md card bg-white ">
+			 				<p class="mb-3 h1"># number</p>
+			 				
+			 				<p class="mb-3 lh1">The number datatype includes all kinds of numbers in programming as due to weak typing, the interpreter will get a version of what it wants from your given code.</p>
+			 				<p class="bold alert">intergers, float, double, real. byte, short -> <span class="bold">number</span></p>
+
+			 				<p class="mt-3 alert alert-warning"><b>Did you know?</b><br> The <span class="bold">number</span> is a <span class="bold">double</span> in native code that is casted to the required number when needed.</p>
+
+			 				<div class="code mt-5 mb-3">a = 12345 // integer
+b = 34.5 // float
+c = -475 // hegative
+
+money = 1_000_000.5</div>
+
+							<p class="mt-2 mb-3 alert"><b>Must know!</b><br> All arithmetic operations work with numbers so if used on another datatype, it will be seen as a zero, in such cases, each datatype as a corresponding module to handle such operating. <a href="math.html" class="underlined">Checkout the <span>math</span> module</a></p>
+						</div>
+
+
+			 			<div id="string" class="py-3 px-5 px-3-md card bg-white">
+							<p class="mb-3 h1 "># string</p>
+			 				
+			 				<p class="mb-3 lh1">The string is a bunch of characters both letters, numbers and marks. This will be created for any character inside quotes, <span class="key bold">'...' "..."</span>, read from a file or decode <a href="#bytes">bytes</a>.</p>
+
+			 				<div class="code mt-5 mb-3">name = 'luqix programming language'
+user = prompt('Enter name: ')
+
+ascii = 'abcdefghijklmnopqrstuvwxyz0123456789!@$%^&*(())-+{}\/..'
+hex = '\x72' // r</div>
+
+							<p class="alert alert-warning"><b>Note</b><br>For <b>hex-codes</b> and other special string encodings be very kin as due to poor usage, you may get an error that is hard to resolve now since error handling is still poor.</p>
+
+							<p class="h2 mt-5 mb-2">Formatted string</p>
+			 				<p class="mb-3 lh1">This one makes life easy as at parsing time the string is well formatted to special code that binds all assigned code in curl braces as one. That escapes numerous string concations.</p>
+
+			 				<div class="code mt-5 mb-3">a = 4
+b = 4
+
+print(f'And the total is {a + b}.')
+
+// similar approached
+c = str.concat('And the total is ', a + b, '.')
+print(c)</div>
+
+							<p class="h2 mt-5 mb-2">Raw string</p>
+			 				<p class="mb-3 lh1">Enables you capture a string in its raw form minus un-decoding its special characters and <a class="key">string encodings</a>.</p>
+
+			 				<div class="code mt-5 mb-3">a = 4
+b = 4
+
+print(f'And the total is {a + b}.')
+
+// similar approached
+c = str.concat('And the total is ', a + b, '.')
+print(c)</div>
+
+						</div>
+
+						<div id="list" class=" px-5 px-3-md card bg-white ">
+			 				<p class="mb-3 h1"># list</p>
+			 				
+			 				<p class="mb-3 lh1">This is an array capable of storing multiple datatypes and to which other operations can be done like indexing, duplicating and many more.</p>
+
+			 				<p class="alert mt-3"><b>Note</b><br>The list's ability to store multiple datatypes has no effect to efficience as in backend, all luqix datatypes are the same object type.</p>
+
+			 				<p class="mt-3 alert alert-warning"><b>Info</b><br>For the iterator cases we are not yet there but methods like indexing are provided and a <b>local module object</b>, <b>list</b> just to manuplate and use lists data.</p>
+
+			 				<p class="mt-3"><a class="b6" href="locals.html">list object</a> is automatically imported to the runtime when the program starts and its the one to handle lists data other than each list object having its own attributes. This is done for memory optimization.</p>
+
+			 				<div class="code mt-5">items = ['a', 'b', 'c', 1, 2, [3, 4]]
+
+print(attr(lists)) // ['append', 'clear', 'contains', 'copy', 'ext...</div>
+
+							<p class="mt-3">We use <span class="key">[...]</span> to make lists but their is an option too using <span class="key">(...)</span> although this has a trick. As for code readability, we use the <a href="https://python.org">python</a> tuple idea. If such <span class="key">(true)</span> with one item, its seen as a math bracket but if multiple members <span class="key">(true, 1)</span> or a trailing <span class="key">,</span> <span class="key">(1,)</span> then its a list.</p>
+
+
+							<div class="code mt-3">tuple_like = (1, 2, 'hello', 4, 'world') // [1, 2, 'hello...
+x = (1) // 1
+y = (1,) // 2
+z = (true, 1) // [true, 1]</div>
+
+			 				<div class="code mt-3 mb-3">wild = ['lion', 'rat', 'hare', 'hyena']
+dom = ['cat', 'dog', 'racoon']
+
+animals = list.join(wild, dom)
+print(animals)
+
+str.sort(animals)
+print(animals)
+
+animals[1] // dog</div>
+
+							<p class="mt-2 mb-3 alert alert-warning"><b>Must know?</b><br>builtin sorting algorithms are not yet there but all is to be ready in the stable version. You can sort this data with native luqix too.</p>
+						</div>
+
+
+						<div id="dictionary" class="mt-7 px-5 px-3-md card bg-white ">
+			 				<p class="mb-3 h1"># dictionary</p>
+			 				
+			 				<p class="mb-3 lh1">Abbreviated as <b class="key">dict</b>, Dict data is inspired from already existing languages, its a javascript object, python dictionary with almost no change. Data is handled the same way and a clue for its backend is that it is a real <a href="" class="b6">associative array</a> in native code with the a <b>string as a key</b> and a <b>luqix datatype as the value</b>.</p>
+
+			 				<p class="mb-3">This minimizes on the level of wrapping but satisfy dynamicness during code interpretation to machine code.</p>
+
+			 				<p class="alert mt-3"><b>Note</b><br>The <a href="locals.html" class="b6">dict module</a> has the functions to handle dictionary data but remember its already imported in the working scope.</p>
+
+			 				<p class="mt-3"><a class="b6" href="json.html">json module</a> is a builtin module which when combined with the dict datatype, you can communicate with many systems including the tremendous <a href="" class="b6">Javascript</a> and its unique web capabilities.</p>
+
+			 				<div class="code mt-5">data = {a: 'A', b: 'B', c: 'C', d: 123}
+
+print(data['c']) // C</div>
+	
+
+							<p class="mt-3">For dynamic purposes you must use strings as keys.</p>
+							<div class="code mt-3">settings = {
+    'theme': 'dark',
+    'font size': 14,
+    'open files': ['main.lqs', 'wav.mp3']
+}</div>
+
+							<p class="mt-3">Getting items and manuplating dict data.</p>
+
+			 				<div class="code mt-3 mb-3">print(attrs(dict)) // ['clear', 'copy', 'get', 'has', 'keys', 'pop...
+
+data[a] = 'abcd'
+print(data) // { c: 'C', a: 'abcd', b: 'B', d: 123 }
+
+copy_of_items = dict.copy(data)
+
+keys = dict.keys(data) // ['c', 'a', 'b', 'd']
+values = dict.values(data) // ['C', 'abcd', 'B', 123]</div>
+
+							<p class="mt-2 mb-3 alert"><b>Must know</b><br>Don't expect the right order for inserting the data as dict capabilities don't mind the order and its done for optimisation purposes.</p>
+
+							<p class="mt-3">This datatype would make a great app settings store for revisiting and updating and if joined with <a href="json.html" class="bold">json module</a>, the program would come to life. <a href="" class="b6">Checkout an example</a></p>
+						</div>
+
+
+						<div id="boolean" class="mt-7 px-5 px-3-md card bg-white ">
+			 				<p class="mb-3 h1"># boolean</p>
+			 				
+			 				<p class="mb-3 lh1">These are only two and used for inquality expression. The <b>true</b> and <b>false</b> keywords are used to make them. They are equvalent to <b>1</b> and <b>0</b> but best for readability.</p>
+
+			 				<p class="alert alert-warning mt-3"><b>Note <br></b>The list's ability to store multiple datatypes has no effect to efficience as in backend, all luqix datatypes are the same object type.</p>
+
+			 				<div class="code mt-5">x = true
+y = false</div>
+
+							<p class="mt-3">To view there number format we use the <a href="locals.html" class="b6">numb</a> object one as the argument.</p>
+
+
+							<div class="code mt-3">numb(true) // 1
+numb(false) // 0</div>
+
+			 				<p class="mt-3">Booleans are over saturated as runtime return values as many functions default to returning them.</p>
+
+			 				<div class="code mt-3 mb-3">file = require('file')
+
+sample = 'app.lqs'
+bool = file.exists(sample) // expect true or false
+
+if (bool)
+    print(file.isfile(sample)</div>
+
+							<p class="mt-2 mb-3 alert alert-warning"><b>Must know <br></b> Using <b>true or 1</b> or <b>false or 0</b> has not effect anythin since the runtime see only the number value.</p>
+						</div>
+
+
+						<div id="none" class="mt-7 px-5 px-3-md card bg-white ">
+			 				<p class="mb-3 h1"># none</p>
+			 				
+			 				<p class="mb-3 lh1">This is simply <b>null</b> in machine code as it represents no data, its fit for empty arguments as its utilizes no memory at machine level.</p>
+
+
+			 				<div class="code mt-3">n = none</div>
+
+							<p class="mt-3">Its number value is <b>0</b> just for dynamicness but behind the hood its no data.</p>
+
+							<div class="code mt-3">numb(none) // 0</div>
+
+							<p class="mt-2 mb-3 alert alert-warning"><b>Must know</b><br>Functions to which have no <a href="" class="bold">return statement</a> return a <span class="key">none</span> too.</p>
+						</div>
+
+						<div id="custom-object" class="mt-7 px-5 px-3-md card bg-white ">
+			 				<p class="mb-3 h1"># custom objects</p>			 				
+			 				<p class="">A whole page is dedicated to this data since its robust, efficient and useful.</p>
+							<p class="">Checkout <a href="objects.html" class="b6">custom objects</a></p>
+						</div>
+
+  					</div>
+  					<div class="col-2-xxl px-4-md col-3-md col-10-sm navigator">
+  						<div class="pt-2">
+  							<p class="b6 text-lg">On this page</p>
+  							<p class="px-2 locate"><a href="#number" class="px-1">Numbers</a></p>
+  							<p class="px-2 locate"><a href="#string" class="px-1">Strings</a></p>
+  							<p class="px-2 locate"><a href="#list" class="px-1">Lists</a></p>
+  							<p class="px-2 locate"><a href="#dictionary" class="px-1">Dictionaries</a></p>
+  							<p class="px-2 locate"><a href="#boolean" class="px-1">Booleans</a></p>
+  							<p class="px-2 locate"><a href="#none" class="px-1">None</a></p>
+  							<p class="px-2 locate"><a href="#custom-object" class="px-1">Custom objects</a></p>
+  						</div>
+  					</div>
+  				</div>
+
+  			</div>
+
+  		</div>
+  	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../modules/flare/flare.js"></script>
+
+
+	<script type="text/javascript" src="../js/docs.js"></script>
+
+
+</body>
+</html>

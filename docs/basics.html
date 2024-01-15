@@ -41,14 +41,14 @@
   			</div>
   			
   			<div id="app2" class="contents contents2">
-  				<div class="flex flex-wrap-md py-10 py-5-md f16">
+  				<div class="flex flex-wrap-md py-5 f16">
 
   					<div class="col-8 col-10-sm pl-10 pl-7-lg pl-0-md pl-5 mb-3">
 
   						<div class="py-3 px-5">
-  							<p class="text-xl-8 tb text-xl-7-lg">Basics and syntax</p>
+  							<p class="page mb-2">Basics and syntax</p>
   							<div class="dv mt-1 mb-3"></div>
-  							<p class="lh1">Luqix code is written in the C way or indentive way, thats to say you can use alot of whiespaces in your code or non at all. The indentive code may not be very safe now as bugs may not be visible to the parser but if you write it properly you are on a safe side or why not rely on the <a href="">C way</a>.</p>
+  							<p class="lh1">Luqix code is written in the C way or indentive way, thats to say you can use alot of whitespaces in your code or non at all. The indentive code may not be very safe now as bugs may not be visible to the parser but if you write it properly you are on a safe side or why not rely on the <a href="">C way</a>.</p>
 
   							<p class="mt-3 mb-3"><a href="https://www.youtube.com/watch?v=evCQrHAk9MU">Watch youtube tutorial...</a></p>
 
@@ -56,50 +56,54 @@
 						</div>
   						
 			 			<div id="basic-variables" class="py-3 px-5 px-3-md card bg-white mt-3">
-			 				<p class=" tb b5 hi">Variables</p>
+			 				<p class="h1">Variables</p>
 			 				<div class="dv mt-1 mb-3"></div>
 			 				
-			 				<p class="mb-3 lh1">Luqix does have things like <a href="">immutable</a> and <a href="">constant</a> variables since one's code implementation is enough to have these in the code, never the less if a super need come who knows.</p>
+			 				<p class="mb-3 lh1">Luqix doesn't have things like <a href="">immutable</a> and <a href="">constant</a> variables since one's code implementation is enough to have these in the code, never the less if a super need comes who knows.</p>
 
-			 				<p class="mb-3 lh1">There exists no global variables but using <a href="">lists tricks</a> you can achieve that, the options are endless.</p>
+			 				<p class="mb-3 lh1">There exists no global variables but using <a href="">lists tricks</a> and <a href="objects.html">Objects</a> you can achieve that, the options are endless. The <b>let</b> keyword is just for code redability and can be used where you want because it doesn't reach the parsing stage.</p>
 
-			 				<div class="code mt-5 mb-3">name = 'Luqix language'
+			 				<div class="code mt-5 mb-3">// all these are variables
+program = 'hello world!'
 
-version = '0.7.1'</div>
+let file = require('file')
+
+x = 9; y = 8
+z = (x, y)</div>
 
 							<p class="mt-2 mb-3 lh1">Variables don't have types, they can handle any a datatype which changes throughtout the execution. <br>Scoped variables like in functions are not available outside their scope.</p>
 
-			 				<div class="code mt-5 mb-3">fn scope_fn(){
+			 				<div class="code mt-5 mb-3">fn foo(){
     a = 'abcdef'
 }
 
-//error 'a' is not defined in this scope.
+//ReferenceError 'a' is not defined, --- in this scope.
 print(a)</div>
 						</div>
 
 
 			 			<div id="basic-functions" class="py-3 px-5 px-3-md card bg-white">
-							<p class="hi">Functions</p>
+							<p class="h1">Functions</p>
 			 				<div class="dv mt-1 mb-3"></div>
 			 				
-			 				<p class="mb-3 lh1">As usual, luqix functions are blocks of reusable and organised code that usually perform a single, related action. They may require <a href="">arguments</a> if assigned parameters and <b class="tb b5">a name</b> that is used to make use of it in the code.</p>
-			 				<p class="mb-3 lh1">Functions <a href="" class="key">return</a> data after performing some task if assigned to do so by the <b class="key">return</b> keyword or it defaults to <a href="" class="key">none</a>.</p>
+			 				<p class="mb-3 lh1">As usual, luqix functions are blocks of reusable and organised code that usually perform a single or related action. They may require <a href="">arguments</a> if assigned parameters and <b class="tb b5">a name</b> that is used to make use of it in the code.</p>
+			 				<p class="mb-3 lh1">Functions <a href="" class="key">return</a> data after performing some task if assigned to do so by the <b class="key">return</b> keyword or it defaults to <a href="datatypes.html#none" class="key">none</a> datatype.</p>
 
 			 				<div class="code mt-5 mb-3">fn foo(a, b) {
     print(a, b)
     return 'I like ice cream.'
 }</div>
 
-							<p class="hi3 mt-4">Calling functions</p>
+							<p class="h2 mt-3">Calling functions</p>
 			 				<div class="dv mt-1 mb-3"></div>
 			 				<p class="mb-3 lh1">To call a function you simply use the parenthesis and supply it with the <span class="key">arguments</span> required by the function separated by commas.</p>
 
-			 				<p class="alert alert-warning"><b>Warning !</b><br>Please give the function call the right number of arguments to avoid <a href="">errors</a>, these may even be harder to handle for now.</p>
+			 				<p class="alert alert-warning"><b>Warning !</b><br>Please give the function call the right number of arguments to avoid <a href="" class="b6">errors</a>, these will be harder to handle for now.</p>
 
 			 				<div class="code mt-5 mb-3">ret = foo(3, 7) // 3 7
 print(ret) // I like ice cream</div>
 
-							<p class="hi3 mt-4">Default parameters</p>
+							<p class="h2 mt-3">Default parameters</p>
 			 				<div class="dv mt-1 mb-3"></div>
 			 				<p class="mb-3 lh1">Functions can have <b class="key">default</b> parameters assigned during the writing of the function that are over written if you want during the function call.</p>
 
@@ -113,13 +117,13 @@ print(ret) // I like ice cream</div>
 hello('Alice') // hello Alice
 hello() // hello Joy
 </div>
-							<p class="mt-2 mb-3 lh1">Default function parameters are not safe to use.</p>
+							<p class="mt-2 mb-3 lh1">Default function parameters are not safe for use, atleast for now.</p>
 
-							<p class="hi3 mt-4">Nameless functions</p>
+							<p class="h2 mt-4">Nameless functions</p>
 			 				<div class="dv mt-1 mb-3"></div>
 			 				<p class="mb-3 lh1">Similar to arrow functions in <a href="">javascript</a> luqix provides almost the same function feature as you can easily define a function and yet assigning it as data for a certain variable or argument.</p>
 
-			 				<p class="alert alert-info">The syntax is friendly i hope <span class="key">?</span> informs the parser about the awareness of the nameless function and the rest happens like a normal function defination.</p>
+			 				<p class="alert alert-info">The syntax is friendly i hope. <span class="key">?</span> informs the parser about the awareness of the nameless function and the rest happens like a normal function defination.</p>
 
 			 				<div class="code mt-5 mb-3">setTheme = ?(theme){
     // ....
@@ -132,7 +136,7 @@ setTheme('light')
 
 
 			 			<div id="basic-if" class="py-3 px-5 px-3-md card bg-white ">
-			 				<p class="hi">If statment</p>
+			 				<p class="h1">If statment</p>
 			 				<div class="dv mt-1 mb-3"></div>
 			 				
 			 				<p class="mb-3 lh1">If statements are always the same in may programming languages, taking the <span class="key">if</span> keyword accompanied by <span class="key">elif</span> and <span class="key">else</span> keyword. <a href="">proof</a></p>
@@ -144,7 +148,7 @@ setTheme('light')
 
 print(a) // 90</div>
 
-							<p class="lh1">If one of the statements phases executes, the others won't bother skipping to the next code block, execution starts from top to bottom.</p>
+							<p class="lh1">If one of the statements phases executes, the others won't bother. Skipping to the next code block, execution starts from top to bottom.</p>
 
 							<div class="mt-3">
 			 					<table class="styled-table">
@@ -181,12 +185,12 @@ else
 </div>
 
 			 				<p class="lh1">If one executes the others won't bother and the execution starts from top to bottom.</p>
-			 				<p class="mb-3 lh1">Calling <b class="tb b5">break</b> and <b class="tb b5">return</b> from here is very okay since there is no new scope formed.</p>
+			 				<p class="mb-3 lh1">Calling <span class="key">break</span> and <b class="tb b5">return</b> from here is very okay since there is no new scope formed.</p>
 			 			</div>
 
 
 						<div id="basic-while" class="py-3 px-5 px-3-md card bg-white ">
-			 				<p class="text-xl-1 tb b5">While loop</p>
+			 				<p class="h1">While loop</p>
 			 				<div class="dv mt-1 mb-3"></div>
 			 				
 			 				<p class="mb-3 lh1">Similar to the <b class="tb b5">if statement</b>, no new scope is formed for loops. This while loop runs as long as the supplied <b class="tb b5">condition</b> statement is <a href="">true</a> or if the <b class="tb b5">break</b> is called.</p>
@@ -208,7 +212,7 @@ while count {
 print('done')
 </div>
 
-			 				<p class="lh1">The <b class="tb b5">break</b> keyword is very useful with its sister <b class="tb b5">continue</b> that is not implimented yet in the build, that will be fine soon.</p>
+			 				<p class="lh1">The <span class="key">break</span> keyword is very useful with its sister <span class="key">continue</span> that is not implimented yet in the build, that will be fine soon.</p>
 							
 							<div class="code mt-5 mb-3">count = 100
 
@@ -228,11 +232,11 @@ while count {
 
 
 						<div id="basic-for" class="py-3 px-5 px-3-md card bg-white ">
-			 				<p class="text-xl-1 tb b5">For loop</p>
+			 				<p class="h1">For loop</p>
 			 				<div class="dv mt-1 mb-3"></div>
 
 			 				<p class="mb-3 lh1">This is like the while loop just with a fixed <a href="">incrementing</a> or <a href="">decrementing</a> statement. Its fit for counts, any loop involving numbers.</p>
-			 				<p class="mb-3 lh1">And also here <b class="tb b5">break</b> works very fine.</p>
+			 				<p class="mb-3 lh1">And also here <b class="key">break</b> works very fine.</p>
 
 
 							<div class="code mt-5 mb-3">fruits = ['apple', 'banana', 'pear', 'cherry']
@@ -241,17 +245,15 @@ for(let i=0; i < len(fruits); i++)
     print(fruits[i])
 </div>
 
-							<p class="mt-4 pt-2 mb-2 lh1 b6 segoe">How it works ?</p>
-			 				<p class="mb-3 lh1">First you <b class="tb b5">let</b> a random variable lets say i. Follow with an inequality statement involving <b class="tb b5">i</b>. The use <a href="">++</a> to increment or <a href="">--</a> to decrement. <b class="tb b5">i</b> in the start i can be assigned to an <b class="tb b5">interger</b> as its starting value that defaults to 0.</p>
+			 				<p class="mt-3 alert"><b>How it works?</b><br>First you <b>let</b> a random variable lets say <b>i</b>. Follow with an <b>inequality statement</b> involving i. Then use <b>++</b> to increment or <b>--</b> to decrement i. In the start <b>i</b> can be assigned to any <b>integer</b> as its starting value but <b>defaults</b> to 0.</p>
 
 			 			</div>
 
 						<div id="basic-classes" class="py-3 px-5 px-3-md card bg-white ">
-			 				<p class="text-xl-1 tb b5">Classes</p>
-			 				<div class="dv mt-1 mb-3"></div>
+			 				<p class="h1">Classes</p>
 			 				
-			 				<p class="mb-3 lh1">This is a special case as luqix classes are used to create your own <a href="">datatypes</a> call them objects. They are a cool building block.</p>
-			 				<p class="mb-3 lh1">You give them a name then functions and variables in there scope all become there attributes, this includes the <b class="tb b5">__init__</b> function <b class="tb b5">self</b> variables.</p>
+			 				<p class="mb-3 mt-3">This is a special case as luqix classes are used to create your own <a href="">datatypes</a> call them objects. They are a cool building block.</p>
+			 				<p class="mb-3 lh1">You give them a name then functions and variables in there scope all become there attributes, this includes the <b class="key">__init__</b> function <b class="tb b5">self</b> variables.</p>
 
 			 				<div class="code mt-5 mb-3">class Student{
     fn __init__(name, age){
@@ -277,12 +279,13 @@ print(stand.age, stand.age) // Lin 20
 
 
 						<div id="basic-from" class="py-3 px-5 px-3-md card bg-white ">
-			 				<p class="text-xl-1 tb b5">From and import statements</p>
+			 				<p class="h1">From and import statements</p>
 			 				<div class="dv mt-1 mb-3"></div>
 
-			 				<p class="mb-3 lh1">These two are used to utilize code thats broken into different file. This is very handy in terms of gigantic projects or distributing code <a href="">coming soon</a>.</p>
+			 				<p class="mb-3 lh1">These two are used to utilize code thats broken into different files. This is very handy interms of big projects or distributing code <a href="">coming soon</a>.</p>
 
-			 				<p class="mb-3 lh1"><b class="tb b5">import</b> is followed by filenames without the extension <b class="tb b5">.lqs</b>.</p>
+			 				<p class="h2 mb-3 mt-4">import statement</p>
+			 				<p class="mb-3 lh1"><b class="key">import</b> is followed by filenames without the extension <b class="tb b5">.lqs</b>.</p>
 
 			 				<div class="code mt-5 mb-3">import calculations
 import trigonometry as trig
@@ -297,7 +300,8 @@ print(sys.path)</div>
 
 			 				<p class="lh1">Atleast the current working directory is already there</p>
 
-			 				<p class="mb-3 lh1 mt-4"><b class="tb b5">from</b> is followed by a string (file or folder name) from scope then an attribute import statement.</p>
+			 				<p class="h2 mt-4">from statement</p>
+			 				<p class="mb-3 lh1 mt-3"><b class="key">from</b> is followed by a <spab class="key">string (file or folder name)</spab> from the scope then an <span class="key">import statement</span>.</p>
 
 			 				<div class="code mt-5 mb-3">from 'maths' import statistics
 

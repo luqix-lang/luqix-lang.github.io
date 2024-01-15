@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Luqix - base64 module docs</title>
+	<title>Luqix - websock module docs</title>
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
@@ -41,59 +41,69 @@
   			</div>
 
   			<div id="app2" class="contents contents2">
-  				<div class="flex flex-wrap-md py-3 py-2 f16">
+  				<div class="flex flex-wrap-md py-3 py-2-sm">
   					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
 
-  						<div class="card p-3 px-5 px-3-md mb-w bg-white">
-	  						<p class="page mb-3">Base64 module</p>
+  						<div class="card p-3 px-5 px-3-sm mb-w bg-white">
+	  						<p class="mb-3 page">Websocket module</p>
 	  						
-	  						<p class="lh1 mb-3">Base64 is a kind of string encoding, that many data very easy to transport over networks minus the worry of encoding support. But it can make files buggy. Still websockets like it so much.</p>
-	  						
-	  						<div class="code mt-3">let base64 = require('base64');</div>
+	  						<p class="lh1"><b class="b5">websocket</b> module its builtin the runtime on top of a <b>TCP socket</b>, this means you could create your own websocket in native luqix. Implementing one is not the easiest but easy.</p>
 
-	  						<p class="text-md mt-3 mb-1">Summarised table</p>
+	  						<p class="alert alert-warning mt-3 mb-3"><b>Did you know? </b><br>Its very easy to gui apps with websockets and the browser, since javascript has a good support for it.</p>
 
-	  						<div class="">
+	  						<p class="">Implementing a websocket is not the easiest think at first hand due to the werd encoding it uses, but in the end its a piece of cake. So thats way it builtin the runtime but making your option could be better with even more control over it. <a href="" class="b6">Learn to build a websocket step by step with luqix.</a></p>
+
+			 				
+			 				<p class="mb-3 mt-7 h1">Module Attributes</p>
+		 					<div class="flex flex-wrap table-many">
+		 						<p><a href="#Websocket" class="">Websocket</a></p>
+				 			</div>
+
+			 				<p class="h2 mb-3 mt-4">websocket.Websocket<span class="args">()</span></p>
+			 			
+			 				<p class="mb-4 lh1">Creates a luqix websocket object with methods to manuplate it.</p>
+
+			 				<div class="code mb-4 mt-2">server = websocket.Websocket()</div>
+
+			 				<div class="mt-3">
 			 					<table class="styled-table">
 			 						<thead class="">
 			 							<tr>
-			 								<th>Function&nbsp;<span class="d-none-sm">name</span></th>
-			 								<th>Usage and Description</th>
+			 								<th>attribute</th>
+			 								<th>function</th>
 			 							</tr>
 			 						</thead>
 			 						<tbody class="">
 			 							<tr>
-			 								<td>decode32</td>
-			 								<td>Decodes base32 strings to bytes, <b class="mn">decode34('JJSXG5LTEBUXGICMN5ZGILQ=')</b>.</td>
+			 								<td>connect</td>
+			 								<td>Binds the websocket to the given hostname and port number, <b class="mn">connect('localhost', 7575)</b>.</td>
 			 							</tr>
 			 							<tr>
-			 								<td>decode64</td>
-			 								<td>Decodes base64 strings to bytes, <b class="mn">decode64('SmVzdXMgaXMgTG9yZC4=')</b></td>
+			 								<td>close</td>
+			 								<td>Shuts down and closes the websocket, <b class="mn">close()</b>.</td>
 			 							</tr>
 			 							<tr>
-			 								<td>encode32</td>
-			 								<td>Encodes and returns given bytes to base32 string, <b class="mn">encode(bytes([72, 101, 108, 108, 111]))</b></td>
+			 								<td>on</td>
+			 								<td>Appends given function to the specified event, <b class="mn">on('message', function(msg){...})</b>. Events can be <span class="key">message</span> and <span class="key">open</span>, then a function with 1 argument.</td>
 			 							</tr>
 			 							<tr>
-			 								<td>encode64</td>
-			 								<td>Encodes and returns given bytes to base32 string, <b class="mn">encode(bytes([72, 101, 108, 108, 111]))</b></td>
+			 								<td>start</td>
+			 								<td>Starts the connection and only listens and accepts one client, <b class="mn">start('1.1')</b>, the http version is optional, it defaults to <span class="key">1.1</span>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>send</td>
+			 								<td>Sends data to client if connection was successful, <b class="mn">send(bytes('hello'))</b>, it should be of type <span class="key">bytes</span>.</td>
 			 							</tr>
 			 						</tbody>
 			 					</table>
-			 				</div>
+				 			</div>
 
-			 				<p class="mt-4 mb-3 alert alert-warning"><b>Note</b> <br>Be very steady with these encodings, they are malicious and lead to un spotted bugs.</p>
+				 			<p class="mt-4 alert"><b>Exercise <br></b>Try building an application using any browser as your GUI library, bind it with luqix using <b>websocket</b>, thank you.</p>
 
-			 				<div class="code mb-4 mt-2">let b64 = require('base64')
-    str = require('string')
 
-chars = str.encode('hello world')
 
-data = b64.encode(chars) // aGVsbG8gd29ybGQ=
-
-read = b64.decode(data) // b'hello world'</div>
-
-  					</div>
+				 		</div>
+				 	</div>
 
   					<div class="col-2-xxl px-4 col-3-md col-10-sm navigator">
   						<div class="pt-4 px-2 py-3 card bg-white">

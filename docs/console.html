@@ -41,11 +41,11 @@
   			</div>
 
   			<div id="app2" class="contents contents2">
-  				<div class="flex flex-wrap-md py-10 py-5-md f16">
+  				<div class="flex flex-wrap-md py-5 f16">
   					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
 
-  						<div class="card p-3 mb-w bg-white">
-	  						<p class="hi2">Console - command line app</p>
+  						<div class="card p-3 px-5 px-3-md mb-w bg-white">
+	  						<p id="features" class="mb-3 page">Console - command line app</p>
 	  						<div class="b-none dv mb-3 mt-1"></div>
 	  						
 	  						<p class="lh1 mb-3">Luqix being a real interpreter, it provides this cmd app easily without need for any hidden compilation but just in time interpreting of the given string text in the console interface.</p>
@@ -53,46 +53,44 @@
 	  						<p class="lh1">The console app is built on simple <a href="">stdin</a> user input mechanism without need for complex libraries like <a href="" class="key">ncurses</a> atleast for now.</p>
 	  					</div>
 
-			 			<div class="mt-3 px-3">
-			 					<table class="styled-table">
-			 						<thead class="">
-			 							<tr>
-			 								<th>features</th>
-			 								<th>usage</th>
-			 							</tr>
-			 						</thead>
-			 						<tbody class="">
-			 							<tr>
-			 								<td>output highlighting</td>
-			 								<td>for terminals supporting <span class="key">ascii</span>, this makes reviews easier.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>error handling</td>
-			 								<td>and error won't terminate the program but show it in realtime.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>auto multiline</td>
-			 								<td>makes in possible to write statements.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>version info</td>
-			 								<td>quickly shows version an system info.</td>
-			 							</tr>
-			 						</tbody>
-			 					</table>
-			 				</div>
+			 			<div class="mt-3 px-5 px-3-md">
+		 					<table class="styled-table">
+		 						<thead class="">
+		 							<tr>
+		 								<th>features</th>
+		 								<th>usage</th>
+		 							</tr>
+		 						</thead>
+		 						<tbody class="">
+		 							<tr>
+		 								<td>output highlighting</td>
+		 								<td>for terminals supporting <span class="key">ascii</span>, this makes reviews easier.</td>
+		 							</tr>
+		 							<tr>
+		 								<td>error handling</td>
+		 								<td>and error won't terminate the program but show it in realtime.</td>
+		 							</tr>
+		 							<tr>
+		 								<td>auto multiline</td>
+		 								<td>makes in possible to write statements.</td>
+		 							</tr>
+		 							<tr>
+		 								<td>version info</td>
+		 								<td>quickly shows version an system info.</td>
+		 							</tr>
+		 						</tbody>
+		 					</table>
+		 				</div>
 
-			 			<div class="py-3 px-5 px-3-md card bg-white">
-			 				<p class="hi">Usage</p>
-			 				<div class="dv mt-1 mb-3"></div>
-			 			
+			 			<div id="usage" class="py-3 px-5 mt-4 px-3-md">
+			 				<p class="mb-3 h1">Usage</p>
 			 				<p class="mb-3 lh1">Just calling luqix from the terminal will open the luqix interpreter console using the commands below.</p>
 
-			 				<p class="alert alert-warning mb-3"> Remember to have the luqix in the root path for executables or you much work in the directory with the luqix interpreter, the options are endless.</p>
-			 				<div class="tablez">
-			 					<p>luqix</p>
-			 					<p>./luqix</p>
-			 					<p>luqix.exe</p>
+			 				<p class="alert mb-3"><b>Info <br></b>Remember to have the luqix in the root path for executables or you much work in the directory with the luqix interpreter, the options are endless.</p>
+			 				<div class="list-group">
+			 					<p class="list-item">luqix</p>
+			 					<p class="list-item">./luqix</p>
+			 					<p class="list-item">luqix.exe</p>
 			 				</div>
 			 				<div class="code2 mb-4 mt-4"><span class="b5 bold c-string">localhost~$</span> uname
 Linux
@@ -116,15 +114,46 @@ At start, Type '--help' for more information
 
 			 			</div>
 
-  					</div>
+			 			<div id="cmds" class="py-3 px-5 mt-4 px-3-md">
+			 				<p class="mb-3 h1">Starter commands</p>
+			 				<p class="mb-3 lh1">As you start the interpreter, you can follow with some arguments, that will do some other unco-ordinated things you needs to know.</p>
 
-  					<div class="col-2-xxl px-4 col-3-md col-10-sm navigator">
-  						<div class="pt-4 px-2 py-3 card bg-white">
-  							<p class="b5 tb mb-2 text-lg hd">On this page</p>
-  							<ul class="ml-4">
-	  							<!-- <li class="mb-1"><a href="#" class="px-1">coming soon</a></li> -->
-	  						</ul>
+			 				<div class="mt-5">
+			 					<table class="styled-table">
+			 						<thead class="">
+			 							<tr>
+			 								<th>argument</th>
+			 								<th>usage</th>
+			 							</tr>
+			 						</thead>
+			 						<tbody class="">
+			 							<tr>
+			 								<td>--help</td>
+			 								<td>Returns some help for luqix executable usage.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>--exec</td>
+			 								<td>Returns path for the luqix executable.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>--version</td>
+			 								<td>Luqix version your using</td>
+			 							</tr>
+			 						</tbody>
+			 					</table>
+				 			</div>
 
+				 			<p class="mt-4 alert"><b>Info <br></b>You better keep an eye on this feature, because its gonna become robust for every upgrade made on luqix.</p>
+
+	  					</div>
+	  				</div>
+
+  					<div class="col-2-xxl px-4-md col-3-md col-10-sm navigator">
+  						<div class="pt-2">
+  							<p class="b6 text-lg">On this page</p>
+  							<p class="px-2 locate"><a href="#features" class="px-1">Features</a></p>
+  							<p class="px-2 locate"><a href="#usage" class="px-1">Usage</a></p>
+  							<p class="px-2 locate"><a href="#cmds" class="px-1">Start Commands</a></p>
   						</div>
   					</div>
   				</div>

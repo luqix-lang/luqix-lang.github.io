@@ -1,8 +1,4 @@
 
-.col-3{
-	width: 3.5% !important;
-}
-
 tr{
 	margin: 0;
 }
@@ -282,10 +278,10 @@ ripples{
 }
 
 /* LINKS */
-a{
+/*a{
 	text-decoration: none;
-	color:#4299E1;
-}
+	color:#0072aa;
+}*/
 
 .top{
 	top: 0;

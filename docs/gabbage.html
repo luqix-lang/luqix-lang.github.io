@@ -41,31 +41,28 @@
   			</div>
 
   			<div id="app2" class="contents contents2">
-  				<div class="flex flex-wrap-md py-10 py-5-md f16">
+  				<div class="flex flex-wrap-md py-3 py-2-sm f16">
   					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
 
-  						<div class="p-3 mb-w bg-white">
-	  						<p class="hi2">Gabbage collection</p>
-	  						<div class="b-none dv mb-3 mt-1"></div>
+  						<div class="p-3 px-5 px-3-md mb-w bg-white">
+	  						<p class="page mb-3">Gabbage collection</p>
 	  						
-	  						<p class="lh1 mb-3">Luqix is a gabbage collected programming language that uses the gabbage collector the compiling dlang compiler provided. This has proven to be working but as you compile, if you know how turn off the <span class="key">gc</span> for testing.</p>
+	  						<p class="lh1 mb-3">Luqix is a gabbage collected programming language that uses the gabbage collector the compiling dlang compiler provided. This has been proven to be working and so far no efforts have been done to build a new one.</p>
 
-	  						<p class="alert-warning alert mt-2"><b>to be sincere</b>, during luqix development the <a href="">GC</a> work has not been put into much though has the compiler or parent language proves to be efficient.</p>
+	  						<p class="alert-warning alert mt-2"><b>to be sincere</b><br>During luqix development the <a class="bold" href="">GC</a> work has not been put into much though has the compiler provides an efficient one.</p>
 
-	  						<p class="alert mt-4">Be aware of any <span class="b5">change</span> that may arise if the gabbage collector is put into great consideration.</p>
+	  						<p class="alert mt-4">Be aware of any <span class="b5">changes</span> that may come up if the gabbage collector is put into great consideration.</p>
 	  					</div>
 
 
 			 			<div class="py-3 px-5 px-3-md card bg-white">
-			 				<p class="hi">Functions to work with gabbage</p>
-			 				<div class="dv mt-1 mb-3"></div>
+			 				<p class="mb-3 h1">Functions to work with gabbage</p>
 			 			
 			 				<p class="mb-3 lh1">I would consider calling <span class="key">gabbage</span> variables or data nolonger needed in your code space or runtime, well then its better to release them out.</p>
 
 			 				<p class="mb-3 lh1">But this must be done when your are making great and kin follow up of your code because this may result into <a href="">burdening errors</a> as the deleted data may still or be in use but some executing function.</p>
 
-			 				<p class="mt-5 hi3"><span class="b4">#</span> del <span class="args">name</span> statement</p>
-			 				<div class="dv mt-1 mb-3"></div>
+			 				<p class="mt-5 h2 mb-3"># del statement</p>
 			 				<p class="mb-3 lh1"><span class="key">del</span> is used to delete variables that includes functions and objects residing in the runtime from the storage <a href="">heap</a> by their name.</p>
 
 			 				<p class="mb-3 lh1">This deletes the variable from the <span class="key">heap</span> and the instance of the data its pointing to, if it was the last instance like if it were a <span class="key">list</span> then the list finally goes.</p>
@@ -76,7 +73,7 @@ print(a)
 del a
 print(a) // reference-error because 'a' nolonger exists.</div>
 
-							<p class="alert"><b>del</b> is a statement parsed by the parser and poor usage leads to a syntax error, <b>del is followed by a variable</b>, its a must do.</p>
+							<p class="alert alert-warning"><b>Just know</b><br><b>del</b> is a statement parsed by the parser and poor usage leads to a syntax error, <b>del is followed by a variable</b>, its a must do.</p>
 
 			 			</div>
 

@@ -12,6 +12,17 @@
   	<link rel="stylesheet" type="text/css" href="css/fancy.css">
   	<link rel="stylesheet" type="text/css" href="modules/flare/flare.css">
 
+  	<style type="text/css">
+  		
+  		@media (max-width:  768px){
+			.brand{
+				width: initial;
+				justify-content: start;
+			}
+		}
+  		
+  	</style>
+
 </head>
 <body >
 
@@ -20,17 +31,22 @@
 
 		<div class="flex justify-center f16">
 			<div class="col-5 col-6-lg col-7-md col-10-sm py-4 px-3-md">
-				<p class="text-xl-4 mt-4">Download Luqix programming Language</p>
+				<p class="text-xl-4 b6 mt-4 brand brand-blue text-white">Download Luqix programming Language</p>
 				<p class="mb-3 mt-2">Luqix is in early development with regular nightly builds so if you need the very current verion you may have to compile it yourself.</p>
 
-				<p class="hi mt-4">Compiling source code</p>
-				<p class="mt-1 mb-3">The luqix source code is hosted on <a href="https://github.com/luqix-lang/luqix">github <i class="fab fa-github"></i></a>.</p>
+				<p class="hi mt-4 b6 brand-yellow brand text-white">Compiling source code</p>
+				<p class="mt-1">The luqix source code is hosted on <a href="https://github.com/luqix-lang/luqix">github <i class="fab fa-github"></i></a>.</p>
 				
-				<div class="p-2 p-3-sm round-lg text-md smoky">
-					<p class="lh1">1. Download and install any dlang <a href="https://dlang.org/download">compiler</a>.</p>
+				<div class="p-2 p-3-sm round-sm text-md smoky">
+					<p class="">1. Download and install any dlang <a href="https://dlang.org/download">compiler</a>.</p>
 					<p class="mb-2 mt-2">2. Get source code from <a href="https://github.com/luqix-lang/luqix">github</a> and unzip it.</p>
-					<p class="">3. Enter luqix folder and run <span class="b5">make</span> command</p>
+					<p class="">3. Enter luqix folder and run <span class="b6">make</span> command.</p>
 					<p class="code mt-4">~$ make</p>
+					<p class="mb-2 mt-3">4. An executable file <b>luqix</b> or <b>luqix.exe</b> will be formed in pwd.</p>
+					<p class="">5. Thats the interpreter so test with cmd <b>luqix.exe</b> windows or <b>./luqix</b> unix.</p>
+					<p class="code mt-4">~$ luqix.exe</p>
+
+
 
 					<p class="mt-4 mb-3"><a href="https://www.youtube.com/watch?v=C0PWq0gjgTA">Watch tutorial for compiling luqix</a>.</p>
 
@@ -38,13 +54,13 @@
 
 				</div>
 
-				<p class="hi mt-5">Download binaries</p>
+				<p class="hi mt-7 b6 brand brand-grass text-white">Download binaries</p>
 				<p class="mt-2 mb-3">Mac and some other platforms binary builds are not yet provided but one can compile a build on any of those platforms then share with the community and us the developing <a href="">team</a>. I expect no errors during compilation.</p>
 
-				<div class="p-2 smoky round-lg">
-					<p class="mb-2"><a href="bin/luqix-0.9.2.tar.gz" class="text-md a-none"><i class="fab fa-linux"></i> Luqix 0.7.5 Nov 29, 2023</a></p>
-					<p class="mb-2"><a href="bin/luqix.zip" class="text-md a-none"><i class="fab fa-windows"></i> Luqix 0.7.5 Nov 29, 2023</a></p>
-					<p class="mb-2 opacity-50 user-none text-md"><i class="fab fa-apple"></i> Luqix 0.7.5 Nov 29, 2023</p>
+				<div class="list-group">
+					<p class="list-item"><a href="bin/linux/luqix-0.9.3.tar.gz" class="a-none"><i class="fab fa-linux"></i> Luqix 0.7. linux Jan 2, 2024</a></p>
+					<p class="list-item"><a href="bin/windows/luqix-0.9.3.zip" class="a-none"><i class="fab fa-windows"></i> Luqix 0.7.5 windows</a></p>
+					<p class="list-item opacity-50 user-none"><i class="fab fa-apple"></i> Luqix 0.7.5 Mac</p>
 				</div>
 
 			</div>

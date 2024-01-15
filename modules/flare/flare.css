@@ -2,44 +2,43 @@
 
 
 .code *, .code, .code2, .code2 *{
-	color: #fff;
-	font-family: 'Fira Mono', monospace;
+	color: #4b4b4b;
+	font-family: 'Fira Mono', monospace !important;
 	font-size: 14px !important;
-	line-height: 20px;
 }
 
 .flare-keywords{
-	color: #ff9a8d !important;
+	color: #008750 !important;
 }
 
 .flare-call{
-	color: #e0ade3 !important;
+	color: #0050ae !important;
 }
 
 .flare-attributes{
-	color: #faffb2 !important;
+	color: #4b4b4b !important;
 }
 
 .flare-numbers{
-	color: #63b3ed !important;
+	color: #ae1000 !important;
 }
 
 .flare-operators{
-	color: #63b3ed !important;
+	color: #be50ff !important;
 }
 
 
 .flare-strings, span2, .flare-strings *, .c-string{
-	color: #77b3d1 !important;
+	color: #ae5000 !important;
 }
 
 .flare-comments, .flare-comments *{
-	color: #718096 !important;
+	color: #5b5b5b90 !important;
 	font-style: italic;
 }
 
 .c-green{
-	color: #faffb2 !important;
+	color: #ae5000 !important;
 }
 
 @media (max-width: 650px){
