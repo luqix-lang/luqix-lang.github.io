@@ -65,10 +65,10 @@ document.getElementById('foot').innerHTML = `<footer class="flex justify-center 
 				</div>
 				<div class="col-3-xxl col-5-sm col-3-md mb-3">
 					<p class="bold mb-3">Join us</p>
-					<p class="mb-1"><a href="" class="text-md">Youtube</a></p>
-					<p class="mb-1"><a href="" class="text-md">Twitter</a></p>
-					<p class="mb-1"><a href="" class="text-md">Telegram</a></p>
-					<p class="mb-1"><a href="" class="text-md">Whatsapp channels</a></p>
+					<p class="mb-1"><a href="https://youtube.com/@luqix-language?si=td5VV8E0-bDufbmr" class="text-md"><i class="fab fa-youtube mr-1"></i> Youtube</a></p>
+					<p class="mb-1"><a href="http://reddit.com/r/Luqix_lang_project/s/1O4aBjK0sG" class="text-md"><i class="fab fa-twitter mr-1"></i> Twitter</a></p>
+					<p class="mb-1"><a href="" class="text-md"><i class="fab fa-reddit mr-1"></i> Reddit</a></p>
+					<p class="mb-1"><a href="https://whatsapp.com/channel/0029VaGAUqaFMqrUn3Y2NJ0G" class="text-md"><i class="fab fa-whatsapp mr-1"></i> Whatsapp channels</a></p>
 				</div>
 				</div>
 		</div>
