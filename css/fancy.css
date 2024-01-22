@@ -58364,6 +58364,10 @@ a-sm{
 	font-size: 	15px;
 }
 
+.text-inherit-sm {
+	font-size: inherit;
+}
+
 .text-lg-sm{
 	font-size: 17px;
 }

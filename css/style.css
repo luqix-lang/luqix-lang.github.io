@@ -33,6 +33,7 @@ a{
 
 .nav{
     background-color: #008750;
+    background-color: #76A350;
 }
 
 .nav *{
@@ -231,7 +232,7 @@ a{
 }
 
 .side-link, .side-link *{
-	color: #152535;
+	color: #253545;
 	text-transform: uppercase;
 }
 
@@ -415,6 +416,10 @@ footer .b5{
     word-break: break-all;
 }
 
+.styled-table tbody .object{
+	color: #0079FF;
+}
+
 .styled-table tbody tr.active-row {
     font-weight: bold;
     color: #009879;
@@ -591,4 +596,9 @@ footer .b5{
 
 .list-group *:hover{
 	color: white;
+}
+
+iframe{
+	border: none;
+	border-radius: 15px;
 }

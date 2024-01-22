@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Luqix progamming language</title>
+	<title>Luqix - file module docs</title>
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
@@ -25,8 +25,8 @@
   				<div class="">
   					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
   					<div class="side-dec">
-  						<a href="docs.html"><p class="side-nav px-4">Introduction</p></a>
-  						<a href="basics.html"><p class="side-nav px-4">Basics and syntax</p></a>
+  						<a href="docs.html"><p class="side-nav px-3">Introduction</p></a>
+  						<a href="basics.html"><p class="side-nav px-3">Basics and syntax</p></a>
   					</div>
   					<p class="side-link flex align-items-center justify-between px-3"><span>Builtin module</span> <span class="caret-right"></span></p>
   					<div class="side-dec" id="modules-nav">
@@ -37,211 +37,189 @@
 
   			<div class="menu-call flex align-items-center">
   				<p class="px-2" onclick="toggleMenu()"><i class="fas fa-bars"></i></p>
-  				<p class="px-2 bl-1"><a href="#"><i class="fas fa-arrow-up"></i></a></p>
+  				<p class="px-2 bl-1"><a href="#"><i class="fas fa-caret-up"></i></a></p>
   			</div>
 
   			<div id="app2" class="contents contents2">
-  				<div class="flex flex-wrap-md py-5 py-2-sm">
+  				<div class="flex flex-wrap-md py-5 py-2-sm f16">
   					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
 
-  						<div class="card p-3 bg-white">
-	  						<p class="page mb-3">Locals module</p>
-	  						<p class="lh1"><b>locals</b> is a builtin module that is readily imported to every new scope formed by the interpreter since it holds greater functionality that must be at hand. This is similar to python's <a href="https://docs.python.org/3/library/functions.html">builtins module</a> having functions like printing to the console, getting data length and much more.</p>
+  						<div class="card p-3 mb-w bg-white">
+	  						<p class="hi2 page">locals module</p>
+	  						
+	  						<p class="lh1 mt-1"><b class="key">locals</b> module has very essential functions and so they are even already all imported to the file scope. They do tasks dealing with data being used in the runtime and also controlling part of the runtime</p>
 
-		  					<div class="code mt-3">let file = require('file');</div>
+	  						<div class="code mt-3">let locals = require('locals');</div>
 
-	  						<p class="text-md mt-3 mb-1">Summarised table</p>			 				
-			 				<div class="">
-			 					<table class="styled-table mt-2">
+	  						<p class="text-md mt-3 mb-1">Summarised table</p>
+
+	  						<!-- ['Exception', 'attr', 'bytes', 'delattr', 'dict', 'eval', 'exec', 'exit', 'getattr', 'len', 'list', 'numb', 'print', 'prompt', 'require', 'setattr', 'str', 'super', 'type'] -->
+
+	  						<div class="">
+			 					<table class="styled-table">
 			 						<thead class="">
 			 							<tr>
-			 								<th>attribute</th>
-			 								<th>function</th>
+			 								<th>Function&nbsp;<span class="d-none-sm">name</span></th>
+			 								<th>Usage and Description</th>
 			 							</tr>
 			 						</thead>
 			 						<tbody class="">
 			 							<tr>
-			 								<td>print</td>
-			 								<td>writes to standard output or screen</td>
-			 							</tr>
-			 							<tr>
-			 								<td>prompt</td>
-			 								<td>gets user input from standard input</td>
-			 							</tr>
-			 							<tr>
-			 								<td>len</td>
-			 								<td>gets the length of a datatype</td>
-			 							</tr>
-			 							<tr>
-			 								<td class="obj"><span>str</span></td>
-			 								<td>Object with attributes for string manuplation.</td>
-			 							</tr>
-			 							<tr>
-			 								<td class="obj"><span>list</span></td>
-			 								<td>Object with attributes for list manuplation.</td>
-			 							</tr>
-			 							<tr>
-			 								<td class="obj"><span>dict</span></td>
-			 								<td>Object with attributes for dict manuplation.</td>
-			 							</tr>
-			 							<tr>
-			 								<td class="obj"><span>bytes</span></td>
-			 								<td>Object with attributes for bytes manuplation.</td>
+			 								<td>Exception</td>
+			 								<td>Exception error thrown requiring a luqix <b>enum</b> with items <span class="key">message, type, line</span>, <b>Exception(enum {message='Wrong usage', type="NormalError", line=0})</b></td>
 			 							</tr>
 			 							<tr>
 			 								<td>attr</td>
-			 								<td>lists all attributes of the given data</td>
+			 								<td>Returns a list of all attributes of the given data, <b>attr(str)</b>.</td>
 			 							</tr>
 			 							<tr>
-			 								<td>exit</td>
-			 								<td>terminates execution of calling process</td>
+			 								<td><a class="object" href="#bytes">bytes</a></td>
+			 								<td>Its the bytes object for handling bytes data and creating, <b>bytes()</b>.</td>
 			 							</tr>
 			 							<tr>
-			 								<td>require</td>
-			 								<td>imports and then return a builtin module</td>
-			 							</tr>
-			 							<tr>
-			 								<td>getattr</td>
-			 								<td>gets data attribute dynamically</td>
-			 							</tr>
-			 							<tr>
-			 								<td>setattr</td>
-			 								<td>sets or replace data attribute dynamically</td>
+			 								<td>read</td>
+			 								<td>Reads the whole file returning all its string data <b class="mn">read('file.txt')</b> without opening it.</td>
 			 							</tr>
 			 							<tr>
 			 								<td>delattr</td>
-			 								<td>deletes an attribute from data.</td>
+			 								<td>Deletes the specified attribute of the given data, <b>delattr(str, 'join')</b>.</td>
 			 							</tr>
 			 							<tr>
-			 								<td>Exception</td>
-			 								<td>returns a recognisable error object for luqix</td>
+			 								<td><a class="object" href="#dict">dict</a></td>
+			 								<td>Its the object that handles <b>dictionaries</b> and creating new ones, <b>dict()</b>. Plus casting to dictionaries.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>eval</td>
+			 								<td>Evaluates the given string code, in the calling scope, <b>eval('1 + 3')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>exec</td>
+			 								<td>Executes string code by injecting it in the runtime, <b>exec('a = "hello world"; print(a);')</b></td>
+			 							</tr>
+			 							<tr>
+			 								<td>exit</td>
+			 								<td>Stops calling thread execution, <b>exit()</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>getattr</td>
+			 								<td>Dynamically gets and returns attribute of any data, <b>getattr(str, 'join')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>len</td>
+			 								<td>Returns the length of given data, <b>len([1,2,3,4,5,6])</b> as an interger (size_t).</td>
+			 							</tr>
+			 							<tr>
+			 								<td><a class="object" href="#list">list</a></td>
+			 								<td>Its the object for handling and casting to lists, <b>list('hello')</b> plus making them.</td>
+			 							</tr>
+			 							<tr>
+			 								<td><a class="object" href="#numb">numb</a></td>
+			 								<td>Its the number object for handling numbers <b>numb('0.3')</b> and casting to numbers.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>print</td>
+			 								<td>Prints strings to the standard output, <b>print('hello world!')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>prompt</td>
+			 								<td>Gets user input from console, <b>prompt("Write: ")</b>, and takes an optional string for prompting.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>require</td>
+			 								<td>Imports native modules to the scope, reusingly by their string name, <b>require('math')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>setattr</td>
+			 								<td>Sets new attributes to the given data if possible, <b>setattra(str, 'added', 'am new')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td><a class="object" href="#str">str</a></td>
+			 								<td>Its the object for handling and creating strings, <b>str(12)</b>, plus casting to strings.</td>
 			 							</tr>
 			 							<tr>
 			 								<td>super</td>
-			 								<td>handles inheritance unpackaging.</td>
+			 								<td>Object for handling, class inheritance but not ready yet.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>type</td>
+			 								<td>Returns the type of the given data as a string, <b>type([1,2,4])</b>.</td>
 			 							</tr>
 			 						</tbody>
 			 					</table>
-				 			</div>
-				 		</div>
+			 				</div>
+			 				<p class="mt-4 alert"><b>Note <br></b>All functions for handling a specific datatype are also incharge of casting to that datatype any data given to them.</p>
 
-						<div id="str" class="py-3 px-5 px-3-md">
-			 				<p class="h3 mb-3">locals.str <span class="args">opt..(any datatype)</span></p>
-			 				<div class="dv mt-1 mb-3"></div>
-			 				
-			 				<p class="mb-4 lh1">If called as a new object, it must be supplied with any datatype that will be converted to a string or you can leave it without any argument.</p>
+	  					</div>
 
-			 				<div class="code mb-4 mt-2">to_str = str([1,2,3,4,5]) // '[1,2,3,4]'</div>
+			 			
 
-			 				<p class="mt-3 mb-3 hi5">Object attributes.</p>
-			 				<div class="flex flex-wrap table-many">
-								<p><a href="#">isupper</a></p> 
-								<p><a href="#">format</a></p> 
-								<p><a href="#">isprintable</a></p> 
-								<p><a href="#">isnumeric</a></p> 
-								<p><a href="#">center</a></p> 
-								<p><a href="#">isalnum</a></p> 
-								<p><a href="#">count</a></p> 
-								<p><a href="#">endswith</a></p> 
-								<p><a href="#">upper</a></p> 
-								<p><a href="#">lstrip</a></p> 
-								<p><a href="#">join</a></p> 
-								<p><a href="#">rstrip</a></p> 
-								<p><a href="#">ljust</a></p> 
-								<p><a href="#">capitalize</a></p> 
-								<p><a href="#">find</a></p> 
-								<p><a href="#">lower</a></p> 
-								<p><a href="#">index</a></p> 
-								<p><a href="#">translate</a></p> 
-								<p><a href="#">repeat</a></p> 
-								<p><a href="#">replace</a></p> 
-								<p><a href="#">isdigit</a></p> 
-								<p><a href="#">islower</a></p> 
-								<p><a href="#">concat</a></p> 
-								<p><a href="#">startswith</a></p> 
-								<p><a href="#">isalpha</a></p> 
-								<p><a href="#">indexof</a></p> 
-								<p><a href="#">strip</a></p> 
-								<p><a href="#">rjust</a></p> 
-								<p><a href="#">encode</a></p> 
-								<p><a href="#">split</a></p>
-		 					</div>
+			 			<div id="bytes" class="py-3 px-3 mt-3 object-sect bg-white">
+			 				<p class="h2 mb-3 mn"># bytes<span class="args">(opt any-data)</span></p>
+			 			
+			 				<p class="mb-3 lh1">Could take any datatype that will be converted to its suitable bytes object or returns an empty bytes object if not specified.</p>
 
-		 					<div class="code mb-4 mt-2">a = 'hello'
-b = 'world'
-c = str.concat(a, ' ', b) // hello world
+			 				<div class="code mb-4 mt-2">bytes = bytes</div>
 
-print(str.capitalize('hey you') // Hey you</div>
+	  						<p class="text-md mt-3 mb-1">Summarised table</p>
+
+			 				<div class="">
+			 					<table class="styled-table">
+			 						<thead class="">
+			 							<tr>
+			 								<th>Function&nbsp;<span class="d-none-sm">name</span></th>
+			 								<th>Usage and Description</th>
+			 							</tr>
+			 						</thead>
+			 						<tbody class="">
+			 							<tr>
+			 								<td>append</td>
+			 								<td>Concats to bytes objects to each other, append()</td>
+			 							</tr>
+			 							<tr>
+			 								<td>decode</td>
+			 								<td>Decodes a byte object to its string format, <b>decode(b'hello')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>index</td>
+			 								<td>For indexing bytes objects like how its done for strings, <b>index(b"hello", 1)</b>, or could be collecting a range or bytes <b>index(b'hello', 1, 3)</b>.</td>
+			 							</tr>
+			 						</tbody>
+			 					</table>
+			 				</div>
+
+			 				<p class="alert mt-3"><b>bytes('strings') <br></b>Casts or encodes any data to a bytes object, <b>lists should have numbers less than 255 and integers, </b></p>
 
 			 			</div>
 
-			 			<div id="bytes" class="py-3 px-5 px-3-md">
-			 				<p class="mb-3 h3">locals.bytes <span class="args">opt..(any datatype)</span></p>
-			 				<div class="dv mt-1 mb-3"></div>
-			 				
-			 				<p class="mb-4 lh1">If called as a new object, it must be supplied with any datatype that will be converted to luqix bytes data or you can leave it without any argument.</p>
-
-			 				<p class="mt-3 mb-3 hi5">Object attributes.</p>
-			 				<div class="flex flex-wrap table-many">
-								<p><a href="#">append</a></p> 
-								<p><a href="#">byte_array</a></p> 
-								<p><a href="#">index</a></p> 
-								<p><a href="#">to_byte_array</a></p> 
-								<p><a href="#">decode</a></p>
-		 					</div>
-
+			 			<div id="dict" class="py-3 px-3 mt-3 object-sect bg-white">
+			 				<p class="h2 mb-3 mn"># dict<span class="args">(opt any-data)</span></p>
+			 				<p class="opacity-40">coming soon</p>
 			 			</div>
 
-			 			<div id="list" class="py-3 px-5 px-3-md">
-			 				<p class="mb-3 h3">locals.list <span class="args">opt..(any datatype)</span></p>
-			 				
-			 				<p class="mb-4 lh1">If called as a new object, it must be supplied with any datatype that will be converted to a list or you can leave it without any argument.</p>
-
-
-			 				<p class="mt-3 mb-3 hi5">Object attributes.</p>
-			 				<div class="flex flex-wrap table-many">
-								<p><a href="#">copy</a></p> 
-								<p><a href="#">pop</a></p> 
-								<p><a href="#">extend</a></p> 
-								<p><a href="#">index</a></p> 
-								<p><a href="#">append</a></p> 
-								<p><a href="#">insert</a></p> 
-								<p><a href="#">reverse</a></p> 
-								<p><a href="#">join</a></p> 
-								<p><a href="#">clear</a></p>
-		 					</div>
-
+			 			<div id="list" class="py-3 px-3 mt-3 object-sect bg-white">
+			 				<p class="h2 mb-3 mn"># list<span class="args">(opt any-data)</span></p>
+			 				<p class="opacity-40">coming soon</p>
 			 			</div>
 
-			 			<div id="dict" class="py-3 px-5 px-3-md">
-			 				<p class="mb-3 h3">locals.dict <span class="args">opt..(any datatype)</span></p>
-			 				
-			 				<p class="mb-4 lh1">If called as a new object, it must be supplied with any datatype that will be converted to a dictionary or you can leave it without any argument.</p>
-
-			 				<p class="mt-3 mb-3 hi5">Object attributes.</p>
-			 				<div class="flex flex-wrap table-many">
-								<p><a href="#">clear</a></p> 
-								<p><a href="#">keys</a></p> 
-								<p><a href="#">pop</a></p> 
-								<p><a href="#">rehash</a></p> 
-								<p><a href="#">values</a></p> 
-								<p><a href="#">update</a></p> 
-								<p><a href="#">get</a></p> 
-								<p><a href="#">has</a></p> 
-								<p><a href="#">copy</a></p>
-		 					</div>
-
+			 			<div id="numb" class="py-3 px-3 mt-3 object-sect bg-white">
+			 				<p class="h2 mb-3 mn"># numb<span class="args">(opt any-data)</span></p>
+			 				<p class="opacity-40">coming soon</p>
 			 			</div>
 
-
+			 			<div id="str" class="py-3 px-3 mt-3 object-sect bg-white">
+			 				<p class="h2 mb-3 mn"># str<span class="args">(opt any-data)</span></p>
+			 				<p class="opacity-40">coming soon</p>
+			 			</div>
 
   					</div>
+
   					<div class="col-2-xxl px-4 col-3-md col-10-sm navigator">
-  						<div class="pt-4 px-2 py-3 bg-white">
-  							<p class="b6 mb-2 text-lg hd">On this page</p>
+  						<div class="pt-4 px-2 py-3 card bg-white">
+  							<p class="b5 tb mb-2 text-lg hd">On this page</p>
   							<ul class="ml-4">
 	  							<!-- <li class="mb-1"><a href="#" class="px-1">coming soon</a></li> -->
 	  						</ul>
+
   						</div>
   					</div>
   				</div>

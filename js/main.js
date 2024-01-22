@@ -14,7 +14,8 @@ nav.innerHTML = `
 <div class="nav py-1 flex align-items-center justify-center">
 		<nav class="flex justify-between align-items-center col-7 col-8-lg col-10-sm px-2-sm overflow-x-scroll-sm">
 			<div class="flex justify-start align-items-center">
-				<p class="logo-case pt-2 pb-1"><a href="index.html" class="logo text-xl-3 text-xl-md px-2">LUQIX</a></p>
+				<p class="logo-case pt-2 pb-1 pr-10-sm">
+					 <a href="index.html" class="flex align-items-center logo text-xl-3 text-xl-md px-2"><img height="25px" class="img mr-2" src="img/logo.svg"> LUQIX</a></p>
 			</div>
 			<div class="flex justify-center align-items-center"></div>
 			<div class="flex justify-end align-items-center">
