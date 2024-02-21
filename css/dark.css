@@ -51,6 +51,7 @@
 
 .dark-nav *{
 	color: #fff !important;
+	color: #000 !important;
 }
 
 .dark-nav .logo{
@@ -145,3 +146,10 @@
 
 .dark-footer-bg *{ color: #c2c5d9 !important; }
 .dark-footer, .dark-footer *{color: rgb(168,177,185) !important; }
+
+.dark-all .h2, .dark-all .h2 *{
+	color: inherit !important;
+}
+.dark-all .h2 *{
+	font-weight: 400;
+}

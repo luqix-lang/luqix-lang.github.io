@@ -50,8 +50,89 @@
 	  						<p class="lh1"><b>socket</b> provides networking to a program using the <b>Berkeley Socket Interface</b> that is commonly seen in many programming language. Docs like for <a href="">python socket</a> module will greatly help as no change was possible for this module in luqix implimentation.</p>
 	  					</div>
 
-			 			<div id="basic-variables" class="p-3">
-			 				<p class=" mb-3 alert"><b>Note!</b><br>Variables in this module are simply <b>numbers</b>, globally know for Berkeley sockets, so their existance in the module could seize, to keep the module clean. But always, a mapping will be found here.</p>
+	  					<p id="mappings" class="h2 px-5 px-3-md">Mapping of all possible socket variables used in luqix.</p>
+	  					<div class="alert grid grid-container grid-3 grid-2-md m-3 mt-0 py-3 px-5 px-3-md">
+		  					<div id="addressFamily" class="text-md text-inherit-sm col grid-item">
+		  						<p class="bold mb-2 mt-2-md">Address Family</p>
+		  						<p class="">0 &nbsp; UNSPEC</p>
+		  						<p class="">1 &nbsp; UNIX</p>
+		  						<p class="">2 &nbsp; INET</p>
+		  						<p class="">4 &nbsp; IPX</p>
+		  						<p class="">5 &nbsp; APPLETALK</p>
+		  						<p class="">10 &nbsp; INET6</p>
+		  					</div>
+		  					<div id="addressFamily" class="text-md text-inherit-sm col grid-item">
+		  						<p class="bold mb-2 mt-2-md">Socket Type</p>
+		  						<p>1 &nbsp; STREAM</P>
+								<p>2 &nbsp; DGRAM</P>
+								<p>3 &nbsp; RAW</P>
+								<p>4 &nbsp; RDM</P>
+								<p>5 &nbsp; SEQPACKET</P>
+		  					</div>
+		  					<div id="addressFamily" class="text-md text-inherit-sm col grid-item">
+		  						<p class="bold mb-2 mt-2-md">Protocol Type</p>
+		  						<p>0 &nbsp; IP</P>                          
+								<p>2 &nbsp; IGMP</P>                     
+								<p>3 &nbsp; GGP</P>                      
+								<p>6 &nbsp; TCP</P>                           
+								<p>17 &nbsp; UDP</P>
+								<p>22 &nbsp; IDP</P>
+								<p>255 &nbsp; RAW</P>
+								<p>41 &nbsp; IPV6</P>
+		  					</div>
+
+		  					<div class="text-md text-inherit-sm grid-item col">
+		  						<p class="bold mb-2 mt-2-md">Socket Option Level</p>
+		  						<p>30 &nbsp; ACCEPTCONN</p>
+		  						<p>6 &nbsp; BROADCAST</p>
+		  						<p>1 &nbsp; DEBUG</p>                         
+								<p>5 &nbsp; DONTROUTE</p>
+								<p>4 &nbsp; ERROR</p>
+								<p>20 &nbsp; IPV6_JOIN_GROUP</p>
+								<p>21 &nbsp; IPV6_LEAVE_GROUP</p>
+								<p>18 &nbsp; IPV6_MULTICAST_HOPS</p>
+								<p>17 &nbsp; IPV6_MULTICAST_IF</p>       
+								<p>19 &nbsp; IPV6_MULTICAST_LOOP</p>
+								<p>26 &nbsp; IPV6_V6ONLY</p>             
+								<p>9 &nbsp; KEEPALIVE</p>
+								<p>13 &nbsp; LINGER</p>
+								<p>10 &nbsp; OOBINLINE</p>
+								<p>8 &nbsp; RCVBUF</p>
+								<p>18 &nbsp; RCVLOWAT</p>
+								<p>20 &nbsp; RCVTIMEO</p>
+								<p>2 &nbsp; REUSEADDR</p>
+								<p>7 &nbsp; SNDBUF</p>
+								<p>19 &nbsp; SNDLOWAT</p>
+								<p>21 &nbsp; SNDTIMEO</p>
+								<p>1 &nbsp; TCP_NODELAY</p>
+								<p>3 &nbsp; TYPE</p>
+		  					</div>
+
+		  					<div class="text-md text-inherit-sm grid-item col mb-3-md">
+		  						<p class="bold mb-2 mt-2-md">Shutdown Type</p>
+								<p>0 &nbsp; RECIEVE</P>                                                                 
+		  						<p>1 &nbsp; SEND</P>                          
+								<p>2 &nbsp; BOTH</P>
+		  					</div>
+
+		  					<div class="text-md text-inherit-sm grid-item col mb-3-md">
+		  						<p class="bold mb-2 mt-2-md">Socket Option Type</p>
+								<p>1 &nbsp; ICMP</p>
+								<p>255 &nbsp; RAW</p>
+								<p>1 &nbsp; SOCKET</p>
+								<p>3 &nbsp; GGP</p>                           
+								<p>0 &nbsp; IP</p>
+								<p>12 &nbsp; PUP</p>
+								<p>41 &nbsp; IPV6</p>
+								<p>2 &nbsp; IGMP</p>
+								<p>17 &nbsp; UDP</p>   
+								<p>6 &nbsp; TCP</p>                      
+								<p>22 &nbsp; IDP</p> 
+		  					</div>
+	  					</div>
+
+			 			<div id="socket-attributes" class="p-3">
+			 				<p class=" mb-3 alert"><b>Note <br></b>The above are variables for types used by the socket, copy when needed.</p>
 			 				
 			 				<p class="mt-7 h1">Module Attributes</p>
 			 				<div class="dv mt-2 mb-3"></div>
@@ -59,144 +140,127 @@
 			 				<div>
 			 					<div></div>
 			 					<div class="flex flex-wrap table-many">
-			 						<p><a href="#">AF_APPLETALK</a></p> 
-									<p><a href="#">AF_INET</a></p> 
-									<p><a href="#">AF_INET6</a></p> 
-									<p><a href="#">AF_IPX</a></p> 
-									<p><a href="#">AF_UNIX</a></p> 
-									<p><a href="#">AF_UNSPEC</a></p> 
-									<p><a href="#">IPPROTO_GGP</a></p> 
-									<p><a href="#">IPPROTO_ICMP</a></p> 
-									<p><a href="#">IPPROTO_IDP</a></p> 
-									<p><a href="#">IPPROTO_IGMP</a></p> 
-									<p><a href="#">IPPROTO_IP</a></p> 
-									<p><a href="#">IPPROTO_IPV6</a></p> 
-									<p><a href="#">IPPROTO_PUP</a></p> 
-									<p><a href="#">IPPROTO_RAW</a></p> 
-									<p><a href="#">IPPROTO_TCP</a></p> 
-									<p><a href="#">IPPROTO_UDP</a></p> 
-									<p><a href="#">SHUT_RD</a></p> 
-									<p><a href="#">SHUT_RDWR</a></p> 
-									<p><a href="#">SHUT_WR</a></p> 
-									<p><a href="#">SOCK_DGRAM</a></p> 
-									<p><a href="#">SOCK_RAW</a></p> 
-									<p><a href="#">SOCK_RDM</a></p> 
-									<p><a href="#">SOCK_SEQPACKET</a></p> 
-									<p><a href="#">SOCK_STREAM</a></p> 
-									<p><a href="#">SOL_GGP</a></p> 
-									<p><a href="#">SOL_ICMP</a></p> 
-									<p><a href="#">SOL_IDP</a></p> 
-									<p><a href="#">SOL_IGMP</a></p> 
-									<p><a href="#">SOL_IP</a></p> 
-									<p><a href="#">SOL_IPV6</a></p> 
-									<p><a href="#">SOL_PUP</a></p> 
-									<p><a href="#">SOL_RAW</a></p> 
-									<p><a href="#">SOL_SOCKET</a></p> 
-									<p><a href="#">SOL_TCP</a></p> 
-									<p><a href="#">SOL_UDP</a></p> 
-									<p><a href="#">SO_ACCEPTCONN</a></p> 
-									<p><a href="#">SO_BROADCAST</a></p> 
-									<p><a href="#">SO_DEBUG</a></p> 
-									<p><a href="#">SO_DONTROUTE</a></p> 
-									<p><a href="#">SO_ERROR</a></p> 
-									<p><a href="#">SO_IPV6_JOIN_GROUP</a></p> 
-									<p><a href="#">SO_IPV6_LEAVE_GROUP</a></p> 
-									<p><a href="#">SO_IPV6_MULTICAST_HOPS</a></p> 
-									<p><a href="#">SO_IPV6_MULTICAST_IF</a></p> 
-									<p><a href="#">SO_IPV6_MULTICAST_LOOP</a></p> 
-									<p><a href="#">SO_IPV6_UNICAST_HOPS</a></p> 
-									<p><a href="#">SO_IPV6_V6ONLY</a></p> 
-									<p><a href="#">SO_KEEPALIVE</a></p> 
-									<p><a href="#">SO_LINGER</a></p> 
-									<p><a href="#">SO_OOBINLINE</a></p> 
-									<p><a href="#">SO_RCVBUF</a></p> 
-									<p><a href="#">SO_RCVLOWAT</a></p> 
-									<p><a href="#">SO_RCVTIMEO</a></p> 
-									<p><a href="#">SO_REUSEADDR</a></p> 
-									<p><a href="#">SO_SNDBUF</a></p> 
-									<p><a href="#">SO_SNDLOWAT</a></p> 
-									<p><a href="#">SO_SNDTIMEO</a></p> 
-									<p><a href="#">SO_TCP_NODELAY</a></p> 
-									<p><a href="#">SO_TYPE</a></p> 
 									<p><a href="#Socket">Socket</a></p> 
-									<p><a href="#">getaddrinfo</a></p> 
-									<p><a href="#">gethostbyaddr</a></p> 
-									<p><a href="#">gethostbyname</a></p>
+									<p><a href="#getAddressInfo">getAddressInfo</a></p> 
+									<p><a href="#getHostByAddress">getHostByAddress</a></p> 
+									<p><a href="#getHostByName">getHostByName</a></p>
 			 					</div>
 			 				</div>
 			 			</div>
 
+			 			<div id="getHostByName" class="py-3 px-5 px-3-md">
+			 				<p class="mb-3 h2">socket.getHostByName<span class="args">(string hostname)</span></p>
+			 				<p class="mb-4 lh1"></p>
+
+			 				<div class="code mb-2 mt-2">url = socket.getHostByName('localhost')</div>
+			 			</div>
+
+			 			<div id="getHostByAddress" class="py-3 px-5 px-3-md">
+			 				<p class="mb-3 h2">socket.getHostByAddress<span class="args">(string iP4)</span></p>
+			 				<p class="mb-4 lh1"></p>
+
+			 				<div class="code mb-2 mt-2">url = socket.getHostByAddress('127.0.0.1')</div>
+			 			</div>
+
+			 			<div id="getAddressInfo" class="py-3 px-5 px-3-md">
+			 				<p class="mb-3 h2">socket.getAddressInfo<span class="args">(string hostname)</span></p>
+			 				<p class="mb-4 lh1"></p>
+
+			 				<div class="code mb-2 mt-2">url = socket.getAddressInfo('localhost')</div>
+			 			</div>
+
 			 			<div id="Socket" class="py-3 px-5 px-3-md">
-			 				<p class="mb-3 h2">socket.Socket<span class="args">(AF, SOCK)</span></p>
+			 				<p class="mb-2 h2"># socket.Socket<span class="args">(ADDR_FAMILY, SOCK_TYPE)</span></p>
 			 				
-			 				<p class="mb-4 lh1">Creates a socket object ready for interfacing with connection of the type specified by the <a href="">address family</a> and <a href="">socket type</a> which would include <a href="">TCP</a>, <a href="">UDP</a> and many more.</p>
+			 				<p class="mb-4 lh1">Creates a socket object of <span class="key">address family</span> and <span class="key">socket type</span> specified.</p>
 
-			 				<div class="code mb-4 mt-2">conn = socket.Socket(socket.AF_INET, socket.SOCK_STREAM) // tcp socket</div>
+			 				<div class="code mb-4 mt-2">s = socket.Socket(2, 1) // tcp socket</div>
 
-			 				<div class="mt-3">
-			 					<table class="styled-table">
-			 						<thead class="">
-			 							<tr>
-			 								<th>attribute</th>
-			 								<th>function</th>
-			 							</tr>
-			 						</thead>
-			 						<tbody class="">
-			 							<tr>
-			 								<td>accept</td>
-			 								<td>accepts connection to the server returning an individual client handling object.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>addr_family</td>
-			 								<td>returns the string address family of the stream</td>
-			 							</tr>
-			 							<tr>
-			 								<td>bind</td>
-			 								<td>binds the socket object to the given localhost and port</td>
-			 							</tr>
-			 							<tr>
-			 								<td>close</td>
-			 								<td>closes the connection</td>
-			 							</tr>
-			 							<tr>
-			 								<td>connect</td>
-			 								<td>connects socket object to a server at the given localhost and port.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>hostname</td>
-			 								<td>returns the hostname string used by the server.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>isalive</td>
-			 								<td>returns true if the connection is still running or false.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>listen</td>
-			 								<td>determines the maximum number of clients the server should listen to at a time.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>send</td>
-			 								<td>sends bytes data on the network</td>
-			 							</tr>
-			 							<tr>
-			 								<td>sendto</td>
-			 								<td>sends byte data on the network like <b>UDP</b> that requires no validation.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>setblocking</td>
-			 								<td>if given true set socket to blocking or false to not blocking.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>setsockopt</td>
-			 								<td>Helps in reusing the port and more.</td>
-			 							</tr>
-			 							<tr>
-			 								<td>shutdown</td>
-			 								<td>shutdowns connections to the socket either for one side or all.</td>
-			 							</tr>
-			 						</tbody>
-			 					</table>
+			 				<div>
+			 					<p class="mt-7 h1">Object Methods</p>
+				 				<div class="dv mt-2 mb-3"></div>
+
+			 					<div class="flex flex-wrap table-many">
+									<p><a href="#Socket-accept">accept</a></p>   
+									<p><a href="#Socket-addressFamily">addressFamily</a></p> 
+									<p><a href="#Socket-alive">alive</a></p>     
+									<p><a href="#Socket-bind">bind</a></p>     
+									<p><a href="#Socket-blocked">blocked</a></p> 
+									<p><a href="#Socket-close">close</a></p> 
+									<p><a href="#Socket-connect">connect</a></p> 
+									<p><a href="#Socket-hostname">hostname</a></p>       
+									<p><a href="#Socket-listen">listen</a></p>         
+									<p><a href="#Socket-receive">receive</a></p>   
+									<p><a href="#Socket-send">send</a></p>     
+									<p><a href="#Socket-sendTo">sendTo</a></p> 
+									<p><a href="#Socket-setBlocking">setBlocking</a></p> 
+									<p><a href="#Socket-setSocketOption">setSocketOption</a></p> 
+									<p><a href="#Socket-shutDown">shutDown</a></p>
+				 				</div>
 			 				</div>
+
+			 				<div id="Socket-accept" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">host = s.accept()</p>
+				 				<p class="">Accept incoming connection and wait if blocking, returns new connected host streaming object.</p>
+				 			</div>
+
+				 			<div id="Socket-addressFamily" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">a = s.addressFamily</p>
+				 				<p class="">Returns address family used by the socket.</p>
+				 			</div>
+				 			<div id="Socket-alive" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">a = s.alive()</p>
+				 				<p class="">Returns true if socket is still up.</p>
+				 			</div>
+				 			<div id="Socket-bind" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">s.bind('localhost', 7575)</p>
+				 				<p class="">Binds socket to given hostname and server.</p>
+				 			</div>
+
+				 			<div id="Socket-blocked" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">b = s.blocked()</p>
+				 				<p class="">Returns true if socket is blocking.</p>
+				 			</div>
+				 			<div id="Socket-close" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">s.close()</p>
+				 				<p class="">Closes the socket connection.</p>
+				 			</div>
+				 			<div id="Socket-connect" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">s.connect('localhost', 7575)</p>
+				 				<p class="">Connects socket to given hostname and port.</p>
+				 			</div>
+				 			<div id="Socket-hostname" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">a = s.hostname</p>
+				 				<p class="">Returns socket hostname.</p>
+				 			</div>
+				 			<div id="Socket-listen" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">s.listen(5)</p>
+				 				<p class="">Sets socket to listen to given number of hosts.</p>
+				 			</div>
+				 			<div id="Socket-recieve" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">data = s.recieve(1024)</p>
+				 				<p class="">Returns sent bytes data from other connection sender.</p>
+				 			</div>
+				 			<div id="Socket-send" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">s.send(b'hello world')</p>
+				 				<p class="">Send sbytes data over network.</p>
+				 			</div>
+				 			<div id="Socket-sendTo" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">s.sendTo(b'hello world')</p>
+				 				<p class="">Sends bytes data over UDP network.</p>
+				 			</div>
+				 			<div id="Socket-setBlocking" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">s.setBlocking(true)</p>
+				 				<p class="">Sets socket to or from blocking.</p>
+				 			</div>
+				 			<div id="Socket-setSocketOption" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">s.setSocketOption(2, 1)</p>
+				 				<p class="">Helps in port reusing.</p>
+				 			</div>
+				 			<div id="Socket-shutDown" class="py-3 px-1 px-3-md">
+				 				<p class="mb-3 code">s.shutDown(1)</p>
+				 				<p class="">Shuts down or stops abilities of a socket like listening, sending or both.</p>
+				 			</div>
 
 			 			</div>
 
@@ -206,7 +270,9 @@
   						<div class="pt-4 px-2 py-3">
   							<p class="b5 tb mb-2 text-lg hd">On this page</p>
   							<ul class="ml-4">
-	  							<!-- <li class="mb-1"><a href="#" class="px-1">coming soon</a></li> -->
+	  							<li class="mb-1"><a href="#mappings" class="px-1">Constants mapping</a></li>
+	  							<li class="mb-1"><a href="#socket-attributes" class="px-1">Attributes</a></li>
+	  							<li class="mb-1"><a href="#Socket" class="px-1">Socket Object</a></li>
 	  						</ul>
   						</div>
   					</div>

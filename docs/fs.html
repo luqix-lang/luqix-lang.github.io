@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luqix - file module docs</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
+   
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  	<link rel="stylesheet" type="text/css" href="../css/fancy.css">
+  	<link rel="stylesheet" type="text/css" href="../modules/flare/flare.css">
+
+</head>
+<body >
+
+	<div class="main-container">
+
+	<div id="nav"></div>
+	  
+  	<div class="content sticky-top" id="docs">
+  		<div class="flex sticky-top">
+  			<div class="sidebar sticky-top" id="sidebar">
+  				<div class="">
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Get Started</span> <span class="caret-right"></span></p>
+  					<div class="side-dec">
+  						<a href="docs.html"><p class="side-nav px-3">Introduction</p></a>
+  						<a href="basics.html"><p class="side-nav px-3">Basics and syntax</p></a>
+  					</div>
+  					<p class="side-link flex align-items-center justify-between px-3"><span>Builtin module</span> <span class="caret-right"></span></p>
+  					<div class="side-dec" id="modules-nav">
+  					</div>
+  					
+  				</div>
+  			</div>
+
+  			<div class="menu-call flex align-items-center">
+  				<p class="px-2" onclick="toggleMenu()"><i class="fas fa-bars"></i></p>
+  				<p class="px-2 bl-1"><a href="#"><i class="fas fa-caret-up"></i></a></p>
+  			</div>
+
+  			<div id="app2" class="contents contents2">
+  				<div class="flex flex-wrap-md py-5 py-2-sm f16">
+  					<div class="col-8 col-7-md col-10-sm pl-10 pl-7-lg pl-0-md px-3-md mb-3">
+
+  						<div class="card p-3 mb-w bg-white">
+	  						<p class="hi2 page">Fs module</p>
+	  						
+	  						<p class="lh1 mt-3"><b class="key">fs</b> module deals with the Os file system handling the likes of <span class="key">reading</span> and <span class="key">writing</span> data to files and files locations on the Pc. This is a convient module has it includes low level file writing with usage of bytes and it functions come from direct C functions.</p>
+
+	  						<div class="code mt-3">let fs = require('fs');</div>
+
+	  						<p class="text-md mt-3 mb-1">Summarised table</p>
+
+	  						<div class="">
+			 					<table class="styled-table">
+			 						<thead class="">
+			 							<tr>
+			 								<th>Function&nbsp;<span class="d-none-sm">name</span></th>
+			 								<th>Usage and Description</th>
+			 							</tr>
+			 						</thead>
+			 						<tbody class="">
+			 							<tr>
+			 								<td>appendFile</td>
+			 								<td>Directly appends bytes data to the given file, <b class="mn">appendFile('file.txt', b'hello world')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>chdir</td>
+			 								<td>Changes to a new directory <b class="mn">chdir('/home')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>copyFile</td>
+			 								<td>Copies a file to a new location on the filesystem <b class="mn">copyFile('file.txt', '/newpath/file.txt')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>dir</td>
+			 								<td>Returns true if given path is a folder <b class="mn">dir('path')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>exists</td>
+			 								<td>Returns true if the file or directory path given exists <b class="mn">exists('path')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>fchmod</td>
+			 								<td>Changes file permissions <b class="mn">fchmod('path/file', 3304)</b>. Number must be valid and Os favoured.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>fdata</td>
+			 								<td>Returns file or folder number, more of attribute, research <b class="mn">fdata('path')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>file</td>
+			 								<td>Returns true if given path is a file <b class="mn">file('path/file.txt')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>fileSize</td>
+			 								<td>Returns the file size of the given file <b class="mn">fileSize('abc.txt')</b>. The number of bytes the file has.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>ftime</td>
+			 								<td>Returns luqix enum file time the file was last accessed, amended and amde for windows <b class="mn">ftime('path/file.txt')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>mkdir</td>
+			 								<td>Recursively makes a folder with even the unexisting sub-folders <b class="mn">mkdir('/tmp/app/dist')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td><a href="#Open">openFile</a></td>
+			 								<td>Opens a file in the given mode <b class="mn">openFile('file.txt', 'wb')</b> then returns a streaming object. <a href="">View file writing modes</a>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>pwd</td>
+			 								<td>Returns current working directory path as a string <b class="mn">pwd()</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>readdir</td>
+			 								<td>Reads given path content files and folder returning their string names <b class="mn">readdir('path')</b>, defaults to the current working directory.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>readFile</td>
+			 								<td>Directly reads bytes data from the given file with a given length or all, <b class="mn">readFile('file.txt', 1024)</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>rename</td>
+			 								<td>Returns gived file or folder <i>src</i> to new name <i>dst</i> <b class="mn">rename('src.txt', 'dst.txt')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>rm</td>
+			 								<td>Permanently deletes the file <b class="mn">rm('def.txt')</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>rmdir</td>
+			 								<td>Recursively deletes a whole folder with its content <b class="mn">rmdir('directory-movies'</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>symlink</td>
+			 								<td>Returns true if given path is a symbolic link <b class="mn">symlink('path')</b>. Limited to unix and linux.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>tempdir</td>
+			 								<td>Returns string path to the browser's temporary directory <b class="mn">tempdir()</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>walkdir</td>
+			 								<td>Recursively reads a directory and its sub folders returning all files as a list. <b class="mn">walk('/tmp/')</b>, defaults to the current directory.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>writeFile</td>
+			 								<td>Directly writes bytes data to the given file overwriting or creating a new file if not found, <b class="mn">writeFile('file.txt', b'hello world')</b>.</td>
+			 							</tr>
+			 						</tbody>
+			 					</table>
+			 				</div>
+			 				<p class="mt-3 alert"><b>Note <br></b>Some functions may give different results from others but atleast they well all do the same and much similar.</p>
+
+	  					</div>
+
+			 			
+
+			 			<div id="Open" class="py-3 px-3 mt-3 object-sect bg-white">
+			 				<p class="h2 mb-3 mn"># file.openFile<span class="args">(str filename, string mode)</span></p>
+			 			
+			 				<p class="mb-3 lh1">Opens a file in the specified mode and returns an object stream to which you can manipulate the file data. Talking of <span class="key">modes</span>, they are quite a number. These specify how the file should be handled, either in string mode or bytes mode.</p>
+
+			 				<p class="alert"><b>modes <br></b>Check the C library to be sure because its all the same.<span class="b6">r, rb, w, wb, w+, r+ wb+, rb+</span>.</p>
+
+			 				<div class="code mb-4 mt-2">handle = file.Open('sample.txt', 'rw')</div>
+
+	  						<p class="text-md mt-3 mb-1">Summarised table</p>
+
+			 				<div class="">
+			 					<table class="styled-table">
+			 						<thead class="">
+			 							<tr>
+			 								<th>Function&nbsp;<span class="d-none-sm">name</span></th>
+			 								<th>Usage and Description</th>
+			 							</tr>
+			 						</thead>
+			 						<tbody class="">
+			 							<tr>
+			 								<td>blocks</td>
+			 								<td>Generator that reads given number of bytes from a file, requiring a callback function which handles it. <b class="mn">blocks(int size, lambda fn)</b></td>
+			 							</tr>
+			 							<tr>
+			 								<td>close</td>
+			 								<td>Closes the file, <b class="mn">close()</b>. No further writing and reading can occur.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>closed</td>
+			 								<td>Checks if the file is closed or open for reading and writing <b class="mn">close()</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>flush</td>
+			 								<td>Writes the buffered data by the OS to the opened file <b class="mn">flush()</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>mode</td>
+			 								<td>The mode string in which the fail was opened, <b class="mn">mode</b>, changing it won't help.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>name</td>
+			 								<td>The name or path of the file.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>read</td>
+			 								<td>Reads <span class="key">8192 bytes</span> from the file. Well you can give an optional length you want. <b class="mn">read(1024)</b>, but already its done by the runtime, so read all and use part thats needed.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>readLine</td>
+			 								<td>Reads <span class="key">line by line</span> from the file or if given by a <span class="key">character</span> specified for string reading. <b class="mn">readLine('\n')</b></td>
+			 							</tr>
+			 							<tr>
+			 								<td>rewind</td>
+			 								<td>Calls file handle rewind, <b class="mn">rewind()</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>seek</td>
+			 								<td>Changes the cursor position, <b class="mn">seek()</b></td>
+			 							</tr>
+			 							<tr>
+			 								<td>size</td>
+			 								<td>Returns the current file size length in bytes, <b class="mn">size()</b></td>
+			 							</tr>
+			 							<tr>
+			 								<td>sync</td>
+			 								<td>Forces any data buffered by the OS to be written to disk, <b class="mn">sync()</b>.</td>
+			 							</tr>
+			 							<tr>
+			 								<td>tell</td>
+			 								<td>Returns the current cursor position, <b class="mn">tell()</b></td>
+			 							</tr>
+			 							<tr>
+			 								<td>write</td>
+			 								<td>Depending on the mode, either writes string or bytes to the file, <b class="mn">write('hello world!')</b></td>
+			 							</tr>
+			 							<tr>
+			 								<td>writeline</td>
+			 								<td>Writes a single line to a file, <b class="mn">writeline('hello world!')</b>.</td>
+			 							</tr>
+			 						</tbody>
+			 					</table>
+			 				</div>
+
+			 				<p class="alert mt-3"><b>Info <br></b>More functions are provided by other programs, but this is the core and report if favourite is missing.</p>
+
+			 			</div>
+
+  					</div>
+
+  					<div class="col-2-xxl px-4 col-3-md col-10-sm navigator">
+  						<div class="pt-4 px-2 py-3 card bg-white">
+  							<p class="b5 tb mb-2 text-lg hd">On this page</p>
+  							<ul class="ml-4">
+	  							<!-- <li class="mb-1"><a href="#" class="px-1">coming soon</a></li> -->
+	  						</ul>
+
+  						</div>
+  					</div>
+  				</div>
+
+  			</div>
+
+  		</div>
+  	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../modules/flare/flare.js"></script>
+
+
+	<script type="text/javascript" src="../js/docs.js"></script>
+
+
+</body>
+</html>

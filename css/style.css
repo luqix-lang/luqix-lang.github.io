@@ -336,9 +336,9 @@ footer .b5{
 }
 
 .h1, .h2, .h3{
-	color: #3b3b3b;
+	color: #1b1b1b;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .h1{
@@ -351,7 +351,8 @@ footer .b5{
 .h2{
 	padding: 7px 10px;
 	border-radius: 15px;
-	background-color: #BDC10A;
+	font-size: 18px;
+	color: inherit;
 }
 
 .mn{
@@ -360,7 +361,6 @@ footer .b5{
 	color: #4b4b4b;
 }
 
-.h2{ font-size: 20px; }
 .h3{ font-size: 18px; }
 
 .styled-table {

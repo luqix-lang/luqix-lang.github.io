@@ -70,7 +70,7 @@ bod.innerHTML += `
 `
 
 if (true) {
-    modules = ["base64", "locals", "file", "json", "math", "os", "path", "process", "random", "regex", "socket", "sys", "thread", "time", "websocket"]
+    modules = ["base64", "locals", "fs", "json", "math", "os", "path", "process", "random", "regex", "socket", "sys", "thread", "time", "websocket"]
     modules.sort()
 
     let mod = document.getElementById('modules-nav')
